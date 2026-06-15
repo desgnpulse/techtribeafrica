@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TechTribe Africa — Technology intelligence from the continent</title>
+<meta name="description" content="TechTribe Africa covers the patterns shaping technology and business in Africa — the shifts nobody told you about, the markets being quietly built, and the ideas worth understanding before they're obvious.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://techtribeafrica.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TechTribe Africa">
+<meta property="og:title" content="TechTribe Africa — Technology intelligence from the continent">
+<meta property="og:description" content="The shifts nobody told you about. The markets being quietly built. The ideas worth understanding before they're obvious.">
+<meta property="og:url" content="https://techtribeafrica.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@TechTribeAfrica">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "TechTribe Africa",
+  "url": "https://techtribeafrica.com",
+  "logo": "https://techtribeafrica.com/logo.png",
+  "description": "Technology intelligence from the African continent.",
+  "sameAs": ["https://twitter.com/TechTribeAfrica","https://linkedin.com/company/techtribeafrica"],
+  "foundingDate": "2026",
+  "areaServed": "Africa"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "TechTribe Africa",
+  "url": "https://techtribeafrica.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {"@type": "EntryPoint", "urlTemplate": "https://techtribeafrica.com/search?q={search_term_string}"},
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NewsArticle",
+  "headline": "Africa didn't adapt WhatsApp for business. Business adapted to WhatsApp.",
+  "description": "For the Lagos fashion seller, the Accra clinic receptionist, the Kampala electrician — WhatsApp isn't a channel in their stack. It's the stack.",
+  "url": "https://techtribeafrica.com/frontier-reports/africa-whatsapp-business-adaptation",
+  "datePublished": "2026-06-15T08:00:00+03:00",
+  "dateModified": "2026-06-15T08:00:00+03:00",
+  "author": {"@type": "Organization", "name": "TechTribe Africa", "url": "https://techtribeafrica.com"},
+  "publisher": {"@type": "Organization", "name": "TechTribe Africa", "logo": {"@type": "ImageObject", "url": "https://techtribeafrica.com/logo.png"}},
+  "articleSection": "Frontier Reports",
+  "keywords": ["WhatsApp", "Africa", "CRM", "small business", "mobile commerce"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;450;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    /* Palette — Ive principle: one near-neutral system, color used to classify only */
+    --ink:        #111110;
+    --ink-2:      #3A3A38;
+    --ink-3:      #6B6B67;
+    --ink-4:      #9A9A95;
+    --rule:       #E4E2DC;
+    --rule-soft:  #EFEDE8;
+    --bg:         #FAFAF8;
+    --white:      #FFFFFF;
+
+    /* Three pillar colors — only color on the page */
+    --frontier:   #0E4A32;   /* Deep forest — earned intelligence */
+    --signal:     #1C2B4A;   /* Deep slate — data, observation */
+    --build:      #7A4A10;   /* Dark amber — craft, making */
+
+    /* Typography */
+    --serif: 'EB Garamond', Georgia, serif;
+    --sans:  'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    --max: 1180px;
+    --gap: clamp(20px, 4vw, 52px);
+  }
+
+  html { font-size: 16px; scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; height: auto; }
+
+  /* ── Skip link ── */
+  .skip { position: absolute; top: -40px; left: 0; background: var(--ink); color: #fff; padding: 8px 16px; font-size: 13px; transition: top .15s; z-index: 200; }
+  .skip:focus { top: 0; }
+
+  /* ── Pillar tags ── */
+  .tag {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    padding: 3px 8px 2px;
+    border-radius: 2px;
+  }
+  .tag-f { background: var(--frontier); color: #fff; }
+  .tag-s { background: var(--signal);   color: #fff; }
+  .tag-b { background: var(--build);    color: #fff; }
+
+  /* ── Thin rule utility ── */
+  .hr { border: none; border-top: 1px solid var(--rule); }
+
+  /* ── HEADER ── */
+  .site-header {
+    background: var(--white);
+    border-bottom: 1px solid var(--rule);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .header-wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 var(--gap);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    gap: 24px;
+  }
+  .wordmark {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    white-space: nowrap;
+  }
+  .wordmark span { color: var(--frontier); }
+  .header-nav { display: flex; align-items: center; gap: 2px; }
+  .hn {
+    font-size: 13px;
+    font-weight: 450;
+    color: var(--ink-3);
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: color .12s, background .12s;
+    white-space: nowrap;
+  }
+  .hn:hover { color: var(--ink); background: var(--rule-soft); }
+  .hn.active { color: var(--ink); font-weight: 500; }
+  .header-right { display: flex; align-items: center; gap: 10px; }
+  .btn-search {
+    width: 34px; height: 34px;
+    border: 1px solid var(--rule);
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ink-3);
+    transition: border-color .12s, color .12s;
+  }
+  .btn-search:hover { border-color: var(--ink-3); color: var(--ink); }
+  .btn-sub {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+    background: var(--ink);
+    border: none;
+    border-radius: 8px;
+    padding: 7px 16px;
+    cursor: pointer;
+    transition: background .12s;
+    white-space: nowrap;
+  }
+  .btn-sub:hover { background: var(--ink-2); }
+
+  /* ── MASTHEAD BANNER ── */
+  .masthead {
+    background: var(--white);
+    border-bottom: 1px solid var(--rule);
+    padding: 48px var(--gap) 36px;
+    text-align: center;
+  }
+  .masthead-pub {
+    font-family: var(--serif);
+    font-size: clamp(40px, 7vw, 80px);
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.03em;
+    line-height: 1;
+    display: block;
+  }
+  .masthead-rule {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 16px auto 14px;
+    max-width: 480px;
+  }
+  .masthead-rule::before,
+  .masthead-rule::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+  .masthead-sub {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-4);
+    white-space: nowrap;
+  }
+  .masthead-date {
+    font-size: 12px;
+    color: var(--ink-4);
+    letter-spacing: 0.03em;
+  }
+
+  /* ── MAIN LAYOUT ── */
+  .main-wrap {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 var(--gap);
+  }
+
+  /* ── HERO ── */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .hero-text {
+    padding: 48px 48px 48px 0;
+    border-right: 1px solid var(--rule);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+  .hero-hed {
+    font-family: var(--serif);
+    font-size: clamp(28px, 3.5vw, 46px);
+    font-weight: 500;
+    line-height: 1.14;
+    color: var(--ink);
+    letter-spacing: -0.025em;
+  }
+  .hero-hed a:hover { color: var(--frontier); }
+  .hero-dek {
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--ink-2);
+    max-width: 480px;
+  }
+  .hero-meta {
+    font-size: 12px;
+    color: var(--ink-4);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+  }
+  .hero-meta-dot { color: var(--rule); }
+  .hero-img {
+    padding: 48px 0 48px 48px;
+    display: flex;
+    align-items: center;
+  }
+  .img-block {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: var(--rule-soft);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: var(--ink-4);
+  }
+  .img-block-label { font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+
+  /* ── SECTION LABEL ── */
+  .sec-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 36px 0 0;
+    margin-bottom: 24px;
+    border-top: 2px solid var(--ink);
+  }
+  .sec-title {
+    font-family: var(--serif);
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  .sec-all {
+    font-size: 12px;
+    color: var(--ink-3);
+    font-weight: 450;
+    transition: color .12s;
+  }
+  .sec-all:hover { color: var(--ink); }
+
+  /* ── TWO-COLUMN PAGE LAYOUT ── */
+  .page-grid {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 0;
+    padding-bottom: 80px;
+  }
+  .col-main { border-right: 1px solid var(--rule); padding-right: 48px; }
+  .col-side { padding-left: 40px; }
+
+  /* ── CARD GRID ── */
+  .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 28px; margin-bottom: 44px; }
+  .card { display: flex; flex-direction: column; gap: 10px; }
+  .card-img {
+    aspect-ratio: 16/9;
+    background: var(--rule-soft);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ink-4);
+    margin-bottom: 2px;
+  }
+  .card-hed {
+    font-family: var(--serif);
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 1.3;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .card-hed a:hover { color: var(--frontier); }
+  .card-dek { font-size: 13px; line-height: 1.65; color: var(--ink-2); }
+  .card-meta {
+    font-size: 11px;
+    color: var(--ink-4);
+    padding-top: 10px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    gap: 10px;
+  }
+
+  /* ── LIST CARDS ── */
+  .list-card {
+    display: grid;
+    grid-template-columns: 1fr 104px;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: start;
+  }
+  .lc-body { display: flex; flex-direction: column; gap: 6px; }
+  .lc-hed {
+    font-family: var(--serif);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.35;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .lc-hed a:hover { color: var(--signal); }
+  .lc-dek { font-size: 13px; color: var(--ink-2); line-height: 1.55; }
+  .lc-meta { font-size: 11px; color: var(--ink-4); margin-top: 4px; }
+  .lc-img {
+    aspect-ratio: 1;
+    background: var(--rule-soft);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--ink-4);
+  }
+
+  /* ── SIDEBAR ── */
+  .sidebar { display: flex; flex-direction: column; }
+
+  .nl-block {
+    background: var(--ink);
+    color: rgba(255,255,255,0.85);
+    padding: 28px 24px;
+    border-radius: 4px;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .nl-hed {
+    font-family: var(--serif);
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+  }
+  .nl-copy { font-size: 13px; line-height: 1.6; color: rgba(255,255,255,0.6); }
+  .nl-input {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    font-size: 13px;
+    font-family: var(--sans);
+    outline: none;
+    transition: border-color .12s, background .12s;
+  }
+  .nl-input::placeholder { color: rgba(255,255,255,0.3); }
+  .nl-input:focus { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.35); }
+  .nl-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #fff;
+    color: var(--ink);
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--sans);
+    cursor: pointer;
+    transition: opacity .12s;
+  }
+  .nl-btn:hover { opacity: 0.88; }
+  .nl-fine { font-size: 11px; color: rgba(255,255,255,0.3); margin-top: -4px; }
+
+  .sb-block { padding-top: 28px; margin-top: 32px; border-top: 2px solid var(--ink); }
+  .sb-title { font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-4); margin-bottom: 16px; }
+
+  .trending-row {
+    display: flex;
+    gap: 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: start;
+  }
+  .tr-num {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--rule);
+    line-height: 1;
+    min-width: 26px;
+  }
+  .tr-hed { font-size: 13px; font-weight: 450; line-height: 1.45; color: var(--ink); }
+  .tr-hed a:hover { color: var(--ink-2); }
+  .tr-tag { margin-top: 5px; }
+
+  .sb-about { font-size: 13px; color: var(--ink-2); line-height: 1.65; }
+  .sb-about + .sb-about { margin-top: 10px; }
+  .sb-link { display: inline-block; margin-top: 12px; font-size: 12px; color: var(--ink-3); border-bottom: 1px solid var(--rule); padding-bottom: 1px; transition: color .12s, border-color .12s; }
+  .sb-link:hover { color: var(--ink); border-color: var(--ink); }
+
+  /* ── FOOTER ── */
+  footer {
+    border-top: 1px solid var(--rule);
+    background: var(--white);
+    margin-top: 0;
+  }
+  .footer-top {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 56px var(--gap) 48px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px;
+  }
+  .f-brand {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+    margin-bottom: 14px;
+  }
+  .f-desc { font-size: 13px; color: var(--ink-3); line-height: 1.7; margin-bottom: 20px; }
+  .f-social { display: flex; gap: 10px; }
+  .f-social a {
+    width: 30px; height: 30px;
+    border: 1px solid var(--rule);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    color: var(--ink-4);
+    font-family: var(--serif);
+    font-weight: 500;
+    transition: border-color .12s, color .12s;
+  }
+  .f-social a:hover { border-color: var(--ink-3); color: var(--ink); }
+  .f-col-title { font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); margin-bottom: 16px; }
+  .f-links { display: flex; flex-direction: column; gap: 10px; }
+  .f-links a { font-size: 13px; color: var(--ink-3); transition: color .12s; }
+  .f-links a:hover { color: var(--ink); }
+  .footer-bottom {
+    border-top: 1px solid var(--rule);
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 18px var(--gap);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: var(--ink-4);
+  }
+  .f-bottom-links { display: flex; gap: 20px; }
+  .f-bottom-links a { color: var(--ink-4); transition: color .12s; }
+  .f-bottom-links a:hover { color: var(--ink); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 960px) {
+    .hero { grid-template-columns: 1fr; }
+    .hero-text { padding: 36px 0; border-right: none; border-bottom: 1px solid var(--rule); }
+    .hero-img { padding: 28px 0; }
+    .page-grid { grid-template-columns: 1fr; }
+    .col-main { border-right: none; padding-right: 0; }
+    .col-side { padding-left: 0; border-top: 1px solid var(--rule); padding-top: 0; }
+    .card-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+  }
+  @media (max-width: 600px) {
+    .card-grid { grid-template-columns: 1fr; }
+    .header-nav { display: none; }
+    .footer-top { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; gap: 12px; }
+    .masthead-pub { letter-spacing: -0.04em; }
+  }
+
+  a:focus-visible, button:focus-visible, input:focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 2px;
+    border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to main content</a>
+
+<!-- STICKY NAV -->
+<header class="site-header" role="banner">
+  <div class="header-wrap">
+    <a href="/" class="wordmark" aria-label="TechTribe Africa home">TechTribe<span>&nbsp;Africa</span></a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="/frontier-reports" class="hn">Frontier Reports</a>
+      <a href="/market-signals" class="hn">Market Signals</a>
+      <a href="/build-opportunities" class="hn">Build Opportunities</a>
+      <a href="/fintech" class="hn">Fintech</a>
+      <a href="/ai-africa" class="hn">AI in Africa</a>
+      <a href="/startups" class="hn">Startups</a>
+    </nav>
+    <div class="header-right">
+      <button class="btn-search" aria-label="Search">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+      <button class="btn-sub">Subscribe</button>
+    </div>
+  </div>
+</header>
+
+<!-- BROADSHEET MASTHEAD -->
+<div class="masthead" role="banner" aria-label="Publication masthead">
+  <span class="masthead-pub">TechTribe Africa</span>
+  <div class="masthead-rule">
+    <span class="masthead-sub">Technology intelligence from the continent</span>
+  </div>
+  <time class="masthead-date" datetime="2026-06-15">Monday, 15 June 2026</time>
+</div>
+
+<!-- MAIN -->
+<main id="main">
+
+  <!-- HERO -->
+  <div class="main-wrap">
+    <section class="hero" aria-label="Featured story">
+      <div class="hero-text">
+        <div><span class="tag tag-f">Frontier Report</span></div>
+        <h1 class="hero-hed">
+          <a href="/frontier-reports/africa-whatsapp-business-adaptation">Africa didn't adapt WhatsApp for business. Business adapted to WhatsApp.</a>
+        </h1>
+        <p class="hero-dek">
+          For the Lagos fashion seller, the Accra clinic receptionist, the Kampala electrician — WhatsApp isn't a channel in their stack. It's the stack. Here's what Western software companies still don't understand, and why African founders are already building the answer.
+        </p>
+        <div class="hero-meta">
+          <time datetime="2026-06-15">15 June 2026</time>
+          <span class="hero-meta-dot">—</span>
+          <span>6 min read</span>
+        </div>
+      </div>
+      <div class="hero-img">
+        <div class="img-block" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="m8 21 4-4 4 4"/><path d="M2 10h20"/></svg>
+          <span class="img-block-label">Hero image</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- PAGE GRID -->
+  <div class="main-wrap">
+    <div class="page-grid">
+
+      <!-- MAIN COLUMN -->
+      <div class="col-main">
+
+        <!-- FRONTIER REPORTS -->
+        <section aria-label="Frontier Reports">
+          <div class="sec-head">
+            <h2 class="sec-title">Frontier Reports</h2>
+            <a href="/frontier-reports" class="sec-all">All reports →</a>
+          </div>
+          <div class="card-grid">
+
+            <article class="card" itemscope itemtype="https://schema.org/NewsArticle">
+              <meta itemprop="datePublished" content="2026-06-15">
+              <meta itemprop="author" content="TechTribe Africa">
+              <div class="card-img" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <span class="tag tag-f">Frontier Report</span>
+              <h3 class="card-hed" itemprop="headline">
+                <a href="/frontier-reports/africa-whatsapp-business-adaptation">Africa didn't adapt WhatsApp for business. Business adapted to WhatsApp.</a>
+              </h3>
+              <p class="card-dek" itemprop="description">The Western CRM playbook assumes email, desktop, and Salesforce. African commerce runs entirely inside a conversation thread.</p>
+              <div class="card-meta">
+                <time datetime="2026-06-15">15 Jun 2026</time>
+                <span>6 min</span>
+              </div>
+            </article>
+
+            <article class="card" itemscope itemtype="https://schema.org/NewsArticle">
+              <meta itemprop="datePublished" content="2026-06-10">
+              <div class="card-img" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <span class="tag tag-f">Frontier Report</span>
+              <h3 class="card-hed" itemprop="headline">
+                <a href="/frontier-reports/whatsapp-pricing-change-smes">The July 2025 pricing switch nobody told SMEs about</a>
+              </h3>
+              <p class="card-dek" itemprop="description">Meta changed the economics of WhatsApp automation. Some businesses saw their bills double overnight. Most had no warning.</p>
+              <div class="card-meta">
+                <time datetime="2026-06-10">10 Jun 2026</time>
+                <span>8 min</span>
+              </div>
+            </article>
+
+            <article class="card" itemscope itemtype="https://schema.org/NewsArticle">
+              <meta itemprop="datePublished" content="2026-06-05">
+              <div class="card-img" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 3H8"/></svg>
+              </div>
+              <span class="tag tag-f">Frontier Report</span>
+              <h3 class="card-hed" itemprop="headline">
+                <a href="/frontier-reports/missing-middle-african-software">The missing middle of African business software</a>
+              </h3>
+              <p class="card-dek" itemprop="description">Between spreadsheet and enterprise CRM lies a giant underserved market spanning CRM, accounting, inventory, and school management.</p>
+              <div class="card-meta">
+                <time datetime="2026-06-05">5 Jun 2026</time>
+                <span>10 min</span>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <hr class="hr">
+
+        <!-- MARKET SIGNALS -->
+        <section aria-label="Market Signals">
+          <div class="sec-head">
+            <h2 class="sec-title">Market Signals</h2>
+            <a href="/market-signals" class="sec-all">All signals →</a>
+          </div>
+
+          <article class="list-card" itemscope itemtype="https://schema.org/NewsArticle">
+            <div class="lc-body">
+              <span class="tag tag-s">Market Signal</span>
+              <h3 class="lc-hed" itemprop="headline">
+                <a href="/market-signals/reddit-whatsapp-crm-frustration">What 500 Reddit comments revealed about WhatsApp CRM frustration</a>
+              </h3>
+              <p class="lc-dek" itemprop="description">We read every thread. The consensus isn't about tools — it's about a pricing wall filtering out an entire tier of business.</p>
+              <div class="lc-meta"><time datetime="2026-06-12">12 Jun 2026</time> · 5 min read</div>
+            </div>
+            <div class="lc-img" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            </div>
+          </article>
+
+          <article class="list-card" itemscope itemtype="https://schema.org/NewsArticle">
+            <div class="lc-body">
+              <span class="tag tag-s">Market Signal</span>
+              <h3 class="lc-hed" itemprop="headline">
+                <a href="/market-signals/meta-subscription-platform-risk">Meta's subscription launch just raised the stakes for every WhatsApp-dependent business</a>
+              </h3>
+              <p class="lc-dek" itemprop="description">May 2026. Meta starts charging for access. What this means for founders who built on WhatsApp as a free channel.</p>
+              <div class="lc-meta"><time datetime="2026-06-08">8 Jun 2026</time> · 4 min read</div>
+            </div>
+            <div class="lc-img" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><polygon points="12,2 2,7 12,12 22,7"/><polyline points="2,17 12,22 22,17"/><polyline points="2,12 12,17 22,12"/></svg>
+            </div>
+          </article>
+
+          <article class="list-card" itemscope itemtype="https://schema.org/NewsArticle">
+            <div class="lc-body">
+              <span class="tag tag-s">Market Signal</span>
+              <h3 class="lc-hed" itemprop="headline">
+                <a href="/market-signals/african-founders-whatsapp-commerce">Why African founders understand WhatsApp commerce better than Silicon Valley</a>
+              </h3>
+              <p class="lc-dek" itemprop="description">DuceCRM, Arkesel, and a wave of African-built tools are solving problems Western tools can't model — because their founders live inside the workflows they're solving.</p>
+              <div class="lc-meta"><time datetime="2026-06-02">2 Jun 2026</time> · 7 min read</div>
+            </div>
+            <div class="lc-img" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+          </article>
+
+        </section>
+
+        <hr class="hr">
+
+        <!-- BUILD OPPORTUNITIES -->
+        <section aria-label="Build Opportunities">
+          <div class="sec-head">
+            <h2 class="sec-title">Build Opportunities</h2>
+            <a href="/build-opportunities" class="sec-all">All opportunities →</a>
+          </div>
+          <div class="card-grid">
+
+            <article class="card" itemscope itemtype="https://schema.org/NewsArticle">
+              <span class="tag tag-b">Build Opportunity</span>
+              <h3 class="card-hed" itemprop="headline">
+                <a href="/build-opportunities/competing-with-forgetting">Competing with forgetting: why most CRMs fail small businesses</a>
+              </h3>
+              <p class="card-dek" itemprop="description">Operational memory is becoming a software category. The real problem isn't pipelines — it's follow-up failure.</p>
+              <div class="card-meta">
+                <time datetime="2026-06-01">1 Jun 2026</time>
+                <span>6 min</span>
+              </div>
+            </article>
+
+            <article class="card" itemscope itemtype="https://schema.org/NewsArticle">
+              <span class="tag tag-b">Build Opportunity</span>
+              <h3 class="card-hed" itemprop="headline">
+                <a href="/build-opportunities/bsp-markup-trap">The BSP markup trap: why WhatsApp API costs are eating African SME margins</a>
+              </h3>
+              <p class="card-dek" itemprop="description">Brokers charge 5–10x Meta's base rate. The price gap between what Meta charges and what most businesses pay is the biggest hidden cost in African tech.</p>
+              <div class="card-meta">
+                <time datetime="2026-05-28">28 May 2026</time>
+                <span>5 min</span>
+              </div>
+            </article>
+
+            <article class="card" itemscope itemtype="https://schema.org/NewsArticle">
+              <span class="tag tag-b">Build Opportunity</span>
+              <h3 class="card-hed" itemprop="headline">
+                <a href="/build-opportunities/school-management-africa">School management software in Africa: the gap nobody is solving</a>
+              </h3>
+              <p class="card-dek" itemprop="description">Every school has a WhatsApp group for parent communication. Almost none have software for anything else.</p>
+              <div class="card-meta">
+                <time datetime="2026-05-22">22 May 2026</time>
+                <span>9 min</span>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+      </div>
+
+      <!-- SIDEBAR -->
+      <aside class="col-side" aria-label="Sidebar">
+        <div class="sidebar">
+
+          <div class="nl-block" role="complementary" aria-label="Newsletter signup">
+            <h3 class="nl-hed">Get the intelligence. Not the noise.</h3>
+            <p class="nl-copy">One email per week. Patterns shaping African tech — synthesised, not summarised.</p>
+            <input class="nl-input" type="email" placeholder="your@email.com" aria-label="Email address">
+            <button class="nl-btn" type="button">Subscribe — it's free</button>
+            <p class="nl-fine">No spam. Unsubscribe any time.</p>
+          </div>
+
+          <div class="sb-block">
+            <h2 class="sb-title">Most read this week</h2>
+            <div class="trending-row">
+              <span class="tr-num">01</span>
+              <div>
+                <div class="tr-hed"><a href="/frontier-reports/africa-whatsapp-business-adaptation">Africa didn't adapt WhatsApp for business. Business adapted to WhatsApp.</a></div>
+                <div class="tr-tag"><span class="tag tag-f" style="font-size:9px;padding:2px 6px;">Frontier</span></div>
+              </div>
+            </div>
+            <div class="trending-row">
+              <span class="tr-num">02</span>
+              <div>
+                <div class="tr-hed"><a href="/frontier-reports/whatsapp-pricing-change-smes">The July 2025 pricing switch nobody told SMEs about</a></div>
+                <div class="tr-tag"><span class="tag tag-f" style="font-size:9px;padding:2px 6px;">Frontier</span></div>
+              </div>
+            </div>
+            <div class="trending-row">
+              <span class="tr-num">03</span>
+              <div>
+                <div class="tr-hed"><a href="/build-opportunities/competing-with-forgetting">Competing with forgetting: why most CRMs fail small businesses</a></div>
+                <div class="tr-tag"><span class="tag tag-b" style="font-size:9px;padding:2px 6px;">Build</span></div>
+              </div>
+            </div>
+            <div class="trending-row">
+              <span class="tr-num">04</span>
+              <div>
+                <div class="tr-hed"><a href="/market-signals/meta-subscription-platform-risk">Meta's subscription launch raised the stakes for every WhatsApp-dependent business</a></div>
+                <div class="tr-tag"><span class="tag tag-s" style="font-size:9px;padding:2px 6px;">Signal</span></div>
+              </div>
+            </div>
+            <div class="trending-row">
+              <span class="tr-num">05</span>
+              <div>
+                <div class="tr-hed"><a href="/frontier-reports/missing-middle-african-software">The missing middle of African business software</a></div>
+                <div class="tr-tag"><span class="tag tag-f" style="font-size:9px;padding:2px 6px;">Frontier</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sb-block">
+            <h2 class="sb-title">About TechTribe Africa</h2>
+            <p class="sb-about">Not a tech news site. A pattern recognition publication. We do original research, synthesise what it means, and tell you where the opportunity is — before it's obvious.</p>
+            <p class="sb-about">Three pillars: <strong>Frontier Reports</strong> for deep research, <strong>Market Signals</strong> for pattern reads, and <strong>Build Opportunities</strong> for what's worth making next.</p>
+            <a href="/about" class="sb-link">Our editorial approach →</a>
+          </div>
+
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="f-brand">TechTribe Africa</div>
+      <p class="f-desc">Technology intelligence from the continent. The shifts nobody told you about, the markets being quietly built, and the ideas worth understanding before they're obvious.</p>
+      <div class="f-social">
+        <a href="https://twitter.com/TechTribeAfrica" aria-label="X / Twitter">𝕏</a>
+        <a href="https://linkedin.com/company/techtribeafrica" aria-label="LinkedIn">in</a>
+        <a href="https://instagram.com/techtribeafrica" aria-label="Instagram">ig</a>
+      </div>
+    </div>
+    <div>
+      <h3 class="f-col-title">Content</h3>
+      <nav class="f-links" aria-label="Content links">
+        <a href="/frontier-reports">Frontier Reports</a>
+        <a href="/market-signals">Market Signals</a>
+        <a href="/build-opportunities">Build Opportunities</a>
+        <a href="/fintech">Fintech</a>
+        <a href="/ai-africa">AI in Africa</a>
+        <a href="/startups">Startups</a>
+        <a href="/policy">Policy</a>
+      </nav>
+    </div>
+    <div>
+      <h3 class="f-col-title">Company</h3>
+      <nav class="f-links" aria-label="Company links">
+        <a href="/about">About</a>
+        <a href="/team">Team</a>
+        <a href="/advertise">Advertise</a>
+        <a href="/press">Press</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </div>
+    <div>
+      <h3 class="f-col-title">Subscribe</h3>
+      <nav class="f-links" aria-label="Subscribe links">
+        <a href="/newsletter">Weekly newsletter</a>
+        <a href="/rss.xml">RSS feed</a>
+        <a href="/podcast">Podcast</a>
+      </nav>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 TechTribe Africa. All rights reserved.</span>
+    <nav class="f-bottom-links" aria-label="Legal links">
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+      <a href="/cookies">Cookies</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+- [Project Infra](.claude/memory/project_infra.md): service names, PM2 app name, deploy paths (load at session start)

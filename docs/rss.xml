@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:media="http://search.yahoo.com/mrss/">
+
+  <channel>
+    <title>TechTribe Africa</title>
+    <link>https://techtribeafrica.com</link>
+    <description>Technology intelligence from the continent. The shifts nobody told you about, the markets being quietly built, and the ideas worth understanding before they're obvious.</description>
+    <language>en</language>
+    <copyright>© 2026 TechTribe Africa</copyright>
+    <managingEditor>hello@techtribeafrica.com (TechTribe Africa)</managingEditor>
+    <webMaster>hello@techtribeafrica.com (TechTribe Africa)</webMaster>
+    <pubDate>Mon, 15 Jun 2026 08:00:00 +0300</pubDate>
+    <lastBuildDate>Mon, 15 Jun 2026 08:00:00 +0300</lastBuildDate>
+    <ttl>60</ttl>
+    <image>
+      <url>https://techtribeafrica.com/logo.png</url>
+      <title>TechTribe Africa</title>
+      <link>https://techtribeafrica.com</link>
+      <width>144</width>
+      <height>144</height>
+    </image>
+    <atom:link href="https://techtribeafrica.com/rss.xml" rel="self" type="application/rss+xml"/>
+
+    <!-- Category feeds -->
+    <!-- Frontier Reports: https://techtribeafrica.com/frontier-reports/rss.xml -->
+    <!-- Market Signals:   https://techtribeafrica.com/market-signals/rss.xml   -->
+    <!-- Build Opps:       https://techtribeafrica.com/build-opportunities/rss.xml -->
+
+    <item>
+      <title>Africa didn't adapt WhatsApp for business. Business adapted to WhatsApp.</title>
+      <link>https://techtribeafrica.com/frontier-reports/africa-whatsapp-business-adaptation</link>
+      <guid isPermaLink="true">https://techtribeafrica.com/frontier-reports/africa-whatsapp-business-adaptation</guid>
+      <pubDate>Mon, 15 Jun 2026 08:00:00 +0300</pubDate>
+      <dc:creator>TechTribe Africa</dc:creator>
+      <category>Frontier Reports</category>
+      <category>WhatsApp</category>
+      <category>CRM</category>
+      <category>Africa</category>
+      <category>Small Business</category>
+      <description><![CDATA[For the Lagos fashion seller, the Accra clinic receptionist, the Kampala electrician — WhatsApp isn't a channel in their stack. It's the stack. Here's what Western software companies still don't understand, and why African founders are already building the answer.]]></description>
+      <content:encoded><![CDATA[
+        <p>A Nairobi caterer doesn't have a CRM.</p>
+        <p>She has a WhatsApp group called "Confirmed Bookings" and another called "Pending." She has a customer who messaged three months ago about a December wedding. She has a starred message she keeps meaning to follow up on.</p>
+        <p>She's not bad at business. She's running her entire operation on the best tool available to her.</p>
+        <p>WhatsApp isn't a channel in her stack. It's the stack.</p>
+        <p><a href="https://techtribeafrica.com/frontier-reports/africa-whatsapp-business-adaptation">Read the full report →</a></p>
+      ]]></content:encoded>
+      <media:content url="https://techtribeafrica.com/images/whatsapp-africa-hero.jpg" medium="image" width="1200" height="630"/>
+    </item>
+
+    <item>
+      <title>The July 2025 pricing switch nobody told SMEs about</title>
+      <link>https://techtribeafrica.com/frontier-reports/whatsapp-pricing-change-smes</link>
+      <guid isPermaLink="true">https://techtribeafrica.com/frontier-reports/whatsapp-pricing-change-smes</guid>
+      <pubDate>Wed, 10 Jun 2026 08:00:00 +0300</pubDate>
+      <dc:creator>TechTribe Africa</dc:creator>
+      <category>Frontier Reports</category>
+      <category>WhatsApp</category>
+      <category>Meta</category>
+      <category>Pricing</category>
+      <category>SME</category>
+      <description><![CDATA[Meta changed the economics of WhatsApp automation in July 2025 — switching from per-conversation to per-message billing. Some businesses saw their monthly bills double overnight. Most had no warning. And every guide written before August 2025 is now actively misleading.]]></description>
+      <content:encoded><![CDATA[
+        <p>In July 2025, Meta quietly switched WhatsApp Business API billing from per-conversation to per-message pricing. The fallout is still hitting businesses today.</p>
+        <p>Some businesses running volume campaigns saw their monthly costs double overnight. Others who shifted to service-first messaging dropped costs 80%. The On-Premises API was sunset around the same time — which means any WhatsApp API guide from 2023–24 is now actively misleading.</p>
+        <p><a href="https://techtribeafrica.com/frontier-reports/whatsapp-pricing-change-smes">Read the full report →</a></p>
+      ]]></content:encoded>
+      <media:content url="https://techtribeafrica.com/images/whatsapp-pricing-hero.jpg" medium="image" width="1200" height="630"/>
+    </item>
+
+    <item>
+      <title>What 500 Reddit comments revealed about WhatsApp CRM frustration</title>
+      <link>https://techtribeafrica.com/market-signals/reddit-whatsapp-crm-frustration</link>
+      <guid isPermaLink="true">https://techtribeafrica.com/market-signals/reddit-whatsapp-crm-frustration</guid>
+      <pubDate>Fri, 12 Jun 2026 08:00:00 +0300</pubDate>
+      <dc:creator>TechTribe Africa</dc:creator>
+      <category>Market Signals</category>
+      <category>WhatsApp</category>
+      <category>CRM</category>
+      <category>Community Research</category>
+      <description><![CDATA[We read every thread in r/CRM and r/smallbusiness touching WhatsApp over the last 30 days. The consensus isn't about tools — it's about a pricing wall filtering out an entire tier of business.]]></description>
+      <content:encoded><![CDATA[
+        <p>82 comments in one thread alone. The top-voted answer on "What's the best CRM for small teams?" wasn't Salesforce or HubSpot — it was "HubSpot Free or Bigin by Zoho paired with WhatsApp Business (no API)".</p>
+        <p>The API tier is being actively avoided. Not because it doesn't work — because the price of entry has become structurally exclusionary for the businesses that need it most.</p>
+        <p><a href="https://techtribeafrica.com/market-signals/reddit-whatsapp-crm-frustration">Read the full signal →</a></p>
+      ]]></content:encoded>
+    </item>
+
+    <item>
+      <title>Meta's subscription launch just raised the stakes for every WhatsApp-dependent business</title>
+      <link>https://techtribeafrica.com/market-signals/meta-subscription-platform-risk</link>
+      <guid isPermaLink="true">https://techtribeafrica.com/market-signals/meta-subscription-platform-risk</guid>
+      <pubDate>Sun, 08 Jun 2026 08:00:00 +0300</pubDate>
+      <dc:creator>TechTribe Africa</dc:creator>
+      <category>Market Signals</category>
+      <category>Meta</category>
+      <category>WhatsApp</category>
+      <category>Platform Risk</category>
+      <description><![CDATA[May 2026: Meta officially launched paid subscription plans across Instagram, Facebook, and WhatsApp. For any business that built its customer communication on a platform now actively monetising access, the dependency variable just changed.]]></description>
+      <content:encoded><![CDATA[
+        <p>On 27 May 2026, Meta launched paid plans across its platforms. The Hacker News thread pulled 290 points and 514 comments — real concern about what this means for businesses that built on WhatsApp as a free channel.</p>
+        <p>For any in-house CRM play that uses WhatsApp as the messaging layer, platform dependency risk just went up a notch.</p>
+        <p><a href="https://techtribeafrica.com/market-signals/meta-subscription-platform-risk">Read the full signal →</a></p>
+      ]]></content:encoded>
+    </item>
+
+    <item>
+      <title>The missing middle of African business software</title>
+      <link>https://techtribeafrica.com/frontier-reports/missing-middle-african-software</link>
+      <guid isPermaLink="true">https://techtribeafrica.com/frontier-reports/missing-middle-african-software</guid>
+      <pubDate>Fri, 05 Jun 2026 08:00:00 +0300</pubDate>
+      <dc:creator>TechTribe Africa</dc:creator>
+      <category>Frontier Reports</category>
+      <category>Software</category>
+      <category>SME</category>
+      <category>Africa</category>
+      <category>Build Opportunity</category>
+      <description><![CDATA[Between spreadsheet and enterprise CRM lies a giant underserved market — spanning CRM, accounting, inventory, HR, and school management. This is the most consequential software gap in Africa right now, and almost nobody is building at the right price point.]]></description>
+      <content:encoded><![CDATA[
+        <p>Every micro-business in Africa has a spreadsheet. None of them have enterprise software. And the tools priced between those two extremes — built for exactly their scale — essentially don't exist.</p>
+        <p>This is the missing middle. And it's not one market — it's five: CRM, accounting, inventory, HR, and school management. Each one is a standalone opportunity. Together they're a platform.</p>
+        <p><a href="https://techtribeafrica.com/frontier-reports/missing-middle-african-software">Read the full report →</a></p>
+      ]]></content:encoded>
+    </item>
+
+    <item>
+      <title>Competing with forgetting: why most CRMs fail small businesses</title>
+      <link>https://techtribeafrica.com/build-opportunities/competing-with-forgetting</link>
+      <guid isPermaLink="true">https://techtribeafrica.com/build-opportunities/competing-with-forgetting</guid>
+      <pubDate>Mon, 01 Jun 2026 08:00:00 +0300</pubDate>
+      <dc:creator>TechTribe Africa</dc:creator>
+      <category>Build Opportunities</category>
+      <category>CRM</category>
+      <category>Product</category>
+      <category>Small Business</category>
+      <description><![CDATA[Operational memory is becoming a software category. The real reason most CRMs fail small businesses isn't features or price — it's that they're designed around pipelines, not follow-up. Here's the wedge that the best African founders are already exploiting.]]></description>
+      <content:encoded><![CDATA[
+        <p>Why do most small businesses abandon their CRM within 90 days? Not because it's too expensive. Not because it's too complex. Because it doesn't solve the actual problem: they forget to follow up.</p>
+        <p>Operational memory — the ability of a business to remember what it promised, to whom, and by when — is the real product. And nobody has built it properly for the sub-$50/month tier.</p>
+        <p><a href="https://techtribeafrica.com/build-opportunities/competing-with-forgetting">Read the full opportunity →</a></p>
+      ]]></content:encoded>
+    </item>
+
+    <item>
+      <title>Why African founders understand WhatsApp commerce better than Silicon Valley</title>
+      <link>https://techtribeafrica.com/market-signals/african-founders-whatsapp-commerce</link>
+      <guid isPermaLink="true">https://techtribeafrica.com/market-signals/african-founders-whatsapp-commerce</guid>
+      <pubDate>Tue, 02 Jun 2026 08:00:00 +0300</pubDate>
+      <dc:creator>TechTribe Africa</dc:creator>
+      <category>Market Signals</category>
+      <category>WhatsApp</category>
+      <category>Africa</category>
+      <category>Startups</category>
+      <description><![CDATA[DuceCRM, Arkesel, and a wave of African-built tools are solving problems Western tools can't model — because their founders live inside the workflows they're solving. This isn't a distribution advantage. It's an epistemological one.]]></description>
+      <content:encoded><![CDATA[
+        <p>Silicon Valley builds tools for workflows it understands. African founders are building tools for workflows they live in.</p>
+        <p>That's not a minor difference. DuceCRM wasn't designed by studying African businesses from the outside — it was designed by founders who are the customer. That's a structural advantage no amount of market research can replicate.</p>
+        <p><a href="https://techtribeafrica.com/market-signals/african-founders-whatsapp-commerce">Read the full signal →</a></p>
+      ]]></content:encoded>
+    </item>
+
+  </channel>
+</rss>

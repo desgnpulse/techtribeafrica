@@ -1,0 +1,34 @@
+CLAUDE.local.md
+.env
+.env.*
+!.env.example
+*.credentials.json
+.DS_Store
+.idea/
+*.swp
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+build/
+
+# pnpm
+.pnpm-store/
+
+# TypeScript
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS
+Thumbs.db
+
+# Claude operational memory (gitignored by convention)
+.claude/CLAUDE.md
+.claude/memory/
+.claude/plans/
