@@ -8,14 +8,21 @@ Primary audience: founders, builders, PMs, and early-stage investors on the cont
 PRD: docs/product/PRD-updated-2026-06-16.md (v1 archived at docs/product/TECHTRIBEAFRICA COM PRD.md)
 
 ## 1. CURRENT STATE
-Sprint 0 complete. Build passes. All pages and components built.
-5 articles live: 3 frontier-reports, 1 market-signals, 1 build-opportunities — all lint-pass, all with hero images.
-RSS feed live at /feed.xml. Homepage hero image wired. Newsletter sidebar: static form only (Beehiiv embed pending — need embed URL from dashboard).
-⚠ Deploy pending: pnpm build passes locally, not yet pushed to Hetzner.
-⚠ Beehiiv embed: need NEXT_PUBLIC_BEEHIIV_EMBED_URL from Beehiiv dashboard to wire the newsletter form.
-Newsletter: Beehiiv (decided). X: @TechTribeHQ (live). Facebook: live.
-Active plan: .claude/plans/techtribeafrica-init.md
-Updated PRD: docs/product/PRD-updated-2026-06-16.md
+Sprint 0 complete. Sprint 1 (content expansion) starting.
+13 articles live — all with hero images, all lint-pass, all deployed to techtribeafrica.com.
+  5 Frontier Reports, 6 Market Signals, 2 Build Opportunities.
+  All 13 are within the WhatsApp / micro-business / follow-up thesis — intentionally narrow for launch.
+Mobile nav with hamburger live. Sitemap at /sitemap.xml live (36 pages).
+Beehiiv newsletter integration live — api:direct subscribers land in dashboard.
+Social distribution pack in docs/social-distribution.md covers all 13 articles (3 formats each).
+⚠ LinkedIn, Instagram, Threads accounts pending (Jay to confirm when live).
+Active plan: .claude/plans/techtribeafrica-sprint1.md
+PRD: docs/product/PRD-updated-2026-06-16.md
+
+IA DECISION (confirmed 2026-06-18): Format-first navigation is correct per PRD.
+  Frontier Reports / Market Signals / Build Opportunities — not topic verticals.
+  Prototype mockup nav (Fintech / AI in Africa / Startups / Policy) is retired.
+  Topic coverage expands within the three format pillars, not as separate nav sections.
 
 ## 2. STACK
 - Next.js 16 (App Router) — site framework
