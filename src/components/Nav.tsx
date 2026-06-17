@@ -15,18 +15,25 @@ export default function Nav() {
   const pathname = usePathname()
   const router = useRouter()
   const [searchOpen, setSearchOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   const [query, setQuery] = useState("")
   const inputRef = useRef<HTMLInputElement>(null)
+  const mobileQueryRef = useRef<HTMLInputElement>(null)
 
   useEffect(() => {
     if (searchOpen) inputRef.current?.focus()
   }, [searchOpen])
+
+  useEffect(() => {
+    setMenuOpen(false)
+  }, [pathname])
 
   function handleSearchSubmit(e: React.FormEvent) {
     e.preventDefault()
     if (query.trim()) {
       router.push(`/search?q=${encodeURIComponent(query.trim())}`)
       setSearchOpen(false)
+      setMenuOpen(false)
       setQuery("")
     }
   }
@@ -55,14 +62,14 @@ export default function Nav() {
             alignItems: "center",
             justifyContent: "space-between",
             height: 56,
-            gap: 24,
+            gap: 16,
           }}
         >
           {/* Logo + Wordmark */}
           <Link
             href="/"
             aria-label="TechTribe Africa home"
-            style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none", whiteSpace: "nowrap" }}
+            style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none", flexShrink: 0 }}
           >
             <Image
               src="/images/logo_dark.png"
@@ -72,21 +79,25 @@ export default function Nav() {
               priority
               style={{ height: 30, width: "auto", display: "block" }}
             />
-            <span style={{
-              fontFamily: "var(--font-serif)",
-              fontSize: 22,
-              fontWeight: 500,
-              color: "var(--color-ink)",
-              letterSpacing: "-0.01em",
-            }}>
+            <span
+              className="nav-wordmark"
+              style={{
+                fontFamily: "var(--font-serif)",
+                fontSize: 22,
+                fontWeight: 500,
+                color: "var(--color-ink)",
+                letterSpacing: "-0.01em",
+                whiteSpace: "nowrap",
+              }}
+            >
               TechTribe<span style={{ color: "var(--color-frontier)" }}>&nbsp;Africa</span>
             </span>
           </Link>
 
-          {/* Nav links — hidden on mobile */}
+          {/* Nav links — desktop only */}
           <nav
             aria-label="Main navigation"
-            style={{ display: "flex", alignItems: "center", gap: 2 }}
+            style={{ display: "flex", alignItems: "center", gap: 2, flex: 1, justifyContent: "center" }}
             className="hide-mobile"
           >
             {NAV_LINKS.map((link) => {
@@ -120,93 +131,97 @@ export default function Nav() {
             })}
           </nav>
 
-          {/* Right: search + subscribe */}
+          {/* Right side */}
           <div style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
-            {searchOpen ? (
-              <form onSubmit={handleSearchSubmit} style={{ display: "flex", gap: 6, alignItems: "center" }}>
-                <input
-                  ref={inputRef}
-                  type="search"
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  placeholder="Search articles…"
-                  aria-label="Search"
-                  style={{
-                    fontSize: 13,
-                    padding: "6px 10px",
-                    borderRadius: 6,
-                    border: "1px solid var(--color-rule)",
-                    background: "var(--color-white)",
-                    color: "var(--color-ink)",
-                    outline: "none",
-                    width: 200,
-                  }}
-                  onBlur={() => { if (!query) setSearchOpen(false) }}
-                />
+            {/* Desktop search */}
+            <div className="hide-mobile">
+              {searchOpen ? (
+                <form onSubmit={handleSearchSubmit} style={{ display: "flex", gap: 6, alignItems: "center" }}>
+                  <input
+                    ref={inputRef}
+                    type="search"
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    placeholder="Search articles…"
+                    aria-label="Search"
+                    style={{
+                      fontSize: 13,
+                      padding: "6px 10px",
+                      borderRadius: 6,
+                      border: "1px solid var(--color-rule)",
+                      background: "var(--color-white)",
+                      color: "var(--color-ink)",
+                      outline: "none",
+                      width: 200,
+                    }}
+                    onBlur={() => { if (!query) setSearchOpen(false) }}
+                  />
+                  <button
+                    type="button"
+                    onClick={() => { setSearchOpen(false); setQuery("") }}
+                    aria-label="Close search"
+                    style={{ background: "none", border: "none", color: "var(--color-ink-4)", cursor: "pointer", fontSize: 18, lineHeight: 1, padding: "0 2px" }}
+                  >
+                    ×
+                  </button>
+                </form>
+              ) : (
                 <button
-                  type="button"
-                  onClick={() => { setSearchOpen(false); setQuery("") }}
-                  aria-label="Close search"
+                  onClick={() => setSearchOpen(true)}
+                  aria-label="Open search"
                   style={{
-                    background: "none",
-                    border: "none",
-                    color: "var(--color-ink-4)",
-                    cursor: "pointer",
-                    fontSize: 18,
-                    lineHeight: 1,
-                    padding: "0 2px",
+                    width: 34, height: 34,
+                    border: "1px solid var(--color-rule)",
+                    borderRadius: 8, background: "none", cursor: "pointer",
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                    color: "var(--color-ink-3)", transition: "border-color .12s, color .12s",
                   }}
+                  onMouseEnter={(e) => { e.currentTarget.style.borderColor = "var(--color-ink-3)"; e.currentTarget.style.color = "var(--color-ink)" }}
+                  onMouseLeave={(e) => { e.currentTarget.style.borderColor = "var(--color-rule)"; e.currentTarget.style.color = "var(--color-ink-3)" }}
                 >
-                  ×
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
+                  </svg>
                 </button>
-              </form>
-            ) : (
-              <button
-                onClick={() => setSearchOpen(true)}
-                aria-label="Open search"
-                style={{
-                  width: 34,
-                  height: 34,
-                  border: "1px solid var(--color-rule)",
-                  borderRadius: 8,
-                  background: "none",
-                  cursor: "pointer",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "var(--color-ink-3)",
-                  transition: "border-color .12s, color .12s",
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = "var(--color-ink-3)"
-                  e.currentTarget.style.color = "var(--color-ink)"
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = "var(--color-rule)"
-                  e.currentTarget.style.color = "var(--color-ink-3)"
-                }}
-              >
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <circle cx="11" cy="11" r="8" />
-                  <path d="m21 21-4.35-4.35" />
+              )}
+            </div>
+
+            {/* Mobile hamburger */}
+            <button
+              className="show-mobile"
+              onClick={() => setMenuOpen((o) => !o)}
+              aria-label={menuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={menuOpen}
+              style={{
+                width: 34, height: 34,
+                border: "1px solid var(--color-rule)",
+                borderRadius: 8, background: "none", cursor: "pointer",
+                display: "none",
+                alignItems: "center", justifyContent: "center",
+                color: "var(--color-ink-3)",
+              }}
+            >
+              {menuOpen ? (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
+                  <path d="M18 6 6 18M6 6l12 12" />
                 </svg>
-              </button>
-            )}
+              ) : (
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" aria-hidden="true">
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+
             <Link
               href="/newsletter"
               style={{
                 fontFamily: "var(--font-sans)",
-                fontSize: 13,
-                fontWeight: 500,
-                color: "#fff",
-                background: "var(--color-ink)",
-                border: "none",
-                borderRadius: 8,
-                padding: "7px 16px",
-                cursor: "pointer",
+                fontSize: 13, fontWeight: 500,
+                color: "#fff", background: "var(--color-ink)",
+                border: "none", borderRadius: 8,
+                padding: "7px 16px", cursor: "pointer",
                 transition: "background .12s",
-                whiteSpace: "nowrap",
-                display: "inline-block",
+                whiteSpace: "nowrap", display: "inline-block",
               }}
               onMouseEnter={(e) => (e.currentTarget.style.background = "var(--color-ink-2)")}
               onMouseLeave={(e) => (e.currentTarget.style.background = "var(--color-ink)")}
@@ -215,11 +230,73 @@ export default function Nav() {
             </Link>
           </div>
         </div>
+
+        {/* Mobile dropdown */}
+        {menuOpen && (
+          <div
+            style={{
+              background: "var(--color-white)",
+              borderTop: "1px solid var(--color-rule)",
+              borderBottom: "1px solid var(--color-rule)",
+              padding: "16px clamp(20px, 4vw, 52px) 20px",
+              boxShadow: "0 8px 24px rgba(0,0,0,0.06)",
+            }}
+          >
+            <form onSubmit={handleSearchSubmit} style={{ display: "flex", gap: 8, marginBottom: 12 }}>
+              <input
+                ref={mobileQueryRef}
+                type="search"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="Search articles…"
+                aria-label="Search"
+                style={{
+                  flex: 1, fontSize: 14,
+                  padding: "8px 12px", borderRadius: 6,
+                  border: "1px solid var(--color-rule)",
+                  background: "var(--color-white)", color: "var(--color-ink)", outline: "none",
+                }}
+              />
+              <button
+                type="submit"
+                style={{
+                  background: "var(--color-ink)", color: "#fff",
+                  border: "none", borderRadius: 6,
+                  padding: "8px 14px", fontSize: 13, cursor: "pointer",
+                }}
+              >
+                Go
+              </button>
+            </form>
+            {NAV_LINKS.map((link) => {
+              const active = pathname.startsWith(link.href)
+              return (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  style={{
+                    display: "block", fontSize: 16,
+                    fontWeight: active ? 500 : 400,
+                    color: active ? "var(--color-ink)" : "var(--color-ink-2)",
+                    padding: "13px 0",
+                    borderBottom: "1px solid var(--color-rule-soft)",
+                    textDecoration: "none",
+                  }}
+                >
+                  {link.label}
+                </Link>
+              )
+            })}
+          </div>
+        )}
       </header>
 
-      {/* Inline style for mobile hide */}
       <style>{`
-        @media (max-width: 768px) { .hide-mobile { display: none !important; } }
+        @media (max-width: 768px) {
+          .hide-mobile { display: none !important; }
+          .show-mobile { display: flex !important; }
+          .nav-wordmark { display: none !important; }
+        }
       `}</style>
     </>
   )
