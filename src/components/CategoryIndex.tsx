@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import Link from "next/link"
 import type { ArticleMeta } from "@/lib/types"
 import { formatDate, formatDateShort } from "@/lib/utils"
@@ -87,24 +88,7 @@ export default function CategoryIndex({ categorySlug, articles }: Props) {
               }}
               className="featured-grid"
             >
-              <div
-                aria-hidden="true"
-                style={{
-                  aspectRatio: "4/3",
-                  background: "var(--color-rule-soft)",
-                  border: "1px solid var(--color-rule)",
-                  borderRadius: 3,
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  color: "var(--color-ink-4)",
-                }}
-              >
-                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="2" y="3" width="20" height="14" rx="2" />
-                  <path d="m8 21 4-4 4 4" />
-                </svg>
-              </div>
+              <FeaturedImage image={featured.image} />
               <div style={{ display: "flex", flexDirection: "column", gap: 14, paddingTop: 4 }}>
                 <div
                   style={{
@@ -197,5 +181,40 @@ export default function CategoryIndex({ categorySlug, articles }: Props) {
         }
       `}</style>
     </>
+  )
+}
+
+function FeaturedImage({ image }: { image?: string }) {
+  const [err, setErr] = useState(false)
+  if (image && !err) {
+    return (
+      <img
+        src={image}
+        alt=""
+        aria-hidden="true"
+        onError={() => setErr(true)}
+        style={{ width: "100%", aspectRatio: "4/3", objectFit: "cover", borderRadius: 3, display: "block" }}
+      />
+    )
+  }
+  return (
+    <div
+      aria-hidden="true"
+      style={{
+        aspectRatio: "4/3",
+        background: "var(--color-rule-soft)",
+        border: "1px solid var(--color-rule)",
+        borderRadius: 3,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        color: "var(--color-ink-4)",
+      }}
+    >
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="3" width="20" height="14" rx="2" />
+        <path d="m8 21 4-4 4 4" />
+      </svg>
+    </div>
   )
 }
