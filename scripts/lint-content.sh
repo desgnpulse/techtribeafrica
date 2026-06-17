@@ -66,6 +66,16 @@ flag "'utilize' found (use 'use')"        '\butilize\b'
 flag "'facilitate' found (use 'help')"    '\bfacilitate\b'
 flag "'initiate' found (use 'start')"     '\binitiate\b'
 
+label "Contractions (write out in full)"
+flag "n't contraction found"    "\w+n't"
+flag "'re contraction found"    "\b(I|you|we|they|he|she|it|that|there|what|who|where|when|how)'re\b"
+flag "'ve contraction found"    "\b(I|you|we|they|he|she)'ve\b"
+flag "'ll contraction found"    "\b(I|you|we|they|he|she|it|that|there|what|who|where|when|how|let|here)'ll\b"
+flag "'d contraction found"     "\b(I|you|we|they|he|she|it|that|there|what|who|where)'d\b"
+flag "I'm contraction found"    "\bI'm\b"
+flag "'s contraction found (it's/that's/there's/what's/who's/how's/here's/let's)" \
+    "\b([Ii]t|[Tt]hat|[Tt]here|[Ww]hat|[Ww]ho|[Ww]here|[Ww]hen|[Hh]ow|[Hh]ere|[Ll]et)'s\b"
+
 label "Credential safety"
 flag "Possible API key pattern found" '(sk-ant-|sk-[a-z]+-|AKIA|ghp_|ghs_)[A-Za-z0-9_-]{16,}'
 

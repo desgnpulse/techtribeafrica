@@ -7,6 +7,7 @@ Never use banned words in article content: delve, leverage, seamless, unlock, ro
 Never write press-release framing — TechTribe interprets, it does not announce
 Never add exclamation marks to editorial content (the lint hook will catch this)
 Never write articles in first person — brand voice is analytical, third-person
+Never use contractions in article content — write "did not" not "didn't", "it is" not "it's" (lint hook catches this)
 
 # Architecture
 Never add a database in MVP — content is MDX files, not a CMS or DB-backed system

@@ -19,6 +19,7 @@ build/
 
 # TypeScript
 *.tsbuildinfo
+next-env.d.ts
 
 # Logs
 *.log
@@ -32,3 +33,11 @@ Thumbs.db
 .claude/CLAUDE.md
 .claude/memory/
 .claude/plans/
+
+# Favicon source files (not served assets)
+images/
+
+# Prototype / planning artefacts
+docs/*.html
+docs/The Skeleton.md
+docs/notes/
