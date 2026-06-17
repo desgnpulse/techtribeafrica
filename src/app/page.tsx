@@ -21,6 +21,7 @@ export const metadata: Metadata = {
       "The shifts nobody told you about. The markets being quietly built. The ideas worth understanding before they are obvious.",
     type: "website",
     url: "/",
+    images: [{ url: "/tta-og.jpg", width: 1200, height: 630, alt: "TechTribe Africa" }],
   },
 }
 
