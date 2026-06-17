@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname, useRouter } from "next/navigation"
 import { useState, useEffect, useRef } from "react"
 
@@ -57,20 +58,35 @@ export default function Nav() {
             gap: 24,
           }}
         >
-          {/* Wordmark */}
+          {/* Logo + Wordmark */}
           <Link
             href="/"
             aria-label="TechTribe Africa home"
             style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 10,
+              textDecoration: "none",
+              whiteSpace: "nowrap",
+            }}
+          >
+            <Image
+              src="/images/logo.png"
+              alt="TechTribe Africa logo"
+              width={32}
+              height={32}
+              priority
+              style={{ display: "block" }}
+            />
+            <span style={{
               fontFamily: "var(--font-serif)",
               fontSize: 22,
               fontWeight: 500,
               color: "var(--color-ink)",
               letterSpacing: "-0.01em",
-              whiteSpace: "nowrap",
-            }}
-          >
-            TechTribe<span style={{ color: "var(--color-frontier)" }}>&nbsp;Africa</span>
+            }}>
+              TechTribe<span style={{ color: "var(--color-frontier)" }}>&nbsp;Africa</span>
+            </span>
           </Link>
 
           {/* Nav links — hidden on mobile */}
