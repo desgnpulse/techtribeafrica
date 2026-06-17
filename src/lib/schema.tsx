@@ -7,7 +7,7 @@ export const ORG_SCHEMA = {
   "@type": "Organization",
   name: "TechTribe Africa",
   url: SITE_URL,
-  logo: `${SITE_URL}/logo.png`,
+  logo: `${SITE_URL}/images/logo.png`,
   description: "Technology intelligence from the African continent.",
   sameAs: [
     "https://x.com/TechTribeHQ",
@@ -47,7 +47,7 @@ export function newsArticleSchema(article: ArticleMeta) {
       "@type": "Organization",
       name: "TechTribe Africa",
       url: SITE_URL,
-      logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.png` },
+      logo: { "@type": "ImageObject", url: `${SITE_URL}/images/logo.png` },
     },
     articleSection: article.categoryLabel,
     keywords: article.tags,
