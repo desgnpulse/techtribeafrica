@@ -34,8 +34,8 @@ Thumbs.db
 .claude/memory/
 .claude/plans/
 
-# Favicon source files (not served assets)
-images/
+# Favicon source files (not served assets — root-level only)
+/images/
 
 # Prototype / planning artefacts
 docs/*.html
