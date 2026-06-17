@@ -186,7 +186,7 @@ export default function CategoryIndex({ categorySlug, articles }: Props) {
 
       <NewsletterBand
         headline={`Get every ${cat.label} in your inbox.`}
-        copy="One email per week. The patterns shaping African tech — synthesised, not summarised. No noise, no filler."
+        copy="One email per week. The patterns shaping African tech, synthesised, not summarised. No noise, no filler."
       />
 
       <style>{`

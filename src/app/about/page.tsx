@@ -233,7 +233,7 @@ export default function AboutPage() {
 
       <NewsletterBand
         headline="Stay ahead of African tech."
-        copy="One email per week. Pattern reads, market signals, and build opportunities — synthesised, not summarised."
+        copy="One email per week. Pattern reads, market signals, and build opportunities, synthesised, not summarised."
       />
 
       <style>{`

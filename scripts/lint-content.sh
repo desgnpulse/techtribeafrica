@@ -35,10 +35,10 @@ flag() {
   done
 
   local files
-  files=$(grep -rIl --include="*.md" --include="*.json" "${excludes[@]}" -E "$pattern" "$TARGET" 2>/dev/null || true)
+  files=$(grep -rIl --include="*.md" --include="*.mdx" --include="*.json" "${excludes[@]}" -E "$pattern" "$TARGET" 2>/dev/null || true)
   if [ -n "$files" ]; then
     red "FAIL: $desc"
-    grep -rIn --include="*.md" --include="*.json" "${excludes[@]}" -E "$pattern" "$TARGET" 2>/dev/null | sed 's/^/  /' || true
+    grep -rIn --include="*.md" --include="*.mdx" --include="*.json" "${excludes[@]}" -E "$pattern" "$TARGET" 2>/dev/null | sed 's/^/  /' || true
     ERRORS=$((ERRORS + 1))
   fi
 }
@@ -102,7 +102,7 @@ else:
     for root, dirs, names in os.walk(target):
         dirs[:] = [d for d in dirs if d not in EXCLUDE_DIRS_PY and not d.startswith('.')]
         for name in names:
-            if name.endswith('.md') and name not in EXCLUDE_FILES:
+            if (name.endswith('.md') or name.endswith('.mdx')) and name not in EXCLUDE_FILES:
                 files.append(os.path.join(root, name))
 
 LIMIT = 20
@@ -111,18 +111,28 @@ for path in files:
     raw_lines = open(path).readlines()
     sentences = []
     in_code = False
+    in_frontmatter = False
+    frontmatter_done = False
     for line in raw_lines:
-        if line.strip().startswith('```'):
+        stripped = line.strip()
+        if not frontmatter_done and stripped == '---':
+            in_frontmatter = not in_frontmatter
+            if not in_frontmatter:
+                frontmatter_done = True
+            continue
+        if in_frontmatter:
+            continue
+        if stripped.startswith('```'):
             in_code = not in_code
             continue
         if in_code:
             continue
-        line = line.strip()
+        line = stripped
         if not line or line.startswith('#') or line.startswith('---') or line.startswith('|'):
             continue
         if line.startswith('- ') or line.startswith('* '):
             line = line[2:]
-        for s in re.split(r'(?<=[.?])\s+', line):
+        for s in re.split(r'(?<=[.?!])["\']?\s+', line):
             s = s.strip()
             if s:
                 sentences.append(s)

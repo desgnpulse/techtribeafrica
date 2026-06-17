@@ -263,7 +263,7 @@ export default function HomePage() {
                   Get the intelligence. Not the noise.
                 </h3>
                 <p style={{ fontSize: 13, lineHeight: 1.6, color: "rgba(255,255,255,0.6)" }}>
-                  One email per week. Patterns shaping African tech — synthesised, not summarised.
+                  One email per week. Patterns shaping African tech, synthesised, not summarised.
                 </p>
                 <BeehiivForm />
               </div>

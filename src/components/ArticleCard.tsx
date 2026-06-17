@@ -1,5 +1,6 @@
 "use client"
 
+import { useState } from "react"
 import Link from "next/link"
 import CategoryBadge from "./CategoryBadge"
 import type { ArticleMeta } from "@/lib/types"
@@ -13,6 +14,7 @@ type Props = {
 
 export default function ArticleCard({ article, headingLevel: H = "h3" }: Props) {
   const cat = CATEGORIES[article.category]
+  const [imgError, setImgError] = useState(false)
   return (
     <article
       style={{ display: "flex", flexDirection: "column", gap: 10 }}
@@ -21,6 +23,22 @@ export default function ArticleCard({ article, headingLevel: H = "h3" }: Props) 
     >
       <meta itemProp="datePublished" content={article.date} />
       <meta itemProp="author" content="TechTribe Africa" />
+      {article.image && !imgError ? (
+        <img
+          src={article.image}
+          alt=""
+          aria-hidden="true"
+          style={{
+            width: "100%",
+            aspectRatio: "16/9",
+            objectFit: "cover",
+            borderRadius: 3,
+            display: "block",
+            marginBottom: 2,
+          }}
+          onError={() => setImgError(true)}
+        />
+      ) : (
       <div
         aria-hidden="true"
         style={{
@@ -41,6 +59,7 @@ export default function ArticleCard({ article, headingLevel: H = "h3" }: Props) 
           <path d="M2 10h20" />
         </svg>
       </div>
+      )}
       <CategoryBadge label={cat.label} variant={cat.tagVariant} />
       <H
         style={{
