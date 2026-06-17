@@ -49,9 +49,6 @@ export default function CategoryIndex({ categorySlug, articles }: Props) {
           className="pillar-inner"
         >
           <div>
-            <div style={{ fontSize: 10, fontWeight: 500, letterSpacing: "0.14em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)", marginBottom: 14 }}>
-              Content pillar
-            </div>
             <h1
               style={{
                 fontFamily: "var(--font-serif)",
