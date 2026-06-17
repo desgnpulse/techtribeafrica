@@ -7,7 +7,11 @@ Never use banned words in article content: delve, leverage, seamless, unlock, ro
 Never write press-release framing — TechTribe interprets, it does not announce
 Never add exclamation marks to editorial content (the lint hook will catch this)
 Never write articles in first person — brand voice is analytical, third-person
-Never use contractions in article content — write "did not" not "didn't", "it is" not "it's" (lint hook catches this)
+Never use contractions in ANY user-facing copy — articles, component text, category descriptions,
+  footer, about page, metadata. Write "did not" not "didn't", "it is" not "it's" everywhere.
+  Lint hook catches .mdx files; .tsx component copy must be checked manually.
+Never use em dashes in ANY user-facing copy — use space-hyphen-space ( - ) everywhere.
+  This includes .tsx components, not just .mdx articles.
 
 # Architecture
 Never add a database in MVP — content is MDX files, not a CMS or DB-backed system
