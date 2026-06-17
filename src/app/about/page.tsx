@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "TechTribe Africa is a pattern recognition publication covering technology and business in Africa. Not news - intelligence.",
   openGraph: {
-    title: "About TechTribe Africa",
+    title: "About - TechTribe Africa",
     description: "Not a tech news site. A pattern recognition publication.",
     type: "website",
     url: "/about",
@@ -122,7 +122,7 @@ export default function AboutPage() {
                 Our primary readers are founders, builders, product managers, and early-stage investors who operate in or think seriously about African markets. People who do not need the basics explained, who already understand that &quot;Africa&quot; is fifty-four countries with radically different market dynamics, and who want the synthesis layer - not the raw news.
               </p>
               <p>
-                We also write for the growing number of global founders, operators, and investors who recognise that the most interesting technology problems of the next decade are being solved in Lagos, Nairobi, Accra, and Kigali — often in ways that will eventually spread outward.
+                We also write for the growing number of global founders, operators, and investors who recognise that the most interesting technology problems of the next decade are being solved in Lagos, Nairobi, Accra, and Kigali - often in ways that will eventually spread outward.
               </p>
             </Section>
 
@@ -137,7 +137,7 @@ export default function AboutPage() {
 
             <Section title="Editorial approach">
               <p>
-                Every Frontier Report follows the same structure: what happened, why it matters, what changes, and where the opportunity is. The first three sections are analysis. The last one is our opinion — clearly marked as such.
+                Every Frontier Report follows the same structure: what happened, why it matters, what changes, and where the opportunity is. The first three sections are analysis. The last one is our opinion - clearly marked as such.
               </p>
               <p>
                 Market Signals are shorter pattern reads, usually triggered by a data point, forum thread, or market move that illuminates something broader. Build Opportunities are specific gap analyses: here is an underserved market, here is the evidence for it, here is what the right solution probably looks like.

@@ -12,11 +12,11 @@ import BeehiivForm from "@/components/BeehiivForm"
 import { SchemaTag, ORG_SCHEMA, WEBSITE_SCHEMA, newsArticleSchema } from "@/lib/schema"
 
 export const metadata: Metadata = {
-  title: "TechTribe Africa — Technology intelligence from the continent",
+  title: "TechTribe Africa - Technology intelligence from Africa",
   description:
     "The shifts nobody told you about. The markets being quietly built. The ideas worth understanding before they are obvious.",
   openGraph: {
-    title: "TechTribe Africa — Technology intelligence from Africa",
+    title: "TechTribe Africa - Technology intelligence from Africa",
     description:
       "The shifts nobody told you about. The markets being quietly built. The ideas worth understanding before they are obvious.",
     type: "website",
@@ -157,7 +157,7 @@ export default function HomePage() {
                 }}
               >
                 <time dateTime={featuredArticle.date}>{formatDate(featuredArticle.date)}</time>
-                <span style={{ color: "var(--color-rule)" }}>—</span>
+                <span style={{ color: "var(--color-rule)" }}>·</span>
                 <span>{featuredArticle.readingTime} min read</span>
               </div>
             </div>
@@ -228,7 +228,7 @@ export default function HomePage() {
             {allArticles.length === 0 && (
               <div style={{ padding: "80px 0", textAlign: "center", color: "var(--color-ink-4)" }}>
                 <p style={{ fontFamily: "var(--font-serif)", fontSize: 20 }}>
-                  Intelligence incoming — first articles publishing soon.
+                  Intelligence incoming - first articles publishing soon.
                 </p>
               </div>
             )}
@@ -333,10 +333,10 @@ export default function HomePage() {
                   About TechTribe Africa
                 </h2>
                 <p style={{ fontSize: 13, color: "var(--color-ink-2)", lineHeight: 1.65 }}>
-                  Not a tech news site. A pattern recognition publication. We do original research, synthesise what it means, and tell you where the opportunity is — before it&apos;s obvious.
+                  Not a tech news site. A pattern recognition publication. We do original research, synthesise what it means, and tell you where the opportunity is - before it is obvious.
                 </p>
                 <p style={{ fontSize: 13, color: "var(--color-ink-2)", lineHeight: 1.65, marginTop: 10 }}>
-                  Three pillars: <strong>Frontier Reports</strong> for deep research, <strong>Market Signals</strong> for pattern reads, and <strong>Build Opportunities</strong> for what&apos;s worth making next.
+                  Three pillars: <strong>Frontier Reports</strong> for deep research, <strong>Market Signals</strong> for pattern reads, and <strong>Build Opportunities</strong> for what is worth making next.
                 </p>
                 <Link
                   href="/about"

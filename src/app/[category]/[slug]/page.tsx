@@ -158,11 +158,11 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
               <strong style={{ color: "var(--color-ink-2)", fontWeight: 500 }} itemProp="author">
                 TechTribe Africa
               </strong>
-              <span style={{ color: "var(--color-rule)" }}>—</span>
+              <span style={{ color: "var(--color-rule)" }}>·</span>
               <time itemProp="datePublished" dateTime={isoDate}>
                 {formatDate(meta.date)}
               </time>
-              <span style={{ color: "var(--color-rule)" }}>—</span>
+              <span style={{ color: "var(--color-rule)" }}>·</span>
               <span>{meta.readingTime} min read</span>
             </div>
           </header>
@@ -370,7 +370,7 @@ function HeroImage({ image, title }: { image?: string; title: string }) {
         <path d="M2 10h20" />
       </svg>
       <span style={{ fontSize: 11, letterSpacing: "0.08em", textTransform: "uppercase" }}>
-        Hero image — 1200 × 630
+        Hero image - 1200 x 630
       </span>
     </div>
   )
