@@ -13,6 +13,11 @@ import BeehiivForm from "@/components/BeehiivForm"
 import Breadcrumb from "@/components/Breadcrumb"
 import ShareStrip from "@/components/ShareStrip"
 import { SchemaTag, newsArticleSchema, breadcrumbSchema } from "@/lib/schema"
+import { getArticlesByCategory } from "@/lib/content"
+import Pullquote from "@/components/mdx/Pullquote"
+import Factblock from "@/components/mdx/Factblock"
+import InlineNewsletter from "@/components/mdx/InlineNewsletter"
+import ArticleCard from "@/components/ArticleCard"
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://techtribeafrica.com"
 
@@ -66,6 +71,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
   const { meta, content } = result
   const cat = CATEGORIES[category]
   const isoDate = `${meta.date}T08:00:00+03:00`
+  const related = getArticlesByCategory(category).filter((a) => a.slug !== slug).slice(0, 3)
 
   return (
     <>
@@ -177,8 +183,13 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
           </p>
 
           {/* Body */}
-          <div className="prose" id="article-body" style={{ maxWidth: 680 }} itemProp="articleBody">
-            <MDXRemote source={content} />
+          <div
+            className="prose"
+            id="article-body"
+            style={{ maxWidth: 680, "--category-color": cat.color } as React.CSSProperties}
+            itemProp="articleBody"
+          >
+            <MDXRemote source={content} components={{ Pullquote, Factblock, InlineNewsletter }} />
           </div>
 
           {/* Tags */}
@@ -248,35 +259,49 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
                 TechTribe Africa
               </div>
               <div style={{ fontSize: 13, color: "var(--color-ink-3)", lineHeight: 1.6 }} itemProp="description">
-                Original research and synthesis on the patterns shaping technology and business in Africa. We connect the dots so you don&apos;t have to.
+                Original research and synthesis on the patterns shaping technology and business in Africa. We connect the dots so you do not have to.
               </div>
             </div>
           </div>
 
-          {/* Related — link back to category */}
-          <section aria-label="Related reading">
-            <div
-              style={{
-                fontSize: 10, fontWeight: 500, letterSpacing: "0.12em",
-                textTransform: "uppercase", color: "var(--color-ink)",
-                marginBottom: 20, paddingBottom: 12,
-                borderBottom: "2px solid var(--color-ink)",
-              }}
-            >
-              Related reading
-            </div>
-            <p style={{ fontSize: 14, color: "var(--color-ink-3)", lineHeight: 1.6 }}>
-              Explore more{" "}
-              <Link href={`/${category}`} style={{ color: cat.color, textDecoration: "underline", textUnderlineOffset: 2 }}>
-                {cat.label}
-              </Link>{" "}
-              or{" "}
-              <Link href="/" style={{ color: "var(--color-ink-2)", textDecoration: "underline", textUnderlineOffset: 2 }}>
-                browse all categories
-              </Link>
-              .
-            </p>
-          </section>
+          {/* Related articles */}
+          {related.length > 0 && (
+            <section aria-label="Related reading">
+              <div
+                style={{
+                  fontSize: 10, fontWeight: 500, letterSpacing: "0.12em",
+                  textTransform: "uppercase", color: "var(--color-ink)",
+                  marginBottom: 20, paddingBottom: 12,
+                  borderBottom: "2px solid var(--color-ink)",
+                }}
+              >
+                Related reading
+              </div>
+              <div
+                style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "28px" }}
+                className="related-grid"
+              >
+                {related.map((a) => <ArticleCard key={a.slug} article={a} />)}
+              </div>
+            </section>
+          )}
+          {related.length === 0 && (
+            <section aria-label="Related reading">
+              <div style={{ fontSize: 10, fontWeight: 500, letterSpacing: "0.12em", textTransform: "uppercase", color: "var(--color-ink)", marginBottom: 12, paddingBottom: 12, borderBottom: "2px solid var(--color-ink)" }}>
+                Related reading
+              </div>
+              <p style={{ fontSize: 14, color: "var(--color-ink-3)", lineHeight: 1.6 }}>
+                Explore more{" "}
+                <Link href={`/${category}`} style={{ color: cat.color, textDecoration: "underline", textUnderlineOffset: 2 }}>
+                  {cat.label}
+                </Link>{" "}
+                or{" "}
+                <Link href="/" style={{ color: "var(--color-ink-2)", textDecoration: "underline", textUnderlineOffset: 2 }}>
+                  browse all categories
+                </Link>.
+              </p>
+            </section>
+          )}
         </article>
 
         {/* Sidebar */}
@@ -325,6 +350,10 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
           .article-layout { grid-template-columns: 1fr !important; }
           .article-main { border-right: none !important; padding-right: 0 !important; }
           .article-side { display: none !important; }
+          .related-grid { grid-template-columns: 1fr 1fr !important; }
+        }
+        @media (max-width: 600px) {
+          .related-grid { grid-template-columns: 1fr !important; }
         }
       `}</style>
     </>
