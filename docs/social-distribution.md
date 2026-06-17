@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 10 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 13 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -679,3 +679,202 @@ Full report: techtribeafrica.com/build-opportunities/africa-follow-up-os-opportu
 
 ### WhatsApp
 A cosmetics seller in Abuja had 11 customers in her head whose follow-ups were overdue - and had no name for the software that would help her. That is what an unoccupied product category looks like. The Follow-Up OS is not CRM - it is timing enforcement for a market that runs on memory. Full read: techtribeafrica.com/build-opportunities/africa-follow-up-os-opportunity
+
+---
+
+## FR#6 — The Real Workflow of a Small African Business
+**slug**: africa-micro-business-real-workflow
+**URL**: /frontier-reports/africa-micro-business-real-workflow
+
+### LinkedIn
+A clothing reseller in Dar es Salaam starts her business day at 6:47 AM.
+
+Not because she decided on that time. Because that is when the first WhatsApp message arrives.
+
+Most software built for small businesses assumes a dedicated work session. The owner opens the app, reviews the pipeline, plans the day. There is a separation between the moment of work and the moment of communication.
+
+In the majority of African micro-businesses, those moments are the same moment. The communication is the work. WhatsApp is not a channel for managing the business. WhatsApp is where the business is managed.
+
+This structural difference explains why most tools fail before they are even rejected. They are designed for a session that does not happen. The owner is never "in the software." She is in WhatsApp, and the software is somewhere nearby - unused.
+
+The product that succeeds does not ask for a login. It watches the conversation stream, identifies what has gone quiet that should not have, and surfaces that conversation at the right moment.
+
+The workflow is already designed. The software just has to fit inside it.
+
+Full analysis at TechTribe Africa.
+
+### X Thread
+1/ A clothing reseller in Dar es Salaam starts her business day at 6:47 AM.
+
+Not by choice.
+
+Because that is when the first WhatsApp message arrives.
+
+2/ Most software assumes a dedicated work session.
+
+Open the app. Review the pipeline. Plan the day.
+
+For the majority of African micro-businesses, that session does not exist.
+
+The communication IS the work. WhatsApp is not the channel - it is the office.
+
+3/ This is not a technology gap.
+
+It is a structural difference.
+
+Enterprise software separates the moment of communication from the moment of work.
+
+In African micro-business, those are the same moment.
+
+Software that does not accept this fails before it is rejected.
+
+4/ The product that fits this workflow must meet two conditions.
+
+One: usable in thirty-second windows between messages. No navigation. No context-setting. Just action.
+
+Two: the priority queue is not the owner's to create. The conversation stream determines what needs attention. The software should read it - not ask the owner to replicate it elsewhere.
+
+5/ The products that have tried to serve this market have mostly failed the second condition.
+
+They ask owners to log interactions. Set follow-up dates. Do the intelligence work themselves.
+
+The product that wins does that work instead.
+
+The workflow is already designed. The software just has to fit inside it.
+
+Full report: techtribeafrica.com/frontier-reports/africa-micro-business-real-workflow
+
+### WhatsApp
+The workflow of a small African business does not begin with a login screen - it begins with a WhatsApp notification. Software built assuming a dedicated work session is solving for a structure that does not exist. The product that wins fits inside the conversation stream the owner is already managing. Full read: techtribeafrica.com/frontier-reports/africa-micro-business-real-workflow
+
+---
+
+## SB#11 — The Software Gap African Micro-Businesses Cannot Afford to Close
+**slug**: africa-saas-fifty-dollar-gap
+**URL**: /market-signals/africa-saas-fifty-dollar-gap
+
+### LinkedIn
+A salon owner in Lagos looked at three software tools this year.
+
+She dismissed all three within the first week. Not because they did not work. Because at $29, $49, and $59 per month, none of them was a cost she could justify against what they actually replaced.
+
+What they replaced was free. Memory is free. WhatsApp is free. A notebook costs almost nothing.
+
+This is not a price sensitivity problem. It is a pricing architecture problem.
+
+Tools below $10 per month exist - but they are too simple to solve the actual problem, or they require so much setup that the simplicity is a fiction. Tools above $30 per month exist - but they are built for businesses that have already outgrown memory. The customer who is ready to pay - aware something is breaking, running on WhatsApp, past the threshold where memory works - has no clear product to land on.
+
+The gap is not between free and expensive. It is between "too basic to matter" and "too expensive before it proves value."
+
+Closing that gap is not a pricing decision. It is a time-to-value problem.
+
+The product that works is not cheaper. It is faster to valuable.
+
+### X Thread
+1/ A Lagos salon owner dismissed three software tools this year.
+
+Not because they failed.
+
+Because none of them was worth what they replaced.
+
+What they replaced was free.
+
+2/ Tools below $10/month exist.
+
+They are either too simple to solve the actual problem - or they require so much setup that the simplicity is a fiction.
+
+Tools above $30/month exist.
+
+They are built for businesses that have already outgrown memory.
+
+3/ The customer in between has no clear product.
+
+She is aware something is breaking. She is running on WhatsApp. She has passed the threshold where memory works reliably.
+
+She is ready to pay. There is nothing obvious to pay for.
+
+4/ The gap is not between free and expensive.
+
+It is between "too basic to matter" and "too expensive before it proves value."
+
+That is a positioning problem as much as a pricing one.
+
+5/ African micro-business owners are not unwilling to pay for software.
+
+They are unwilling to pay before the software proves itself.
+
+Most products priced for this market ask them to pay first and wait for proof.
+
+The conversion model is wrong before the pricing is.
+
+The product that works is not cheaper. It is faster to valuable.
+
+Full report: techtribeafrica.com/market-signals/africa-saas-fifty-dollar-gap
+
+### WhatsApp
+African micro-business owners are not unwilling to pay for software - they are unwilling to pay before it proves itself, and most tools ask them to pay first and wait for proof. The gap is not a pricing problem - it is a time-to-value problem. The product that closes it is not cheaper. It is faster to valuable. Full read: techtribeafrica.com/market-signals/africa-saas-fifty-dollar-gap
+
+---
+
+## BO#2 — Why Appointment Businesses Are the Right First Market for African SaaS
+**slug**: africa-appointment-business-saas-wedge
+**URL**: /build-opportunities/africa-appointment-business-saas-wedge
+
+### LinkedIn
+A Nairobi hair salon books twelve appointments per week through WhatsApp.
+
+Each booking starts as a conversation. The customer names a service, proposes a time, receives a confirmation. Then the thread is joined by eleven others. By Thursday, the Tuesday conversation is invisible without scrolling.
+
+Three kinds of revenue disappear in that scenario. The customer who did not receive a reminder and did not show. The customer who asked about a new service and received no follow-up. The customer who rescheduled once and was never contacted again.
+
+Most micro-business follow-up failures are diffuse. A fashion seller who misses an inquiry loses revenue - but the timing is unclear. The customer might still buy next week, next month, or never.
+
+Appointment businesses are different. A missed reminder loses a confirmed booking. The slot is empty at a specific moment. The revenue was as certain as micro-business revenue gets - and it is gone on a known date.
+
+This specificity makes appointment businesses the clearest first customer for follow-up software in Africa.
+
+The product they need is simple: a booking list, a pre-appointment reminder, and a post-appointment follow-up. All via WhatsApp. One tap per action.
+
+Appointment businesses already know they need this. The product just needs to exist in a form they can find.
+
+### X Thread
+1/ A Nairobi hair salon books 12 appointments per week through WhatsApp.
+
+By Thursday, the Tuesday conversation is invisible without scrolling.
+
+Three kinds of revenue disappear every week.
+
+2/ Most micro-business follow-up failures are diffuse.
+
+A missed inquiry might still convert next week. Or next month. The loss is real but hard to isolate.
+
+Appointment businesses are different.
+
+A missed reminder means an empty slot at a specific time. That revenue was certain. It is gone at a known moment.
+
+3/ This specificity makes appointment businesses the clearest first ICP for follow-up software in Africa.
+
+Not all micro-businesses - the subset where missing a follow-up has a known cost and a known timing.
+
+Salons. Tutors. Coaches. Physiotherapists. Photographers. Event caterers.
+
+4/ The product specification follows from the constraint.
+
+A booking list. A pre-appointment reminder. A post-appointment follow-up.
+
+All via WhatsApp. One tap per action.
+
+The product does not ask the owner to adopt a new channel. It sits beside the workflow that already exists.
+
+5/ The path from salon reminder tool to general micro-business follow-up system is shorter than starting from enterprise CRM.
+
+The wedge determines the learning curve.
+
+Appointment businesses already know they need this.
+
+The product just needs to exist in a form they can find.
+
+Full report: techtribeafrica.com/build-opportunities/africa-appointment-business-saas-wedge
+
+### WhatsApp
+Appointment businesses are the right first market for African micro-business software - every missed follow-up has a specific cost at a specific moment, which makes the product value visible on day one. The spec is simple: booking list, pre-appointment reminder, post-appointment follow-up, all via WhatsApp. They already know they need it. Full read: techtribeafrica.com/build-opportunities/africa-appointment-business-saas-wedge
