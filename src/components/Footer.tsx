@@ -38,7 +38,7 @@ export default function Footer() {
           </p>
           <div style={{ display: "flex", gap: 10 }}>
             {[
-              { href: "https://twitter.com/TechTribeAfrica", label: "X / Twitter", text: "𝕏" },
+              { href: "https://x.com/TechTribeHQ", label: "X / Twitter", text: "𝕏" },
               { href: "https://linkedin.com/company/techtribehq", label: "LinkedIn", text: "in" },
               { href: "https://instagram.com/techtribeafrica", label: "Instagram", text: "ig" },
             ].map((s) => (
