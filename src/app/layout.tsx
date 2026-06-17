@@ -7,7 +7,7 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: {
     template: "%s — TechTribe Africa",
-    default: "TechTribe Africa — Technology intelligence from the continent",
+    default: "TechTribe Africa — Technology intelligence from Africa",
   },
   description:
     "The shifts nobody told you about. The markets being quietly built. The ideas worth understanding before they are obvious.",

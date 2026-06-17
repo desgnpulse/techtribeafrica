@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     description: "Not a tech news site. A pattern recognition publication.",
     type: "website",
     url: "/about",
+    siteName: "TechTribe Africa",
     images: [{ url: "/tta-og.jpg", width: 1200, height: 630, alt: "TechTribe Africa" }],
   },
   alternates: { canonical: "/about" },
