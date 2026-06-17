@@ -7,7 +7,7 @@ import { SchemaTag, aboutPageSchema, ORG_SCHEMA } from "@/lib/schema"
 export const metadata: Metadata = {
   title: "About",
   description:
-    "TechTribe Africa is a pattern recognition publication covering technology and business in Africa. Not news — intelligence.",
+    "TechTribe Africa is a pattern recognition publication covering technology and business in Africa. Not news - intelligence.",
   openGraph: {
     title: "About TechTribe Africa",
     description: "Not a tech news site. A pattern recognition publication.",
@@ -28,13 +28,13 @@ const PILLARS = [
     label: "Market Signals",
     href: "/market-signals",
     color: "#1C2B4A",
-    desc: "Pattern reads from data, forums, developer conversations, and market moves. What the numbers actually say — and what they mean for founders and investors on the continent.",
+    desc: "Pattern reads from data, forums, developer conversations, and market moves. What the numbers actually say - and what they mean for founders and investors on the continent.",
   },
   {
     label: "Build Opportunities",
     href: "/build-opportunities",
     color: "#7A4A10",
-    desc: "Specific market gaps worth building into, backed by research and sized by reality. For founders who want to know what's worth making next, before it becomes obvious.",
+    desc: "Specific market gaps worth building into, backed by research and sized by reality. For founders who want to know what is worth making next, before it becomes obvious.",
   },
 ]
 
@@ -89,7 +89,7 @@ export default function AboutPage() {
               fontStyle: "italic",
             }}
           >
-            We do original research, synthesise what it means, and tell you where the opportunity is — before it&apos;s obvious.
+            We do original research, synthesise what it means, and tell you where the opportunity is - before it is obvious.
           </p>
         </div>
       </div>
@@ -108,28 +108,28 @@ export default function AboutPage() {
           <div>
             <Section title="What we do">
               <p>
-                TechTribe Africa covers the patterns shaping technology and business in Africa. Not press releases, funding announcements, or startup profiles written for foreign VCs. We cover the structural shifts that matter: the infrastructure being quietly built, the market dynamics that don&apos;t make headlines, the tools that African businesses actually use versus the ones that Silicon Valley thinks they should.
+                TechTribe Africa covers the patterns shaping technology and business in Africa. Not press releases, funding announcements, or startup profiles written for foreign VCs. We cover the structural shifts that matter: the infrastructure being quietly built, the market dynamics that do not make headlines, the tools that African businesses actually use versus the ones that Silicon Valley thinks they should.
               </p>
               <p>
-                Every piece we publish starts with a question, not a story pitch. We ask: what is actually happening here, why is it happening, and what does it change? The analysis follows the evidence. The opportunity layer — what founders and builders should be paying attention to — comes last.
+                Every piece we publish starts with a question, not a story pitch. We ask: what is actually happening here, why is it happening, and what does it change? The analysis follows the evidence. The opportunity layer - what founders and builders should be paying attention to - comes last.
               </p>
             </Section>
 
             <Section title="Who we write for">
               <p>
-                Our primary readers are founders, builders, product managers, and early-stage investors who operate in or think seriously about African markets. People who don&apos;t need the basics explained, who already understand that &quot;Africa&quot; is fifty-four countries with radically different market dynamics, and who want the synthesis layer — not the raw news.
+                Our primary readers are founders, builders, product managers, and early-stage investors who operate in or think seriously about African markets. People who do not need the basics explained, who already understand that &quot;Africa&quot; is fifty-four countries with radically different market dynamics, and who want the synthesis layer - not the raw news.
               </p>
               <p>
                 We also write for the growing number of global founders, operators, and investors who recognise that the most interesting technology problems of the next decade are being solved in Lagos, Nairobi, Accra, and Kigali — often in ways that will eventually spread outward.
               </p>
             </Section>
 
-            <Section title="What we don't do">
+            <Section title="What we do not do">
               <p>
-                We don&apos;t do sponsored content. We don&apos;t run press releases. We don&apos;t write &quot;the top 10 African startups to watch&quot; lists that just compile what VCs told us in off-the-record briefings.
+                No sponsored content. No press releases. No &quot;top 10 African startups to watch&quot; lists compiled from VC briefings.
               </p>
               <p>
-                We don&apos;t use the banned words. You&apos;ll never read about something being &quot;transformative,&quot; &quot;revolutionary,&quot; or &quot;cutting-edge&quot; here. If the analysis is correct, the evidence speaks for itself.
+                The banned words do not appear here: no &quot;transformative,&quot; no &quot;revolutionary,&quot; no &quot;cutting-edge.&quot; If the analysis is correct, the evidence speaks for itself.
               </p>
             </Section>
 
