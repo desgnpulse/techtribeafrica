@@ -58,16 +58,29 @@ export default function Nav() {
             gap: 24,
           }}
         >
-          {/* Logo */}
-          <Link href="/" aria-label="TechTribe Africa home" style={{ display: "block", lineHeight: 0 }}>
+          {/* Logo + Wordmark */}
+          <Link
+            href="/"
+            aria-label="TechTribe Africa home"
+            style={{ display: "flex", alignItems: "center", gap: 10, textDecoration: "none", whiteSpace: "nowrap" }}
+          >
             <Image
               src="/images/logo_dark.png"
-              alt="TechTribe Africa"
+              alt=""
               width={100}
               height={47}
               priority
               style={{ height: 30, width: "auto", display: "block" }}
             />
+            <span style={{
+              fontFamily: "var(--font-serif)",
+              fontSize: 22,
+              fontWeight: 500,
+              color: "var(--color-ink)",
+              letterSpacing: "-0.01em",
+            }}>
+              TechTribe<span style={{ color: "var(--color-frontier)" }}>&nbsp;Africa</span>
+            </span>
           </Link>
 
           {/* Nav links — hidden on mobile */}
