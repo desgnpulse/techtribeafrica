@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     default: "TechTribe Africa — Technology intelligence from the continent",
   },
   description:
-    "The shifts nobody told you about. The markets being quietly built. The ideas worth understanding before they're obvious.",
+    "The shifts nobody told you about. The markets being quietly built. The ideas worth understanding before they are obvious.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://techtribeafrica.com"),
   openGraph: {
     siteName: "TechTribe Africa",

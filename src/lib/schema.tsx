@@ -23,7 +23,7 @@ export const WEBSITE_SCHEMA = {
   name: "TechTribe Africa",
   url: SITE_URL,
   description:
-    "The shifts nobody told you about. The markets being quietly built. The ideas worth understanding before they're obvious.",
+    "The shifts nobody told you about. The markets being quietly built. The ideas worth understanding before they are obvious.",
   potentialAction: {
     "@type": "SearchAction",
     target: { "@type": "EntryPoint", urlTemplate: `${SITE_URL}/search?q={search_term_string}` },

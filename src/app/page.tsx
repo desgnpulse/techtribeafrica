@@ -14,11 +14,11 @@ import { SchemaTag, ORG_SCHEMA, WEBSITE_SCHEMA, newsArticleSchema } from "@/lib/
 export const metadata: Metadata = {
   title: "TechTribe Africa — Technology intelligence from the continent",
   description:
-    "The shifts nobody told you about. The markets being quietly built. The ideas worth understanding before they're obvious.",
+    "The shifts nobody told you about. The markets being quietly built. The ideas worth understanding before they are obvious.",
   openGraph: {
     title: "TechTribe Africa — Technology intelligence from the continent",
     description:
-      "The shifts nobody told you about. The markets being quietly built. The ideas worth understanding before they're obvious.",
+      "The shifts nobody told you about. The markets being quietly built. The ideas worth understanding before they are obvious.",
     type: "website",
     url: "/",
   },

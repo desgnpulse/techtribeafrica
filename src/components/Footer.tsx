@@ -34,7 +34,7 @@ export default function Footer() {
             TechTribe Africa
           </div>
           <p style={{ fontSize: 13, color: "var(--color-ink-3)", lineHeight: 1.7, marginBottom: 20, maxWidth: 300 }}>
-            Technology intelligence from the continent. The shifts nobody told you about, the markets being quietly built, and the ideas worth understanding before they&apos;re obvious.
+            Technology intelligence from the continent. The shifts nobody told you about, the markets being quietly built, and the ideas worth understanding before they are obvious.
           </p>
           <div style={{ display: "flex", gap: 10 }}>
             {[
