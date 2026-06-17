@@ -12,6 +12,7 @@
     "@mdx-js/loader": "^3.1.0",
     "@mdx-js/react": "^3.1.0",
     "@next/mdx": "^16.2.9",
+    "@plausible-analytics/tracker": "^0.4.5",
     "gray-matter": "^4.0.3",
     "next": "16.2.9",
     "next-mdx-remote": "^6.0.0",
@@ -20,7 +21,10 @@
     "server-only": "^0.0.1"
   },
   "pnpm": {
-    "ignoredBuiltDependencies": ["sharp", "unrs-resolver"]
+    "ignoredBuiltDependencies": [
+      "sharp",
+      "unrs-resolver"
+    ]
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
