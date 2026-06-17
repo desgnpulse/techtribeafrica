@@ -10,8 +10,8 @@ export const ORG_SCHEMA = {
   logo: `${SITE_URL}/logo.png`,
   description: "Technology intelligence from the African continent.",
   sameAs: [
-    "https://twitter.com/TechTribeAfrica",
-    "https://linkedin.com/company/techtribeafrica",
+    "https://x.com/TechTribeHQ",
+    "https://linkedin.com/company/techtribehq",
   ],
   foundingDate: "2026",
   areaServed: "Africa",
