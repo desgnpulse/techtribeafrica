@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 16 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 17 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -1082,3 +1082,70 @@ Claude Pro costs three different prices in Nigeria depending on which payment pa
 
 
 
+
+---
+
+## BO#13 — float-management-mpesa-agents
+
+### LinkedIn
+Kenya has over 800,000 active M-Pesa agents.
+
+Most of them manage float - KES 200,000 to 800,000 in working capital across multiple wallets - with pen-and-paper and WhatsApp messages to float suppliers.
+
+The Safaricom M-Pesa Business API has been open since 2023-2024. Float balance data is programmatically accessible. No product has been built on top of it for these agents.
+
+The economics are documented. The World Bank case study on Kenyan M-Pesa agents shows that one standard agent category loses money on commissions alone. They stay in business because of float income - roughly KES 5,800 per month in interest on KES 500,000 at the 14.24% annualised rate available in Kenyan money market products. That income does not appear on any Safaricom document.
+
+A WhatsApp bot that monitors float balance and sends an alert when the threshold drops is not a complex product. It does not require an app download. It fits the existing communication channel.
+
+The trust barrier is real - agent fraud in 2022-2023 created inherited suspicion of anything requesting M-Pesa account access. Distribution runs through agent network organizations, not cold acquisition.
+
+The infrastructure for this product is open. The 800,000 agents who need it are already on WhatsApp.
+
+The product does not exist yet.
+
+Full read: techtribeafrica.com/build-opportunities/float-management-mpesa-agents
+
+### X Thread
+1/ Kenya has 800,000+ active M-Pesa agents.
+
+Most of them manage KES 200K-800K in float across multiple wallets.
+
+Current system: pen-and-paper and a WhatsApp message when the balance "feels low."
+
+2/ The Safaricom M-Pesa Business API has been open since 2023-2024.
+
+Float balance data is programmatically accessible.
+
+No product has been built on top of it for individual agents.
+
+3/ The World Bank documented the economics.
+
+One standard agent category loses money on commissions alone. They stay in business because float income is the business.
+
+KES 500K in working float = KES 5,800/month in money market interest.
+
+That number does not appear on any Safaricom document.
+
+4/ A float imbalance has two costs.
+
+Too little: turned-away customer. Lost commission. Lost relationship.
+
+Too much: idle capital not earning 14.24% annualised - the Kenyan money market rate.
+
+Neither is solved by the current toolkit.
+
+5/ The product gap is specific.
+
+A WhatsApp bot that monitors float balance via M-Pesa API and alerts when the threshold drops. No app download. KES 300/month for three wallets plus a daily summary.
+
+The trust barrier from 2022-2023 agent fraud means distribution runs through agent network organizations - not cold acquisition.
+
+6/ The infrastructure is open. The agent network is 800,000 people.
+
+The product does not exist.
+
+Full read: techtribeafrica.com/build-opportunities/float-management-mpesa-agents
+
+### WhatsApp
+Kenya has 800,000 M-Pesa agents managing float manually - pen-and-paper, WhatsApp messages when the balance feels low, no reconciliation tool. The M-Pesa Business API has been open since 2024. The product that should run on it does not exist. Full read: techtribeafrica.com/build-opportunities/float-management-mpesa-agents
