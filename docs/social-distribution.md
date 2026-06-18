@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 18 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 19 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -1210,3 +1210,78 @@ Full read: techtribeafrica.com/market-signals/llm-cost-africa-startup
 
 ### WhatsApp
 A 300-user AI product costs $280/month in API fees. In Lagos, that is more than half a junior developer's salary. In San Francisco, it is under 3% of one. That gap explains why African AI founders build on open-weight models - not as a compromise, but as the rational outcome. Full read: techtribeafrica.com/market-signals/llm-cost-africa-startup
+
+---
+
+## FR#5 — africa-startup-funding-2025-lp-exit
+
+### LinkedIn
+Africa startup funding in 2025 reached $4.1 billion.
+
+That looks like a recovery. The composition is the story.
+
+Debt now accounts for 41% of all capital deployed in African tech - up from 17% in 2019. The headline number is up. The equity pool is not what it was in 2022.
+
+The investor count tells it more directly. US investors active in African tech fell from over 30 funds in 2021 to approximately 14 by early 2026 - a 53% decline. Named departures: QED Investors, Quona Capital, Left Lane Capital. European funds went from 70% of African VC fundraising at peak to 21%.
+
+The US institutions still active in Africa in early 2026 are IFC and the US International Development Finance Corporation. Neither is a traditional return-driven VC fund.
+
+This is not a broad market correction. It is a fund-category exit.
+
+The capital that left was priced on US growth curves and USD-denominated exits. The capital that stayed - and grew - is Africa-native. That cohort went from 23% to 45% of total venture fund commitments in a single year.
+
+Founders still pitching the 2021 playbook are pitching to a room that has largely emptied. The question is not when those funds return. It is whether the business case holds for the investors who stayed.
+
+Full analysis: techtribeafrica.com/frontier-reports/africa-startup-funding-2025-lp-exit
+
+### X Thread
+1/ African startup funding did not slow down because Africa got harder.
+
+The US and European investors who came in 2021 left. The ones who stayed are writing different cheques.
+
+Here is what the data actually shows:
+
+2/ Total Africa startup funding 2025: $4.1 billion (+25% YoY).
+
+But 41% of that is now debt - up from 17% in 2019.
+
+The equity pool did not collapse. But it is not the same pool it was in 2022.
+
+3/ US investors active in African tech: 30+ funds in 2021. ~14 by early 2026.
+
+That is a 53% decline.
+
+Named departures: QED Investors, Quona Capital, Left Lane Capital.
+
+European funds went from 70% of African VC fundraising to 21%.
+
+4/ Who stayed?
+
+IFC and the US International Development Finance Corporation - government-linked, impact-oriented. Not traditional return-driven VC.
+
+Africa-native investors went from 23% to 45% of total fund commitments in 2025. Their share nearly doubled in a single year.
+
+5/ Why did the US and European funds leave?
+
+African Business documented it: quiet but firm repricing of the 2021-2022 cohort. Valuations built on US growth benchmarks. Businesses that could not hit those curves.
+
+The Nigerian naira lost 40.9% against the dollar in 2024. $1 billion in blocked funds could not exit the continent.
+
+6/ The geographic signal: Kenya overtook Nigeria.
+
+$1.04 billion raised in Kenya in 2025 (+72% YoY). Roughly one-third of all African startup investment.
+
+Not a coincidence. Kenya has a stronger exit track record. Capital concentrates where exits are visible.
+
+7/ The structural conclusion:
+
+The capital that left priced for US growth and USD exits.
+
+The capital that stayed is milestone-based, patient, with exit paths that include African acquirers and regional buyers.
+
+The investors who left were not wrong about Africa. They were right about their own risk tolerance.
+
+Full read: techtribeafrica.com/frontier-reports/africa-startup-funding-2025-lp-exit
+
+### WhatsApp
+Africa startup funding 2025 reached $4.1 billion - but 53% of US investors active in 2021 had exited by early 2026. QED, Quona, and Left Lane Capital are gone. Africa-native capital doubled its share to 45%. The story is not a slowdown. It is a rotation. Full read: techtribeafrica.com/frontier-reports/africa-startup-funding-2025-lp-exit
