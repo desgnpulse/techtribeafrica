@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 14 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 15 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -939,3 +939,58 @@ Full report: techtribeafrica.com/frontier-reports/africa-mobile-money-infrastruc
 
 ### WhatsApp
 Africa processed over $1 trillion in mobile money in 2024 - M-Pesa alone runs 379 times the value of Kenya's equity market. The payments layer is largely solved; the next generation builds on top of it. techtribeafrica.com/frontier-reports/africa-mobile-money-infrastructure
+
+---
+
+## SB#12 — M-Pesa Agents Do Not Earn From Transactions
+**slug**: mpesa-agent-float-economics
+**URL**: /market-signals/mpesa-agent-float-economics
+
+### LinkedIn
+Safaricom publishes the M-Pesa agent commission schedule. Most founders building for agents have read it.
+
+The rate card stops at commissions.
+
+M-Pesa agents hold float - typically KES 200,000 to KES 1,000,000 or more in combined cash and e-money. Kenyan money market funds returned an average of 14.24 percent per annum in June 2024. Safaricom's own Ziidi product gives agents direct access to those rates from their M-Pesa balance.
+
+An agent managing KES 500,000 in working float earns roughly KES 5,800 per month in interest. That figure does not appear on any Safaricom document.
+
+The World Bank's case study on Kenyan M-Pesa agents documents this directly: one retail agent category loses money on commissions alone. Their costs of maintaining float and staffing exceed what the rate card pays. Those agents stay in business because the rate card is not the whole business.
+
+A product that helps agents earn more per transaction addresses the income line every agent already tracks. A product that helps agents manage float allocation addresses the income line most agents still handle manually.
+
+No product currently serves this well at scale.
+
+Full signal at TechTribe Africa.
+
+### X Thread
+1/ The Safaricom M-Pesa agent commission schedule is public.
+
+Most founders building for agents have read it.
+
+The rate card stops at commissions.
+
+2/ M-Pesa agents also hold float - typically KES 200,000 to KES 1,000,000 or more. That float does not sit idle.
+
+Kenyan MMFs returned an average of 14.24 percent per annum in June 2024. Safaricom's Ziidi gives agents direct access from their M-Pesa balance.
+
+3/ An agent managing KES 500,000 in working float earns roughly KES 5,800 per month in interest.
+
+That figure does not appear on any Safaricom document.
+
+4/ The World Bank's M-Pesa case study documents agents who lose money on commissions alone.
+
+Their costs exceed what the rate card pays.
+
+They stay in business because the rate card is not the whole business.
+
+5/ A product built to improve commission earnings addresses what every agent already tracks.
+
+A product built for float management addresses what most agents still handle manually.
+
+No product currently serves this well at scale.
+
+Full signal: techtribeafrica.com/market-signals/mpesa-agent-float-economics
+
+### WhatsApp
+M-Pesa agents earn commission per transaction - but the rate card stops there. An agent managing KES 500K in float earns roughly KES 5,800/month in interest at current Kenyan MMF rates, and no product serves this well yet. techtribeafrica.com/market-signals/mpesa-agent-float-economics
