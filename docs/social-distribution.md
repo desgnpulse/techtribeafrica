@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 17 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 18 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -1149,3 +1149,64 @@ Full read: techtribeafrica.com/build-opportunities/float-management-mpesa-agents
 
 ### WhatsApp
 Kenya has 800,000 M-Pesa agents managing float manually - pen-and-paper, WhatsApp messages when the balance feels low, no reconciliation tool. The M-Pesa Business API has been open since 2024. The product that should run on it does not exist. Full read: techtribeafrica.com/build-opportunities/float-management-mpesa-agents
+
+---
+
+## SB#14 — llm-cost-africa-startup
+
+### LinkedIn
+GPT-4o API pricing: $10 per million output tokens.
+
+A product serving 300 daily active users at 2,500 output tokens per session generates 22.5 million output tokens per month. Monthly API spend: $280, before infrastructure or margin.
+
+In Lagos, a junior software developer earns $400 to $600 per month. That API bill is more than half of one.
+
+For the same product at the same usage, a US team spends under 3 percent of a developer salary.
+
+Same product. Same API. Two different cost structures.
+
+This is why African AI founders are not compromising by building on open-weight models. Qwen3, DeepSeek R1, and Gemma 4 running locally through Ollama replace recurring API costs with one-time hardware. The arithmetic requires it.
+
+The API providers have not adjusted for this. There is no regional API pricing equivalent to what Google introduced for consumer subscriptions. The cost differential is structural.
+
+LLM cost in Africa is not a pricing complaint. It is an architecture decision.
+
+Full read: techtribeafrica.com/market-signals/llm-cost-africa-startup
+
+### X Thread
+1/ GPT-4o API: $10 per million output tokens.
+
+A 300-user AI product at 2,500 tokens per session = 22.5M output tokens per month = $280/month.
+
+Before infrastructure. Before margin. Before revenue.
+
+2/ In Lagos, a junior developer earns $400-600/month.
+
+That API bill is more than half of one salary. Every month.
+
+In San Francisco, the same bill is under 3% of a developer salary.
+
+Same product. Same API. Different cost structures.
+
+3/ The API providers have not adjusted for this.
+
+No regional pricing for API access. No localized tiers for African markets.
+
+Google introduced consumer subscription pricing in Nigeria (Gemini at ₦7,450/month). The API layer has not moved.
+
+4/ African AI founders are not being cheap by building on open-weight models.
+
+Qwen3, DeepSeek R1, Gemma 4 via Ollama - local inference, one-time hardware cost, no recurring USD billing.
+
+The arithmetic requires it.
+
+5/ The constraint does not produce inferior products.
+
+It produces products designed for different economics. Built for lower token volume, smarter triggers, architectures that do not assume a cloud API budget in USD.
+
+LLM cost in Africa is not a pricing complaint. It is an architecture decision.
+
+Full read: techtribeafrica.com/market-signals/llm-cost-africa-startup
+
+### WhatsApp
+A 300-user AI product costs $280/month in API fees. In Lagos, that is more than half a junior developer's salary. In San Francisco, it is under 3% of one. That gap explains why African AI founders build on open-weight models - not as a compromise, but as the rational outcome. Full read: techtribeafrica.com/market-signals/llm-cost-africa-startup
