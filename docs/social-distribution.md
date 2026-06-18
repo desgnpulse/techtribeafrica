@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 21 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 22 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -1415,3 +1415,72 @@ Full read: techtribeafrica.com/frontier-reports/africa-fintech-regulation-licens
 
 ### WhatsApp
 A Lagos fintech founder built 14 months of infrastructure before the CBN told him he had the wrong license category. PSSP covers domestic payments. IMTO covers cross-border. Switching does not mean re-filing - it means rebuilding. Most founders hit this after the product is built. The CBN sandbox (45 working days + 6 months) changes the entry calculus for those who know it exists. Full read: techtribeafrica.com/frontier-reports/africa-fintech-regulation-licensing
+
+---
+
+## SB#9 — stablecoin-africa-devaluation-hedge
+
+### LinkedIn
+Africans are among the most active stablecoin users in the world.
+
+The reason has nothing to do with DeFi.
+
+The Central Bank of Nigeria abandoned its fixed exchange rate in June 2023. The naira fell from NGN 464 to the dollar to NGN 708 in a single week. By February 2024, it had passed NGN 1,400.
+
+Between July 2023 and June 2024, Nigeria processed $22 billion in stablecoin transactions. Chainalysis data shows stablecoins accounted for 43 percent of all crypto volume across Sub-Saharan Africa in that period. In Nigeria, 38.3 percent of all crypto sent by Nigerians was in dollar-pegged tokens - held as savings, not traded for yield.
+
+The global stablecoin narrative is a DeFi narrative: yield protocols, liquidity pools, collateralised positions. The African stablecoin narrative is a savings narrative.
+
+Opening a dollar account in Nigeria requires documentation most working adults do not have. A stablecoin wallet does not. When the local currency falls and the dollar holds, USDT becomes a rational savings vehicle for anyone with a smartphone.
+
+The product that wins this market is not an exchange. It is a savings account that holds its value in a currency that holds its value. The demand is structural, not speculative.
+
+Full read: techtribeafrica.com/market-signals/stablecoin-africa-devaluation-hedge
+
+### X Thread
+1/ Africans are among the most active stablecoin users in the world.
+
+The reason has nothing to do with DeFi.
+
+2/ June 2023: the CBN abandoned its fixed exchange rate.
+
+The naira fell from NGN 464/USD to NGN 708/USD in a single week. By February 2024 it had passed NGN 1,400.
+
+A Lagos trader did not need to understand DeFi. She needed to protect her salary.
+
+3/ Between July 2023 and June 2024:
+
+- Nigeria processed $22 billion in stablecoin transactions
+- Stablecoins = 43% of all Sub-Saharan Africa crypto volume
+- 38.3% of all crypto sent by Nigerians = dollar-pegged stablecoins
+
+This is not speculation. It is savings.
+
+4/ The global stablecoin narrative is DeFi. Yield protocols. Liquidity pools.
+
+The African stablecoin narrative is different. It is a savings narrative with a currency risk problem at its centre.
+
+Ghana's cedi and the Nigerian naira both fell significantly between 2022 and 2024. Stablecoin adoption in each market moved with the local currency, not with global crypto sentiment.
+
+5/ Opening a dollar account in Nigeria requires documentation most working adults do not have.
+
+A stablecoin wallet does not.
+
+When local currency falls and the dollar holds, USDT is the rational savings vehicle. No bank. No FX queue. No documentation barrier.
+
+6/ The CBN moved from a crypto ban to a regulated framework between 2023 and 2025.
+
+Nigeria launched cNGN in early 2025 within a CBN sandbox. The ISA 2025 recognised digital assets under SEC oversight.
+
+The regulatory direction is toward structured integration, not prohibition.
+
+7/ The product that wins this market is not an exchange.
+
+It is a savings account that holds its value in a currency that holds its value.
+
+The demand is structural. It will grow as long as local currencies remain volatile. Which means it is not going away.
+
+Full read: techtribeafrica.com/market-signals/stablecoin-africa-devaluation-hedge
+
+### WhatsApp
+Nigeria processed $22 billion in stablecoin transactions between July 2023 and June 2024. Not DeFi speculation - currency protection. The naira lost more than half its value in under 8 months after the CBN's June 2023 rate devaluation. Stablecoins now account for 43% of all Sub-Saharan Africa crypto volume. The product opportunity is a savings account that holds its value, not an exchange. Full read: techtribeafrica.com/market-signals/stablecoin-africa-devaluation-hedge
