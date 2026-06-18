@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 22 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 23 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -1484,3 +1484,81 @@ Full read: techtribeafrica.com/market-signals/stablecoin-africa-devaluation-hedg
 
 ### WhatsApp
 Nigeria processed $22 billion in stablecoin transactions between July 2023 and June 2024. Not DeFi speculation - currency protection. The naira lost more than half its value in under 8 months after the CBN's June 2023 rate devaluation. Stablecoins now account for 43% of all Sub-Saharan Africa crypto volume. The product opportunity is a savings account that holds its value, not an exchange. Full read: techtribeafrica.com/market-signals/stablecoin-africa-devaluation-hedge
+
+---
+
+## FR#10 — africa-digital-infrastructure-closing-gap
+
+### LinkedIn
+Most African tech products were built for a constraint that is being removed from below.
+
+Three subsea cables arrived in African waters within 18 months of each other. Equiano (144Tbps, Google-backed), PEACE (96Tbps), and 2Africa (180Tbps, Meta-backed) together deliver more bandwidth to the continent than all previous cables combined. Round-trip latency to Europe has fallen by 20 to 40 milliseconds.
+
+Data centre capacity is catching up. Nigeria had 86 megawatts of operational capacity in 2025. Over 320 megawatts are under construction or in the pipeline. Lagos gets a $250 million hyperscale facility in 2026. Microsoft is investing $1 billion in Kenya. Starlink reached 25 African countries by December 2025.
+
+The products that defined African mobile software in the 2010s were built for a specific constraint: bandwidth was scarce, expensive, and intermittent. Offline-first architecture was not a design choice. It was a user requirement. Lightweight payloads. SMS fallback. Minimal images. Local data caching.
+
+Those decisions are baked into codebases and product thinking across the region. The constraint that generated them is being removed from below.
+
+The premium user segment in Lagos, Nairobi, and Accra is operating on infrastructure that has changed. A product built in 2019 for 3G conditions is now competing in a different market. The 2019 product will feel the gap before its team notices it.
+
+AWS Africa cloud pricing has not yet caught up to what new infrastructure enables. That gap will close. The founders who build on the current pricing carry lower infrastructure costs for longer.
+
+The infrastructure changed. Most product assumptions did not.
+
+Full read: techtribeafrica.com/frontier-reports/africa-digital-infrastructure-closing-gap
+
+### X Thread
+1/ Most African tech products were built for a constraint that is now being removed from below.
+
+Here is what changed - and what it means for the products that have not caught up.
+
+2/ Three subsea cables arrived in African waters within 18 months:
+
+- Equiano (Google) — 144Tbps — live in 2023 across Nigeria, South Africa, Namibia, Togo
+- PEACE — 96Tbps — landed in Kenya, December 2022
+- 2Africa (Meta) — 180Tbps — staged activations 2023-2024, 33 countries
+
+Together: more bandwidth than every cable before them combined.
+Latency to Europe: down 20-40ms.
+
+3/ Data centre capacity is accelerating in parallel.
+
+Nigeria: 86MW operational in 2025 → 320MW+ in pipeline
+Lagos: $250M hyperscale facility (Nxtra, 2026)
+Nairobi: iXAfrica 20MW expansion (January 2025)
+Microsoft: $1 billion investment in Kenya
+Starlink: 25 African countries by December 2025
+
+4/ The products that defined African mobile software in the 2010s were built for a specific constraint.
+
+Bandwidth was scarce, expensive, and intermittent.
+
+Offline-first architecture was not a design choice. It was a user requirement.
+
+Lightweight payloads. Progressive loading. SMS fallback. Minimal images.
+
+5/ Those decisions are baked into codebases and product thinking across the region.
+
+The constraint is being removed from below.
+
+A product built in 2019 for 3G conditions in Lagos now competes with a different market. The 2019 product will feel the gap before its team notices it.
+
+6/ Enterprise tools stayed text-heavy to save data costs. Consumer apps stripped out media. Products defaulted to WhatsApp because a 2G fallback was required.
+
+Each of those decisions can now be revisited.
+
+The infrastructure ceiling moved. The product design floor has not.
+
+7/ AWS Africa cloud pricing has not yet caught up to the cost reductions that new infrastructure enables.
+
+Regional pricing remains higher than equivalent US and EU regions.
+
+That gap will close. Founders who build now carry lower infrastructure costs for longer.
+
+The infrastructure changed. Most product assumptions did not.
+
+Full read: techtribeafrica.com/frontier-reports/africa-digital-infrastructure-closing-gap
+
+### WhatsApp
+Three subsea cables delivered more bandwidth to Africa in 18 months than all previous cables combined. Round-trip latency to Europe fell by 20-40ms. Nigeria has 320MW+ of data centre capacity in the pipeline. Most African tech products were built for 2019 constraints - offline-first, lightweight, SMS fallback. The constraint is being removed from below. The products designed for it will feel the gap before their teams notice. Full read: techtribeafrica.com/frontier-reports/africa-digital-infrastructure-closing-gap
