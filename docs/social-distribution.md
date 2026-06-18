@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 24 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 26 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -1645,3 +1645,85 @@ Full read: techtribeafrica.com/market-signals/nigeria-fintech-licensing-cost
 
 ### WhatsApp
 The CBN PSSP license fee is NGN 100,000. The actual cost is NGN 100 million locked for up to 10 months, plus NGN 3 million to 10 million in legal fees, before the first transaction is processed. The fee schedule publishes the regulatory cost - nobody publishes the total cost. Full read: techtribeafrica.com/market-signals/nigeria-fintech-licensing-cost
+
+---
+
+## BO#12 — The WhatsApp price agent for African micro-businesses
+
+URL: techtribeafrica.com/build-opportunities/whatsapp-ai-agent-africa-micro-business
+
+### LinkedIn
+
+A Lagos building materials trader calls three suppliers every morning before opening her shop.
+
+Cement price. Steel rod price. Sand per ton.
+
+The call takes 40 minutes. By noon, two of the prices have changed.
+
+She is not looking for an AI tool. She is looking for one thing: the right price before she quotes a customer.
+
+This is the ICP for the WhatsApp price agent. Not the African professional who uses Claude to draft emails. The micro-business operator whose morning costs 40 minutes in supplier calls.
+
+The information already exists. It lives in WhatsApp group threads, Facebook market pages, informal SMS chains. None of it is in one place. None of it updates itself.
+
+Three things changed between 2023 and 2025 that make the product viable now:
+
+Claude and Gemini both released WhatsApp-compatible API integrations in 2025. WhatsApp Business API pricing fell. Commodity price data from the Kenya Bureau of Standards and Lagos trade associations became more programmatically accessible than it was two years ago.
+
+The architecture for this product exists. The reason it has not been built is not technology. It is distribution.
+
+The entry angle is not an AI agent. It is a daily price summary delivered over WhatsApp. One specific vertical: food commodities in Nairobi, or building materials in Lagos. Free for 30 days. KES 200 per month or NGN 1,000 per month after that.
+
+The AI layer arrives in month three. A product that starts as a daily WhatsApp newsletter and evolves into a conversational price tool is not simpler. It is better-distributed.
+
+The constraint is not technical. One wrong price loses the subscriber permanently. The cost of one error is not one churn event - it is the entire referral network that subscriber carried.
+
+The product that wins delivers the right price over the channel the trader already trusts. It arrives before the first customer does.
+
+Full read: techtribeafrica.com/build-opportunities/whatsapp-ai-agent-africa-micro-business
+
+### X Thread
+
+1/ A Lagos building materials trader calls three suppliers every morning.
+
+Cement price. Steel rod price. Sand per ton. The call takes 40 minutes. By noon, two prices have changed.
+
+She is not looking for an AI tool. She needs the right price before she quotes a customer.
+
+2/ This is the ICP for a WhatsApp price agent in Africa.
+
+Monthly revenue: KES 30,000 to KES 200,000 or NGN 150,000 to NGN 800,000.
+Business runs primarily through WhatsApp.
+Not app-download-comfortable.
+Has used at least one WhatsApp bot before.
+
+3/ The information she needs exists.
+
+It lives in WhatsApp group threads, Facebook market pages, SMS chains, and supplier calls. None of it is in one place. None of it updates itself.
+
+Urban micro-business operators in Lagos and Nairobi spend 2 to 4 hours per week on this.
+
+4/ Three things changed in 2024 and 2025 that make this product viable today.
+
+Claude and Gemini both released WhatsApp-compatible API integrations in 2025. BSP markup tiers fell to workable rates for this price point. Commodity price data became more programmatically accessible.
+
+5/ The architecture exists. The reason it has not been built is distribution.
+
+The entry angle is not an AI agent. It is a daily price summary over WhatsApp. One vertical. The subscriber does not interact with it. The number sends. The subscriber reads.
+
+Free for 30 days. KES 200 or NGN 1,000 per month after that.
+
+6/ The AI layer does not exist on launch day. It arrives in month three.
+
+After the distribution channel is proven and the price data validated.
+
+A product that starts as a daily WhatsApp newsletter and evolves into a conversational price tool is not simpler. It is better-distributed.
+
+7/ The constraint is not technical. It is trust.
+
+One wrong price loses the subscriber permanently. A vendor who quotes cement based on an incorrect WhatsApp summary loses the customer and the credibility. The cost of one error is not one churn event. It is the entire referral network that subscriber carried.
+
+Full read: techtribeafrica.com/build-opportunities/whatsapp-ai-agent-africa-micro-business
+
+### WhatsApp
+A Lagos building materials trader spends 40 minutes every morning calling three suppliers for cement, steel rod, and sand prices. By noon, two prices have changed. She is not looking for AI - she is looking for a supplier call she does not have to make herself. The architecture for a WhatsApp daily price agent exists today. The reason it has not been built is distribution, not technology. Full read: techtribeafrica.com/build-opportunities/whatsapp-ai-agent-africa-micro-business
