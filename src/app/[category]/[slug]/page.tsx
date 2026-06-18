@@ -17,6 +17,7 @@ import { getArticlesByCategory } from "@/lib/content"
 import Pullquote from "@/components/mdx/Pullquote"
 import Factblock from "@/components/mdx/Factblock"
 import InlineNewsletter from "@/components/mdx/InlineNewsletter"
+import DataTable from "@/components/mdx/DataTable"
 import ArticleCard from "@/components/ArticleCard"
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://techtribeafrica.com"
@@ -189,7 +190,7 @@ export default async function ArticlePage({ params }: { params: Promise<Params> 
             style={{ maxWidth: 680, "--category-color": cat.color } as React.CSSProperties}
             itemProp="articleBody"
           >
-            <MDXRemote source={content} components={{ Pullquote, Factblock, InlineNewsletter }} />
+            <MDXRemote source={content} components={{ Pullquote, Factblock, InlineNewsletter, DataTable }} />
           </div>
 
           {/* Tags */}
