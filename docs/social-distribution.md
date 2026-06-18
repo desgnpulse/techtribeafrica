@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 19 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 20 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -1285,3 +1285,60 @@ Full read: techtribeafrica.com/frontier-reports/africa-startup-funding-2025-lp-e
 
 ### WhatsApp
 Africa startup funding 2025 reached $4.1 billion - but 53% of US investors active in 2021 had exited by early 2026. QED, Quona, and Left Lane Capital are gone. Africa-native capital doubled its share to 45%. The story is not a slowdown. It is a rotation. Full read: techtribeafrica.com/frontier-reports/africa-startup-funding-2025-lp-exit
+
+---
+
+## SB#6 — africa-startup-bridge-round
+
+### LinkedIn
+In Silicon Valley, a bridge round is a phone call. Two to four weeks.
+
+In Africa, the same round can take five months.
+
+The capital exists. The investors exist. The problem is access architecture.
+
+US investors active in African tech fell 53% between 2021 and early 2026. The pool of investors with an existing relationship to your company shrank with it. Reaching a new one requires a warm intro to someone inside the original LP network - a network most African founders do not have direct access to.
+
+The top 10 startups in Africa received 42% of all 2025 funding. That concentration reflects which companies already have investor relationships that can move fast. The other 90% are navigating a smaller, slower-to-reach pool.
+
+Three things compound this: fewer active investors seeing more deal flow, a $20M-50M mid-stage gap that local capital cannot fill and global growth capital will not enter, and FX exposure on USD-denominated terms that adds a negotiation layer with no Silicon Valley equivalent.
+
+Bridge rounds in Africa are not slow because the capital is absent. They are slow because the access infrastructure was not built ahead of the need.
+
+The founders who build investor relationships before the runway pressure starts do not face the same five-month clock.
+
+Full read: techtribeafrica.com/market-signals/africa-startup-bridge-round
+
+### X Thread
+1/ In Silicon Valley, a bridge round takes 2-4 weeks.
+
+In Africa, the same process takes 5+ months.
+
+The capital is not the problem. The access architecture is.
+
+2/ US investors active in African tech: 30+ funds in 2021. ~14 by early 2026.
+
+That is a 53% decline in the pool of investors who already know your company and can move fast.
+
+Reaching a new investor requires a warm intro to the original LP network. Most African founders do not have that.
+
+3/ The top 10 startups in Africa received 42% of all 2025 funding.
+
+Not a coincidence. Those companies have investor relationships that compress the timeline. The other 90% are competing for access to a smaller, harder-to-reach pool.
+
+4/ Three structural factors that compound the problem:
+
+- Fewer active investors, more deal flow each → longer diligence
+- The $20M-50M mid-stage gap: too large for local capital, too small for global growth investors
+- FX exposure on USD terms adds a negotiation layer with no Silicon Valley equivalent
+
+5/ The founders who navigate this well are not better at raising bridge rounds.
+
+They do not need to find the capital. They already know the investors.
+
+Bridge rounds in Africa are hard because the access infrastructure is not built in advance. Build it before the runway pressure starts.
+
+Full read: techtribeafrica.com/market-signals/africa-startup-bridge-round
+
+### WhatsApp
+A Nairobi founder started a bridge round conversation with 90 days of runway. Five months later it had not closed - not because the capital did not exist, but because reaching the right investors required warm intros to a network she did not have. 53% of US Africa-focused investors left between 2021 and 2026. The access infrastructure shrank with them. Full read: techtribeafrica.com/market-signals/africa-startup-bridge-round
