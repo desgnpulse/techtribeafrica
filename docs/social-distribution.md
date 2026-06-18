@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 15 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 16 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -881,116 +881,204 @@ Appointment businesses are the right first market for African micro-business sof
 
 ---
 
-## FR#7 — Africa's Mobile Money Layer Is Infrastructure, Not Innovation
+## FR#7 — Africa's mobile money layer is infrastructure, not innovation
 **slug**: africa-mobile-money-infrastructure
 **URL**: /frontier-reports/africa-mobile-money-infrastructure
 
 ### LinkedIn
-Africa processed over $1 trillion in mobile money transactions in 2024.
+M-Pesa processed KES 40.2 trillion in transactions in FY2024.
 
-That number is not a fintech milestone. It is evidence of infrastructure.
+The Nairobi Stock Exchange - the primary equity market for East Africa - handles roughly KES 106 billion annually. Mobile money moves 379 times more value.
 
-M-Pesa alone processed KES 40.2 trillion in FY2024. In the same period, the Nairobi Securities Exchange recorded KES 105.97 billion in equity turnover. M-Pesa ran approximately 379 times the value of Kenya's formal capital exchange.
+That ratio is not an argument for M-Pesa. It is a description of what African financial infrastructure has become.
 
-This is not a comparison between two financial systems. It is evidence that the economy runs on different rails than the official ones.
+The common framing treats mobile money as a fintech product: a payments feature, a distribution channel, a competitor to traditional banking. The more accurate framing is infrastructure. M-Pesa and MTN MoMo are the substrate on which the formal African economy now runs. The 700,000 M-Pesa agents in Kenya are not salespeople for a product. They are nodes in a financial network.
 
-Founders who frame mobile money as a payments competitor make a category error. M-Pesa is not taking share from Visa or bank transfers. It is the substrate on which both need to operate to reach most of Africa's working population.
+The founders who build on this infrastructure with that mental model will make different decisions than those who treat it as a feature. The agent is not a user - the agent is often the customer. The product opportunity is not in the transaction - it is in the services that ride on top: credit scored from transaction history, insurance priced from float behaviour, working capital built from receivables.
 
-Building a faster payment product is competing with infrastructure. Building on top of it is a different thesis entirely.
-
-The payments layer is largely competed. The layer above it is not.
-
-MTN MoMo's advanced services - credit, insurance, merchant payments - grew 40 percent year-on-year in 2024. Digital lending demand across Africa jumped five times between 2023 and mid-2025.
+Fuliza, Safaricom's mobile overdraft service, had 17.7 million users drawing an average of KES 254 per loan in FY2024. Not a product launched into a market. A product launched onto an infrastructure that was already there.
 
 The rails are in place. The question is what to run on them.
 
-Full analysis at TechTribe Africa.
+Full report: techtribeafrica.com/frontier-reports/africa-mobile-money-infrastructure
 
 ### X Thread
-1/ Africa's mobile money layer processed over $1 trillion in transactions in 2024.
+1/ M-Pesa processed KES 40.2 trillion in FY2024.
 
-That is not a fintech milestone.
+The Nairobi Stock Exchange processed KES 106 billion.
 
-It is evidence of infrastructure.
+Mobile money moves 379 times more value than the primary equity market.
 
-2/ M-Pesa processed KES 40.2 trillion in FY2024. The Nairobi Securities Exchange recorded KES 105.97 billion in equity turnover in the same period.
+That is not a product. That is infrastructure.
 
-M-Pesa runs 379 times the value of Kenya's formal capital exchange.
+2/ The mental model matters.
 
-The economy runs on different rails than the official ones.
+Founders who treat M-Pesa as a payments feature compete with Safaricom.
 
-3/ Founders who frame mobile money as a payments competitor make a category error.
+Founders who treat it as substrate build on top of it.
 
-M-Pesa is not taking share from Visa. It is the substrate on which Visa needs to operate to reach Africa's working population.
+The 700,000 M-Pesa agents in Kenya are nodes in a financial network - not users of a startup product.
 
-Building faster payments is competing with infrastructure. Building on it is different.
+3/ The first-layer opportunity was transactions.
 
-4/ The payments layer is largely competed. The layer above it is not.
+That is done.
 
-MTN MoMo's advanced services - credit, insurance, merchant payments - grew 40 percent in 2024. That is double the growth rate of core payments.
+The second layer is services that ride on top of the transaction data: credit from payment history, insurance from float behaviour, working capital from receivables.
 
-Fuliza's average loan is KES 254. Roughly two US dollars. At 17.7 million users.
+Fuliza had 17.7 million users drawing an average of KES 254 per loan. A product launched onto infrastructure that was already there.
+
+4/ MTN MoMo has 321.3 million registered wallets across Africa.
+
+GSMA estimates total African mobile money value at $1.105 trillion annually.
+
+The float sitting in agent accounts across the continent is a treasury system most fintech products have never modeled.
 
 5/ The rails are in place.
 
-The next generation of African financial services will not be built by laying new ones.
+The question is not how to build mobile money.
 
-Full report: techtribeafrica.com/frontier-reports/africa-mobile-money-infrastructure
+It is what to run on mobile money.
+
+Full analysis: techtribeafrica.com/frontier-reports/africa-mobile-money-infrastructure
 
 ### WhatsApp
-Africa processed over $1 trillion in mobile money in 2024 - M-Pesa alone runs 379 times the value of Kenya's equity market. The payments layer is largely solved; the next generation builds on top of it. techtribeafrica.com/frontier-reports/africa-mobile-money-infrastructure
+M-Pesa processed 379 times more value than the Nairobi Stock Exchange in FY2024 - not a product, infrastructure. The second-layer opportunity is services that ride on the transaction data: credit, insurance, working capital. Full read: techtribeafrica.com/frontier-reports/africa-mobile-money-infrastructure
 
 ---
 
-## SB#12 — M-Pesa Agents Do Not Earn From Transactions
+## SB#12 — M-Pesa agents do not earn from transactions
 **slug**: mpesa-agent-float-economics
 **URL**: /market-signals/mpesa-agent-float-economics
 
 ### LinkedIn
-Safaricom publishes the M-Pesa agent commission schedule. Most founders building for agents have read it.
+The Safaricom M-Pesa rate card is a public document.
 
-The rate card stops at commissions.
+It shows what an agent earns per transaction: KES 4 on a small deposit, KES 200 on a large withdrawal. Every founder building products for the agent network quotes these numbers.
 
-M-Pesa agents hold float - typically KES 200,000 to KES 1,000,000 or more in combined cash and e-money. Kenyan money market funds returned an average of 14.24 percent per annum in June 2024. Safaricom's own Ziidi product gives agents direct access to those rates from their M-Pesa balance.
+The rate card stops there.
 
-An agent managing KES 500,000 in working float earns roughly KES 5,800 per month in interest. That figure does not appear on any Safaricom document.
+M-Pesa agents hold float - typically KES 200,000 to KES 1,000,000 or more in combined cash and e-money. Kenyan money market funds, including Safaricom's own Ziidi product, returned an average of 14.24 percent per annum in June 2024. An agent managing KES 500,000 in working float earns roughly KES 5,800 per month in interest. That figure does not appear on any Safaricom document.
 
-The World Bank's case study on Kenyan M-Pesa agents documents this directly: one retail agent category loses money on commissions alone. Their costs of maintaining float and staffing exceed what the rate card pays. Those agents stay in business because the rate card is not the whole business.
+The World Bank case study on Kenyan M-Pesa agents documents what happens when float income is ignored in the product model. One retail agent category - processing standard volumes at standard commissions - loses money on commissions alone. The costs of maintaining float and staffing exceed what the rate card pays. Those agents stay in business because the rate card is not the whole business.
 
-A product that helps agents earn more per transaction addresses the income line every agent already tracks. A product that helps agents manage float allocation addresses the income line most agents still handle manually.
+A product that helps agents earn more per transaction addresses the income line every agent already tracks. A product that helps agents manage float allocation - timing, amount, rate - addresses the income line most agents still handle manually.
 
-No product currently serves this well at scale.
+The agent behind the counter is not running a payments booth. She is running a treasury operation with a commission on the side.
 
-Full signal at TechTribe Africa.
+Products that start from the commission miss the business.
+
+Full signal: techtribeafrica.com/market-signals/mpesa-agent-float-economics
 
 ### X Thread
-1/ The Safaricom M-Pesa agent commission schedule is public.
+1/ The Safaricom M-Pesa rate card is public.
 
-Most founders building for agents have read it.
+KES 4 on a small deposit. KES 200 on a large withdrawal.
 
-The rate card stops at commissions.
+Every founder building for M-Pesa agents knows these numbers.
 
-2/ M-Pesa agents also hold float - typically KES 200,000 to KES 1,000,000 or more. That float does not sit idle.
+The rate card stops there.
 
-Kenyan MMFs returned an average of 14.24 percent per annum in June 2024. Safaricom's Ziidi gives agents direct access from their M-Pesa balance.
+2/ M-Pesa agents hold KES 200,000 to KES 1,000,000 or more in float.
 
-3/ An agent managing KES 500,000 in working float earns roughly KES 5,800 per month in interest.
+Kenyan money market funds returned 14.24% on average in June 2024.
 
-That figure does not appear on any Safaricom document.
+An agent managing KES 500,000 earns roughly KES 5,800 per month in interest.
 
-4/ The World Bank's M-Pesa case study documents agents who lose money on commissions alone.
+That number does not appear anywhere in Safaricom documentation.
 
-Their costs exceed what the rate card pays.
+3/ The World Bank case study on M-Pesa agents documents this directly.
 
-They stay in business because the rate card is not the whole business.
+One retail agent category loses money on commissions alone. Costs exceed what the rate card pays.
 
-5/ A product built to improve commission earnings addresses what every agent already tracks.
+Those agents stay in business because the commission is not the business.
 
-A product built for float management addresses what most agents still handle manually.
+4/ A product that helps agents earn more per transaction solves the visible income problem.
 
-No product currently serves this well at scale.
+A product that helps agents manage float allocation - timing, amount, rate - solves the invisible one.
+
+No product currently serves float management at scale.
+
+5/ The M-Pesa agent is not running a payments booth with a margin problem.
+
+She is running a treasury operation with a commission on the side.
+
+Products that start from the commission miss the business.
 
 Full signal: techtribeafrica.com/market-signals/mpesa-agent-float-economics
 
 ### WhatsApp
-M-Pesa agents earn commission per transaction - but the rate card stops there. An agent managing KES 500K in float earns roughly KES 5,800/month in interest at current Kenyan MMF rates, and no product serves this well yet. techtribeafrica.com/market-signals/mpesa-agent-float-economics
+M-Pesa agent float earns 14.24% annualised in Kenyan money market funds - more per month than most commission income - and no product currently helps agents manage it. The commission is the visible business. The float is the actual one. Full read: techtribeafrica.com/market-signals/mpesa-agent-float-economics
+
+---
+
+## FR#8 — What AI tools African founders are actually using
+**slug**: ai-tools-african-founders
+**URL**: /frontier-reports/ai-tools-african-founders
+
+### LinkedIn
+Claude Pro costs ₦32,000 per month in Nigeria through a virtual dollar card.
+
+Through the Apple App Store - registered to the right region - the same subscription runs ₦14,900. The global list price is $20.
+
+Google Gemini is ₦7,450 per month on Google Play in Nigeria. Roughly $5. It is the only major AI provider to have introduced localized pricing in African markets.
+
+This pricing gap shapes what gets built.
+
+A founder who cannot afford a $20 per month model subscription does not abandon AI. They route around it. Quantized open-weight models - Qwen3, DeepSeek R1, Gemma 4 - run on consumer hardware without cloud API fees. Running inference locally through Ollama replaces per-token billing with one-time hardware amortisation. For many African AI builders, this is not a workaround. It is the primary architecture.
+
+TechCabal Insights counted 207 active African AI startups. Thirty-seven percent are building vertical AI - agriculture, finance, healthcare, education. The thesis forming among those builders: local data is the moat. The model can be sourced from Asia or subsidised through programs. The data the model trains on is the defensible asset.
+
+AfriqueLLM, led by David Ifeoluwa Adelani, is the first serious attempt at open LLM infrastructure built specifically for African language contexts. It points toward where the ecosystem is moving.
+
+The product opportunity in African AI is not in the model layer. It is in deployment, distribution, and the infrastructure that sits between world-class models and a founder in Lagos who cannot get a payment card accepted.
+
+The tools that will define AI in Africa are not the ones being sold to Africa.
+
+Full report: techtribeafrica.com/frontier-reports/ai-tools-african-founders
+
+### X Thread
+1/ Claude Pro costs ₦32,000/month in Nigeria via virtual dollar card.
+
+Google Gemini: ₦7,450/month.
+
+That is the only major AI provider that has introduced localized African pricing.
+
+The rest price in USD. No adjustment.
+
+2/ This gap shapes what gets built.
+
+A founder who cannot afford $20/month does not skip AI.
+
+They route around it.
+
+Qwen3, DeepSeek R1, Gemma 4 - quantized open-weight models running on consumer hardware. Local inference. No cloud API. No USD billing.
+
+3/ TechCabal Insights counted 207 active African AI startups.
+
+37% are building vertical AI: agriculture, finance, healthcare, education.
+
+The thesis forming among them: local data is the moat. The model can come from anywhere. The data is the defensible asset.
+
+4/ In June 2026, Data Science Nigeria announced free GPU access for Nigerian AI researchers, startups, and communities.
+
+The fact that this was treated as significant news signals how scarce GPU access had been before.
+
+5/ AfriqueLLM - open large language models built for African language contexts - points toward where the infrastructure is heading.
+
+Not localizing global models.
+
+Building African ones.
+
+6/ The product opportunity in African AI is not in models.
+
+It is in deployment and distribution - between world-class infrastructure and a founder who cannot get a payment card accepted.
+
+The tools that will define AI in Africa are not the ones being sold to Africa.
+
+Full report: techtribeafrica.com/frontier-reports/ai-tools-african-founders
+
+### WhatsApp
+Claude Pro costs three different prices in Nigeria depending on which payment path a founder finds - ₦14,900, ₦32,000, or $20 global. That gap is reshaping what African AI builders actually use: open-weight models, local inference, no USD billing. Full read: techtribeafrica.com/frontier-reports/ai-tools-african-founders
+
+
+
