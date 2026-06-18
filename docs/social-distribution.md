@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 20 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 21 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -1342,3 +1342,76 @@ Full read: techtribeafrica.com/market-signals/africa-startup-bridge-round
 
 ### WhatsApp
 A Nairobi founder started a bridge round conversation with 90 days of runway. Five months later it had not closed - not because the capital did not exist, but because reaching the right investors required warm intros to a network she did not have. 53% of US Africa-focused investors left between 2021 and 2026. The access infrastructure shrank with them. Full read: techtribeafrica.com/market-signals/africa-startup-bridge-round
+
+---
+
+## FR#7 — africa-fintech-regulation-licensing
+
+### LinkedIn
+Most African fintech founders treat licensing as a compliance task.
+
+It is not. It is an architecture decision.
+
+A Lagos founder applied for a PSSP license 14 months into building his product. The CBN review found he needed an IMTO license instead. The infrastructure he had built did not qualify. That is not a compliance failure. It is an architecture decision made with incomplete information.
+
+The license category determines what the product is legally allowed to do. A PSSP processes domestic payments. An IMTO moves money across borders. They operate under different capital structures, different compliance frameworks, and different permitted activity sets. A product built against the wrong license does not become compliant by switching license types. It requires architectural changes.
+
+PSSP: NGN 100 million capital deposited with the CBN. Up to 10 months elapsed time before a single transaction is legally processed. IMTO: $1 million minimum operating capital for foreign operators.
+
+Kenya had over 200 pending fintech applications as of mid-2025. Nigeria operates a regulatory sandbox - 45 working days for eligibility assessment, six months of supervised testing - that most founders discover after they have already filed for the full license.
+
+NALA holds 14 licenses across its operating markets. That number is not a compliance achievement. It is an operational map.
+
+The CBN circulars and CBK policy documents are public. The information is not hidden. It is scattered, written for compliance officers, and not synthesised for founders building products. That gap is where most founders lose months.
+
+Choose the license before you choose the architecture.
+
+Full read: techtribeafrica.com/frontier-reports/africa-fintech-regulation-licensing
+
+### X Thread
+1/ A Lagos fintech founder applied for a PSSP license 14 months into building his product.
+
+The CBN review found he needed an IMTO license instead.
+
+That is not a compliance failure. It is an architecture decision made with incomplete information.
+
+2/ African fintech licensing is not one process. It is a set of distinct processes with distinct capital requirements, timelines, and operational constraints.
+
+PSSP = domestic payment processing
+IMTO = cross-border money movement
+MMO = float and cash disbursement
+
+Wrong license means a product rebuild, not a form resubmission.
+
+3/ The numbers:
+
+PSSP: NGN 100M capital deposited with CBN + up to 10 months before your first legal transaction
+IMTO: $1M minimum operating capital for foreign operators
+Kenya CBK: 200+ pending applications as of mid-2025
+
+This is the structural constraint most founders hit too late.
+
+4/ There is a faster path that most founders miss.
+
+The CBN sandbox: 45 working days eligibility + 6 months supervised testing under lighter requirements.
+
+Kenya runs a dual sandbox - CBK and Capital Markets Authority - with parallel programs.
+
+Most founders discover the sandbox after filing for the full license.
+
+5/ NALA holds 14 licenses across its operating markets.
+
+That number is not a compliance achievement. It is an operational map.
+
+It can process transactions in the markets where it holds a license. It cannot in the ones where it does not. Every license is a product decision.
+
+6/ The regulatory information NALA acted on is public.
+
+CBN circulars, CBK policy documents, FinTechNG guidance notes. Not hidden. Scattered, written for compliance officers, not synthesised for founders.
+
+The founders who navigate Africa fintech regulation well chose the license before they chose the architecture.
+
+Full read: techtribeafrica.com/frontier-reports/africa-fintech-regulation-licensing
+
+### WhatsApp
+A Lagos fintech founder built 14 months of infrastructure before the CBN told him he had the wrong license category. PSSP covers domestic payments. IMTO covers cross-border. Switching does not mean re-filing - it means rebuilding. Most founders hit this after the product is built. The CBN sandbox (45 working days + 6 months) changes the entry calculus for those who know it exists. Full read: techtribeafrica.com/frontier-reports/africa-fintech-regulation-licensing
