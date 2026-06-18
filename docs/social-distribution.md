@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 23 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 24 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -1562,3 +1562,86 @@ Full read: techtribeafrica.com/frontier-reports/africa-digital-infrastructure-cl
 
 ### WhatsApp
 Three subsea cables delivered more bandwidth to Africa in 18 months than all previous cables combined. Round-trip latency to Europe fell by 20-40ms. Nigeria has 320MW+ of data centre capacity in the pipeline. Most African tech products were built for 2019 constraints - offline-first, lightweight, SMS fallback. The constraint is being removed from below. The products designed for it will feel the gap before their teams notice. Full read: techtribeafrica.com/frontier-reports/africa-digital-infrastructure-closing-gap
+
+---
+
+## SB#11 — Fintech Licensing in Nigeria: What It Actually Costs and How Long It Takes
+**slug**: nigeria-fintech-licensing-cost
+**URL**: /market-signals/nigeria-fintech-licensing-cost
+
+### LinkedIn
+A Lagos founder building a payment gateway read the CBN fee schedule.
+
+She noted: NGN 100,000 application fee. NGN 1,000,000 on approval.
+
+She had not yet read the page about capital requirements.
+
+The CBN fee schedule is a public document. What it does not publish in one place is the total cost structure a founder needs to survive the process.
+
+A PSSP license requires NGN 100 million in shareholders' funds deposited with the CBN during the application period. That capital does not earn a return. It is not available for operations. The approval window runs up to 10 months - Approval-in-Principle takes 3 to 6 months, final issuance a further 2 to 4.
+
+Legal and compliance preparation to file a complete application runs NGN 3 million to NGN 10 million. The CBN rejected or delayed 65 percent of license applications in 2024 due to documentation or capital errors. A rejection does not refund the legal fees or the application fee.
+
+The math that catches founders is not the CBN fee. It is the combination.
+
+NGN 100 million locked for 10 months. NGN 3 million to NGN 10 million in legal fees. Ten months of pre-revenue runway required to reach the licensing window. Most teams raise enough to build. Few raise enough to survive that window.
+
+The CBN fee schedule publishes the regulatory cost. Nobody publishes the total cost.
+
+That gap is where founders get surprised.
+
+Full read: techtribeafrica.com/market-signals/nigeria-fintech-licensing-cost
+
+### X Thread
+1/ A Lagos founder read the CBN fee schedule before filing for a payment license.
+
+NGN 100,000 application fee.
+NGN 1,000,000 on approval.
+
+She had not yet read the page about capital requirements.
+
+Here is what the fee schedule does not tell you.
+
+2/ A PSSP license - the most common entry point for payment product founders - requires NGN 100 million in shareholders' funds deposited with the CBN.
+
+That capital does not earn a return. It is not available for operations. It sits there while your application is reviewed.
+
+3/ The review takes up to 10 months.
+
+Approval-in-Principle: 3 to 6 months.
+Final license issuance: a further 2 to 4 months.
+
+During that window, NGN 100 million is locked. Not deployed. Not earning. Just held.
+
+4/ Before you file, you will need legal and compliance preparation.
+
+That runs NGN 3 million to NGN 10 million depending on product complexity and legal team.
+
+The CBN rejected or delayed 65 percent of 2024 applications due to documentation or capital errors. A rejection does not refund the fees.
+
+5/ The fee schedule is the least of it.
+
+For context on the rest:
+
+MMO license: NGN 2 billion minimum capital deposit.
+Payment Service Bank: NGN 5 billion.
+IMTO application fee (CBN increased): now NGN 10 million, before the capital requirement.
+
+6/ The founders who navigate this well are not the ones who file fastest.
+
+They are the ones who budgeted for the full cost structure before filing.
+
+NGN 100 million locked for 10 months.
+NGN 3 million to 10 million in legal fees.
+18 months of operating runway to cover the gap between application and first legal revenue.
+
+7/ The CBN fee schedule publishes the regulatory cost.
+
+Nobody publishes the total cost.
+
+That gap is where founders get surprised.
+
+Full read: techtribeafrica.com/market-signals/nigeria-fintech-licensing-cost
+
+### WhatsApp
+The CBN PSSP license fee is NGN 100,000. The actual cost is NGN 100 million locked for up to 10 months, plus NGN 3 million to 10 million in legal fees, before the first transaction is processed. The fee schedule publishes the regulatory cost - nobody publishes the total cost. Full read: techtribeafrica.com/market-signals/nigeria-fintech-licensing-cost
