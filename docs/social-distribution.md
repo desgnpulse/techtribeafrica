@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 13 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 14 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -878,3 +878,64 @@ Full report: techtribeafrica.com/build-opportunities/africa-appointment-business
 
 ### WhatsApp
 Appointment businesses are the right first market for African micro-business software - every missed follow-up has a specific cost at a specific moment, which makes the product value visible on day one. The spec is simple: booking list, pre-appointment reminder, post-appointment follow-up, all via WhatsApp. They already know they need it. Full read: techtribeafrica.com/build-opportunities/africa-appointment-business-saas-wedge
+
+---
+
+## FR#7 — Africa's Mobile Money Layer Is Infrastructure, Not Innovation
+**slug**: africa-mobile-money-infrastructure
+**URL**: /frontier-reports/africa-mobile-money-infrastructure
+
+### LinkedIn
+Africa processed over $1 trillion in mobile money transactions in 2024.
+
+That number is not a fintech milestone. It is evidence of infrastructure.
+
+M-Pesa alone processed KES 40.2 trillion in FY2024. In the same period, the Nairobi Securities Exchange recorded KES 105.97 billion in equity turnover. M-Pesa ran approximately 379 times the value of Kenya's formal capital exchange.
+
+This is not a comparison between two financial systems. It is evidence that the economy runs on different rails than the official ones.
+
+Founders who frame mobile money as a payments competitor make a category error. M-Pesa is not taking share from Visa or bank transfers. It is the substrate on which both need to operate to reach most of Africa's working population.
+
+Building a faster payment product is competing with infrastructure. Building on top of it is a different thesis entirely.
+
+The payments layer is largely competed. The layer above it is not.
+
+MTN MoMo's advanced services - credit, insurance, merchant payments - grew 40 percent year-on-year in 2024. Digital lending demand across Africa jumped five times between 2023 and mid-2025.
+
+The rails are in place. The question is what to run on them.
+
+Full analysis at TechTribe Africa.
+
+### X Thread
+1/ Africa's mobile money layer processed over $1 trillion in transactions in 2024.
+
+That is not a fintech milestone.
+
+It is evidence of infrastructure.
+
+2/ M-Pesa processed KES 40.2 trillion in FY2024. The Nairobi Securities Exchange recorded KES 105.97 billion in equity turnover in the same period.
+
+M-Pesa runs 379 times the value of Kenya's formal capital exchange.
+
+The economy runs on different rails than the official ones.
+
+3/ Founders who frame mobile money as a payments competitor make a category error.
+
+M-Pesa is not taking share from Visa. It is the substrate on which Visa needs to operate to reach Africa's working population.
+
+Building faster payments is competing with infrastructure. Building on it is different.
+
+4/ The payments layer is largely competed. The layer above it is not.
+
+MTN MoMo's advanced services - credit, insurance, merchant payments - grew 40 percent in 2024. That is double the growth rate of core payments.
+
+Fuliza's average loan is KES 254. Roughly two US dollars. At 17.7 million users.
+
+5/ The rails are in place.
+
+The next generation of African financial services will not be built by laying new ones.
+
+Full report: techtribeafrica.com/frontier-reports/africa-mobile-money-infrastructure
+
+### WhatsApp
+Africa processed over $1 trillion in mobile money in 2024 - M-Pesa alone runs 379 times the value of Kenya's equity market. The payments layer is largely solved; the next generation builds on top of it. techtribeafrica.com/frontier-reports/africa-mobile-money-infrastructure
