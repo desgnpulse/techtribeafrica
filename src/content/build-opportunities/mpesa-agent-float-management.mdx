@@ -1,0 +1,47 @@
+---
+title: "The M-Pesa float tool that nobody has built yet"
+slug: mpesa-agent-float-management
+date: 2026-06-19
+category: build-opportunities
+categoryLabel: Build Opportunity
+tags: [mpesa agent float management, float management agent banking africa, mpesa business api, agent banking Kenya, mobile money agent income]
+summary: "M-Pesa agent float management is a KES 5,800 per month income stream that most agents track with a notebook. The M-Pesa Business API opened in 2023 - the tool to manage it has not been built."
+readingTime: 4
+image: /images/articles/mpesa-agent-float-management.jpg
+---
+
+A Thika super-agent runs four M-Pesa kiosks through sub-agents she does not employ directly. On a Thursday afternoon she gets a call from a customer. One of her kiosks could not process a withdrawal. The sub-agent had run out of e-money float.
+
+By the time she finds out, the customer has walked to a competitor. The super-agent does not know how long the kiosk was empty before the call. She finds out from the complaint, not from the system.
+
+---
+
+The agent banking model in Kenya runs on 600,000 agents. Each manages between KES 200,000 and KES 1 million in combined cash and e-money. Float management is the operational core of the business.
+
+Most agents manage it manually. A notebook tracks the cash side. The e-money side lives in a phone app. Neither sends an alert when float falls below the threshold where a customer cannot be served.
+
+The [income model explains why this matters](market-signals/mpesa-agent-float-economics). Commission income from a standard retail agent at standard volumes does not cover operating costs. Float income does. Kenyan money market funds returned 14.24 percent per annum in June 2024. An agent holding KES 500,000 earns KES 5,800 per month in interest when float is allocated correctly. Most agents are not allocating it correctly. They hold it idle between transactions.
+
+Safaricom opened programmatic float visibility through the M-Pesa Business API in 2023. The agent's balance is readable by software. A low-float alert is technically straightforward to build on this API. It has not been built at scale.
+
+---
+
+The barrier is not technical. It is trust.
+
+Agent fraud in the M-Pesa network peaked in 2022 and 2023. The pattern: fake apps and phishing tools that requested M-Pesa account access. The agents most likely to adopt a float management tool are also the most suspicious of M-Pesa account access requests. This is not solvable through better marketing. It is a distribution architecture problem.
+
+A product arriving through cold acquisition will not get the M-Pesa access grant it needs. A product arriving through the M-Pesa Agent Network Association gets a different response. The distribution constraint determines the business model before the product is designed.
+
+A compliance-first tool reduces the trust barrier. Read-only balance access. No transaction initiation. No money moved. Distributing through existing agent associations requires a partnership, not an acquisition budget. That partnership is the hard part. It is also the moat.
+
+---
+
+The entry angle is a balance alert. One WhatsApp number. One function: when the agent's e-money float falls below a configurable threshold, the number sends a message. Free for one wallet. KES 300 per month for three wallets plus a daily float allocation report.
+
+The [infrastructure that makes this possible](frontier-reports/africa-mobile-money-infrastructure) is the same M-Pesa network that sixty thousand developers are already building on. The agent market is not underserved because the API is inaccessible. It is underserved because the distribution path requires going through agent associations, not the app store.
+
+An agent who receives a float alert through her agent association's WhatsApp number trusts it. An agent who receives the same message from an unknown sender does not. That distinction is not a marketing problem. It is the product.
+
+The ICP is the Tier 2 and Tier 3 agent in Nairobi, Mombasa, and Kisumu. Managing KES 200,000 to KES 800,000 in float, running the M-Pesa counter alongside the main shop. WhatsApp-native but not app-download-comfortable. The super-agent network above them is the distribution channel into that market.
+
+The float is already there. The income is already there. The alert that prevents Thursday afternoon customer losses has not been built.
