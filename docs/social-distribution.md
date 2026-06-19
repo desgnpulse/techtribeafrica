@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 29 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 30 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -2033,3 +2033,114 @@ Full build brief: https://techtribeafrica.com/build-opportunities/africa-fintech
 ### WhatsApp
 
 65% of Nigerian fintech license applications were rejected or delayed in 2024 - mostly because founders chose the wrong license and built the wrong architecture. The compliance information exists in CBN circulars. Nobody has synthesised it into a tool a pre-revenue founder can use before the first infrastructure decision. That gap is the product. Full build brief: techtribeafrica.com/build-opportunities/africa-fintech-regulatory-navigation
+
+---
+
+## BO#8 — The M-Pesa Float Tool That Nobody Has Built Yet
+**slug**: mpesa-agent-float-management
+**URL**: /build-opportunities/mpesa-agent-float-management
+
+---
+
+### LinkedIn
+
+A Thika super-agent runs four M-Pesa kiosks. On a Thursday afternoon she gets a call from a customer. One kiosk ran out of e-money float. By the time she found out, the customer had walked to a competitor.
+
+She did not know the kiosk was empty. She found out from the complaint.
+
+This is the operational reality for 600,000 M-Pesa agents in Kenya. Each manages between KES 200,000 and KES 1 million in combined cash and e-money. Float management is the core of the business. Most of them track it with a notebook.
+
+The income model is what makes this consequential. Commission income from a standard retail agent at standard volumes does not cover operating costs. Float income does. Kenyan money market funds returned 14.24 percent per annum in June 2024. An agent holding KES 500,000 earns KES 5,800 per month in interest when float is allocated correctly. Most agents are not allocating it correctly.
+
+Safaricom opened programmatic float visibility through the M-Pesa Business API in 2023. A low-float alert is technically straightforward to build on this API. It has not been built at scale.
+
+The barrier is not technical. It is trust. Agent fraud in the M-Pesa network peaked in 2022 and 2023. The agents most likely to adopt a float management tool are also the most suspicious of M-Pesa account access requests.
+
+The distribution path is through agent associations, not the app store. A product arriving through the M-Pesa Agent Network Association gets a different response than a cold acquisition. That partnership is the hard part. It is also the moat.
+
+The entry angle is a balance alert. One WhatsApp number. One function. Free for one wallet. KES 300 per month for three wallets plus a daily float allocation report.
+
+The float is already there. The income is already there. The alert that prevents Thursday afternoon customer losses has not been built.
+
+Full build brief: https://techtribeafrica.com/build-opportunities/mpesa-agent-float-management
+
+---
+
+### X Thread
+
+**Tweet 1 (hook)**
+A Thika super-agent runs 4 M-Pesa kiosks.
+
+On a Thursday afternoon she gets a call from a customer.
+
+One kiosk ran out of float. The customer walked to a competitor.
+
+She found out from the complaint.
+
+**Tweet 2**
+This is the operational reality for 600,000 M-Pesa agents in Kenya.
+
+Each manages KES 200,000 to KES 1 million in combined cash and e-money.
+
+Float management is the core of the business.
+
+Most track it with a notebook.
+
+**Tweet 3**
+The income model is what makes this consequential.
+
+Commission income alone does not cover operating costs.
+
+Float income does.
+
+Kenyan money market funds returned 14.24% p.a. in June 2024.
+
+At KES 500K float: KES 5,800/month in interest.
+
+Most agents are not capturing it.
+
+**Tweet 4**
+Safaricom opened programmatic float visibility through the M-Pesa Business API in 2023.
+
+The agent's balance is readable by software.
+
+A low-float alert is technically straightforward to build on this API.
+
+It has not been built at scale.
+
+**Tweet 5**
+The barrier is not technical. It is trust.
+
+Agent fraud peaked in 2022-2023.
+
+Fake apps and phishing tools that requested M-Pesa account access.
+
+The agents most likely to adopt this tool are also the most suspicious of M-Pesa access requests.
+
+**Tweet 6**
+The distribution path is through agent associations, not the app store.
+
+A product arriving through the M-Pesa Agent Network Association gets a different response.
+
+Read-only balance access. No transaction initiation. No money moved.
+
+The partnership is the hard part. It is also the moat.
+
+**Tweet 7 (CTA)**
+The entry angle: one WhatsApp number.
+
+One function: low-float alert.
+
+Free for one wallet. KES 300/month for three wallets plus a daily float allocation report.
+
+The float is already there. The income is already there.
+
+The alert has not been built.
+
+Full build brief: https://techtribeafrica.com/build-opportunities/mpesa-agent-float-management
+
+---
+
+### WhatsApp
+
+600,000 M-Pesa agents in Kenya manage KES 200K-1M in float with a notebook, missing up to KES 5,800 per month in interest income because they cannot see when float is idle. Safaricom opened the M-Pesa Business API for programmatic balance reads in 2023 - the alert tool that turns that visibility into float income has not been built. Full brief: techtribeafrica.com/build-opportunities/mpesa-agent-float-management
