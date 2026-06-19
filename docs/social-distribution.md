@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 26 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 27 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -1727,3 +1727,104 @@ Full read: techtribeafrica.com/build-opportunities/whatsapp-ai-agent-africa-micr
 
 ### WhatsApp
 A Lagos building materials trader spends 40 minutes every morning calling three suppliers for cement, steel rod, and sand prices. By noon, two prices have changed. She is not looking for AI - she is looking for a supplier call she does not have to make herself. The architecture for a WhatsApp daily price agent exists today. The reason it has not been built is distribution, not technology. Full read: techtribeafrica.com/build-opportunities/whatsapp-ai-agent-africa-micro-business
+
+---
+
+## SB#13 — African incumbents are acquiring startups instead of building
+
+URL: techtribeafrica.com/market-signals/acqui-hire-africa-startups
+
+### LinkedIn
+
+Mono's founders spent years building the plumbing layer between Nigerian banks and fintech apps.
+
+They raised from Tiger Global.
+
+The exit, when it came, was not a New York listing. It was a call from Flutterwave.
+
+Flutterwave paid between $25 million and $40 million in an all-stock transaction in January 2026. TechCrunch called it a rare African fintech exit. The rarity was not in the size. It was in the buyer.
+
+This is what African startup M&A looked like in 2025:
+
+67 deals closed - a 72 percent increase from 39 in 2024. Five-year high. Fintech led with 31 of 67 deals.
+
+But the number is not the story. The buyer profile is.
+
+Domestic and regional African acquirers now account for more than half of all startup exits.
+
+Moniepoint acquired Sumac Microfinance Bank - not for its revenue, but for its Central Bank of Kenya licence and the team that already understood the Kenyan credit market.
+
+TymeBank acquired Retail Capital and converted it into an SME distribution channel.
+
+Nedbank acquired iKhokha for approximately $92.4 million.
+
+In each case, the acquirer bought three things at once: a regulatory position, a customer network, and a product team.
+
+This is acqui-hire logic applied to the African licensing environment. Banks and telcos are buying their way into digital capability. An internal engineering project takes years to staff, build, and licence. An acquisition compresses that timeline considerably.
+
+For founders, the shift changes the exit calculus.
+
+In 2019, the viable outcomes were narrow: reach IPO scale or attract a foreign acquirer. Both required a specific size most companies could not reach.
+
+The 2025 data opens a different question. Is there an incumbent in this market that needs what this team has built?
+
+The founders who built Mono did not need to become the next Flutterwave. They needed to build something Flutterwave could not build fast enough on its own.
+
+The ecosystem is not consolidating around failure. It is consolidating around value.
+
+Full read: techtribeafrica.com/market-signals/acqui-hire-africa-startups
+
+### X Thread
+
+1/ Mono's founders spent years building the plumbing layer between Nigerian banks and fintech apps.
+
+They raised from Tiger Global.
+
+The exit was not a New York listing. It was a call from Flutterwave.
+
+2/ Flutterwave paid $25M - $40M for Mono in January 2026. All-stock deal.
+
+TechCrunch called it "a rare African fintech exit."
+
+The rarity was not the size. It was the buyer.
+
+3/ African startup M&A in 2025:
+
+67 deals closed. Up 72% from 39 in 2024.
+Five-year high.
+Fintech: 31 of 67 deals.
+
+But the number is not the story.
+
+4/ The buyer profile is.
+
+Domestic and regional African acquirers now account for more than half of all startup exits.
+
+Banks. Telcos. Larger fintechs. Buying rather than building.
+
+5/ Specific deals:
+
+Moniepoint acquired Sumac Microfinance Bank - for a Central Bank of Kenya licence, not revenue.
+
+TymeBank acquired Retail Capital - converted a startup lender into an SME distribution channel.
+
+Nedbank acquired iKhokha for ~$92.4M.
+
+6/ In each case: three things bought at once.
+
+A regulatory position. A customer network. A product team.
+
+This is acqui-hire logic applied to the African licensing environment. Building takes years. Buying takes months.
+
+7/ For founders, the exit calculus has changed.
+
+In 2019: reach IPO scale or attract a foreign acquirer. Most companies could not qualify.
+
+In 2025: is there an incumbent in this market that needs what this team built?
+
+The ecosystem is not consolidating around failure. It is consolidating around value.
+
+Full read: techtribeafrica.com/market-signals/acqui-hire-africa-startups
+
+### WhatsApp
+African startup M&A hit 67 deals in 2025 - a 72 percent increase from 2024, the highest annual total in five years. The story is not the volume. It is the buyer: domestic African acquirers now account for more than half of all exits. Banks and telcos are buying teams, licences, and customer networks instead of building them. Flutterwave acquired Mono for $25M - $40M. Moniepoint bought a Kenyan banking licence via startup acquisition. The ecosystem is not consolidating around failure - it is consolidating around value. Full read: techtribeafrica.com/market-signals/acqui-hire-africa-startups
