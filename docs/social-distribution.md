@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 31 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 32 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -2265,3 +2265,100 @@ Full build brief: https://techtribeafrica.com/build-opportunities/mpesa-agent-fl
 ### WhatsApp
 
 600,000 M-Pesa agents in Kenya manage KES 200K-1M in float with a notebook, missing up to KES 5,800 per month in interest income because they cannot see when float is idle. Safaricom opened the M-Pesa Business API for programmatic balance reads in 2023 - the alert tool that turns that visibility into float income has not been built. Full brief: techtribeafrica.com/build-opportunities/mpesa-agent-float-management
+
+---
+
+## SB#16 — Nigeria is paying the highest WhatsApp API rate outside Europe
+**slug**: africa-whatsapp-api-pricing-bsp-markup
+**URL**: /market-signals/africa-whatsapp-api-pricing-bsp-markup
+
+---
+
+### LinkedIn
+
+A Lagos startup founder opened her WhatsApp API invoice in December 2025.
+
+The number had more than doubled since she signed the contract.
+
+She had not changed her message volume. Meta had.
+
+In July 2025, Meta completed its switch from per-conversation to per-message billing. Nigeria landed in the authentication-international tier - $0.052 per marketing message. The highest published rate outside Europe.
+
+One documented invoice shows the cost moving from $1,890 in December 2023 to $4,182 in December 2025. A 121 percent increase in 24 months. Three rate changes in that window.
+
+The published rate is not the real rate.
+
+BSPs - Business Solution Providers - are the only route to the WhatsApp API for most African businesses. WATI adds approximately 20 percent on top of Meta's rate. The combined cost to an African SME runs 2x to 5x the number on Meta's pricing page.
+
+The structural gap is not between Meta and Africa. It is between Meta's pricing tier and African ARPU. Europe pays comparable rates against European revenue. Nigeria pays comparable rates against Lagos revenue.
+
+The arbitrage has been in Meta's pricing table since November 2024. Service messages - conversations a customer starts - are free. The reply window costs nothing. Outbound marketing messages cost $0.052, plus BSP markup.
+
+African founders who design for inbound avoid the pricing anomaly entirely. The ones still running outbound campaigns at Nigerian rates are subsidising the ones who are not.
+
+Full signal brief: techtribeafrica.com/market-signals/africa-whatsapp-api-pricing-bsp-markup
+
+---
+
+### X Thread
+
+**Tweet 1 (hook)**
+A Lagos founder's WhatsApp API bill went from $1,890 to $4,182 in 24 months.
+
+Same volume. Three Meta price increases.
+
+Nigeria is now paying the highest WhatsApp API rate outside Europe.
+
+Here is what that actually costs.
+
+**Tweet 2**
+Meta switched from per-conversation to per-message billing in July 2025.
+
+Nigeria landed in the authentication-international tier.
+
+Rate: $0.052 per outbound marketing message.
+
+Highest rate outside Europe. Against Lagos ARPU.
+
+**Tweet 3**
+The published rate is not the real rate.
+
+BSPs are the only route to the WhatsApp API for most African businesses.
+
+WATI adds ~20% on top of Meta's fee.
+
+Total cost to an African SME: 2x to 5x the number on Meta's pricing page.
+
+**Tweet 4**
+The structural anomaly:
+
+Europe pays similar rates against European revenue.
+
+Nigeria pays similar rates against African revenue.
+
+The gap is not between Meta and Africa - it is between pricing tier and ARPU.
+
+**Tweet 5**
+The arbitrage has been in Meta's own pricing table since November 2024.
+
+Service messages - conversations the customer starts - are free.
+
+Outbound marketing messages: $0.052 per message plus BSP markup.
+
+**Tweet 6**
+This is not a rate negotiation problem.
+
+It is a funnel design problem.
+
+African founders who build for inbound avoid the pricing anomaly entirely.
+
+**Tweet 7 (CTA)**
+The ones still running outbound campaigns at Nigerian rates are subsidising the ones who are not.
+
+Full breakdown: techtribeafrica.com/market-signals/africa-whatsapp-api-pricing-bsp-markup
+
+---
+
+### WhatsApp
+
+Nigeria pays $0.052 per WhatsApp API marketing message - the highest rate outside Europe - and BSP markups push the real cost 2x to 5x above that. Since November 2024, inbound service messages are free: the founders designing for inbound are not paying the pricing anomaly at all. Full read: techtribeafrica.com/market-signals/africa-whatsapp-api-pricing-bsp-markup
