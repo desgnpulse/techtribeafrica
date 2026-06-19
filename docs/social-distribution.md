@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 27 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 28 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -1828,3 +1828,102 @@ Full read: techtribeafrica.com/market-signals/acqui-hire-africa-startups
 
 ### WhatsApp
 African startup M&A hit 67 deals in 2025 - a 72 percent increase from 2024, the highest annual total in five years. The story is not the volume. It is the buyer: domestic African acquirers now account for more than half of all exits. Banks and telcos are buying teams, licences, and customer networks instead of building them. Flutterwave acquired Mono for $25M - $40M. Moniepoint bought a Kenyan banking licence via startup acquisition. The ecosystem is not consolidating around failure - it is consolidating around value. Full read: techtribeafrica.com/market-signals/acqui-hire-africa-startups
+
+---
+
+## SB#14 — African cloud is still expensive after the cables arrived - here is why
+**Slug**: africa-cloud-pricing-subsea-cable
+**URL**: https://techtribeafrica.com/market-signals/africa-cloud-pricing-subsea-cable
+**Primary keyword**: africa cloud pricing
+**Published**: 2026-06-19
+
+### LinkedIn
+
+Three major subsea cables arrived in African waters between 2022 and 2024. Equiano. PEACE. 2Africa. Together they deliver more bandwidth to the continent than all previous cables combined.
+
+Cloud prices in Africa did not move.
+
+The reason is that bandwidth was never the bottleneck. Data centres are.
+
+A founder comparing AWS Cape Town against AWS Singapore in late 2024 found the Cape Town region measurably more expensive per compute-hour. The cables had been live for over a year. The pricing gap had not closed.
+
+Here is the structural reason: subsea cable capacity delivers bandwidth to a landing station. It does not build a data centre on the other side. Africa currently has one hyperscale cloud region - AWS af-south-1 in Cape Town, launched in 2022. A single provider with a single African region does not produce competitive pricing.
+
+That is changing on a specific timeline. Nigeria has 86 megawatts of operational data centre capacity in 2025 with over 320 megawatts under construction. The Nxtra Lagos hyperscale facility - $250 million - delivers in 2026. Microsoft committed $1 billion to Kenya. iXAfrica added 20 megawatts in Nairobi in January 2025.
+
+When Lagos and Nairobi get hyperscale providers, Cape Town loses its monopoly. Competition compresses pricing.
+
+For founders making infrastructure decisions now: the current premium has a defined close date. Architect for portability. The workloads most sensitive to cloud cost are the same ones that benefit most from local latency. Building on African cloud today pays for latency. Building outside Africa avoids the cost premium but absorbs that latency.
+
+The cables already arrived. The data centres are on their way. The price will follow.
+
+→ Full analysis: https://techtribeafrica.com/market-signals/africa-cloud-pricing-subsea-cable
+
+---
+
+### X Thread (7 tweets)
+
+**Tweet 1 (hook)**
+Three new subsea cables arrived in Africa between 2022 and 2024.
+
+Cloud prices did not move.
+
+Here is the structural reason why - and when it changes.
+
+**Tweet 2**
+Africa now has one hyperscale cloud region: AWS Cape Town (af-south-1), launched 2022.
+
+One provider. One region. No competition.
+
+That is a pricing structure, not a technology gap.
+
+**Tweet 3**
+The cables delivered bandwidth to landing stations.
+
+They did not build data centres on the other end.
+
+Subsea cable capacity and data centre supply are different problems. Africa solved the first one. The second is still in progress.
+
+**Tweet 4**
+The data centre pipeline by market, right now:
+
+Nigeria: 86 MW operational, 320+ MW under construction
+- Nxtra Lagos hyperscale: $250M, delivery 2026
+
+Kenya:
+- iXAfrica: +20 MW live, Jan 2025
+- Microsoft Azure: $1 billion committed
+
+When Lagos and Nairobi have hyperscale regions, Cape Town loses its monopoly.
+
+**Tweet 5**
+The cables did deliver on latency.
+
+Lagos and Nairobi users experience measurably faster connections to European services than in 2022.
+
+They did not deliver on cost - because cost depends on supply, not on wire.
+
+**Tweet 6**
+For founders making cloud infrastructure decisions in 2026:
+
+The current premium reflects a supply gap with a defined close date.
+
+A founder building on AWS Cape Town today carries a cost premium that will not exist in 24 to 36 months.
+
+That is not a reason to wait. It is a reason to architect for portability.
+
+**Tweet 7 (CTA)**
+The data centre gap made the cloud expensive.
+
+The data centre pipeline will close it.
+
+The cable is already there.
+
+Full breakdown with infrastructure pipeline data:
+https://techtribeafrica.com/market-signals/africa-cloud-pricing-subsea-cable
+
+---
+
+### WhatsApp
+
+African cloud is still expensive despite three new subsea cables - because the bottleneck was never bandwidth. It was data centres. Lagos gets its first hyperscale facility in 2026. That is when pricing starts to move. Full breakdown at techtribeafrica.com/market-signals/africa-cloud-pricing-subsea-cable
