@@ -131,7 +131,7 @@ export default function AboutPage() {
                 No sponsored content. No press releases. No &quot;top 10 African startups to watch&quot; lists compiled from VC briefings.
               </p>
               <p>
-                The banned words do not appear here: no &quot;transformative,&quot; no &quot;revolutionary,&quot; no &quot;cutting-edge.&quot; If the analysis is correct, the evidence speaks for itself.
+                The publication does not use hype language. Not because it is a rule, but because the evidence does not need it. If the analysis is correct, the numbers and the pattern speak for themselves.
               </p>
             </Section>
 
