@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 30 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 31 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -746,6 +746,127 @@ Full report: techtribeafrica.com/frontier-reports/africa-micro-business-real-wor
 
 ### WhatsApp
 The workflow of a small African business does not begin with a login screen - it begins with a WhatsApp notification. Software built assuming a dedicated work session is solving for a structure that does not exist. The product that wins fits inside the conversation stream the owner is already managing. Full read: techtribeafrica.com/frontier-reports/africa-micro-business-real-workflow
+
+---
+
+## MS#9 — Africa leads the world in stablecoin adoption - and it has nothing to do with DeFi
+**slug**: stablecoin-africa-adoption
+**URL**: /market-signals/stablecoin-africa-adoption
+
+### LinkedIn
+In June 2023, the Central Bank of Nigeria abandoned its controlled exchange rate system.
+
+Within one week, the naira fell from NGN 464 to NGN 708 per dollar.
+
+By February 2024, it had passed NGN 1,400.
+
+That single policy shift - and the sixty percent currency collapse that followed - is the real origin story of Africa's stablecoin adoption surge.
+
+Not DeFi. Not speculation. Not a crypto bull market.
+
+Currency substitution.
+
+---
+
+Sub-Saharan Africa now has the highest stablecoin adoption rate in the world at 9.3 percent.
+
+Nigeria alone accounts for 60 percent of the region's stablecoin inflows since 2019.
+
+Between July 2023 and June 2024, Nigeria received $59 billion in crypto-asset inflows.
+
+The dominant instrument was USDT on TRON - not Ethereum, not DeFi protocols. Low transaction fees on TRON made it the practical default for traders moving money across borders. USDT on TRON accounted for 88.5 percent of all stablecoin activity.
+
+A Lagos fabric trader paid a Chinese textile supplier in USDT for the first time the day the naira fell twelve percent in seventy-two hours.
+
+She was not learning about decentralised finance.
+
+She was solving a dollar access problem that her bank could not solve.
+
+---
+
+In June 2026, the IMF published a paper calling this phenomenon digital dollarization.
+
+Stablecoin inflows were reducing demand for the naira and weakening the CBN's ability to conduct monetary policy. The CBN had already attempted to restrict P2P trading in 2024. The volumes continued.
+
+The IMF is not describing a speculative market. It is describing currency substitution at scale. 25.9 million Nigerian users holding USDT are not earning yield or providing liquidity. They are preserving dollar value, paying overseas suppliers, and receiving cross-border payments.
+
+The product logic for builders is entirely different from the DeFi playbook.
+
+---
+
+The settlement rails already exist.
+
+TRON-based USDT is fast, cheap, and trusted by tens of millions of people across West and East Africa.
+
+The products being built on top are savings interfaces, supplier payment tools, and cross-border payroll systems. They address the same cross-border problem that conventional remittance channels solve at eight to ten percent in fees. The stablecoin route costs under one percent.
+
+Nigeria launched cNGN, a naira-backed stablecoin under CBN supervision, in 2025. The regulatory debate is about monetary sovereignty - not prohibition. That distinction determines which rails remain legally viable for builders over the next three years.
+
+Africa's stablecoin adoption started as an emergency response to currency collapse.
+
+It is becoming the payment layer.
+
+Full signal brief at TechTribe Africa: techtribeafrica.com/market-signals/stablecoin-africa-adoption
+
+### X Thread
+1/ In June 2023, the naira fell from NGN 464 to NGN 708 in one week.
+
+By February 2024, it had passed NGN 1,400.
+
+That currency collapse is the real origin story of Africa's stablecoin surge.
+
+Not DeFi. Currency substitution.
+
+2/ Sub-Saharan Africa now has the highest stablecoin adoption rate in the world: 9.3 percent.
+
+Nigeria alone accounts for 60 percent of the region's inflows since 2019.
+
+Between July 2023 and June 2024: $59 billion in crypto-asset inflows into Nigeria.
+
+3/ The dominant instrument is USDT on TRON.
+
+Not Ethereum. Not DeFi protocols.
+
+TRON because transaction fees are low and traders moving money across borders needed something fast and cheap - not something financially sophisticated.
+
+USDT on TRON = 88.5 percent of all stablecoin activity.
+
+4/ In June 2026, the IMF published a paper naming this "digital dollarization."
+
+The finding: stablecoin inflows are reducing demand for the naira and weakening the CBN's ability to conduct monetary policy.
+
+The CBN restricted P2P trading in 2024.
+
+The volumes continued.
+
+5/ The 25.9 million Nigerian USDT users are not earning yield.
+
+They are not providing liquidity.
+
+They are preserving dollar value, paying overseas suppliers, and receiving cross-border payments.
+
+That is a completely different product to build for than DeFi.
+
+6/ The builder opportunity is not a new stablecoin.
+
+The rails already exist. What is being built on top:
+
+- Savings interfaces for naira-hedging
+- Supplier payment tools for cross-border trade
+- Cross-border payroll systems
+
+Conventional remittance fees: 8-10 percent. Stablecoin route: under 1 percent.
+
+7/ The regulatory question is not prohibition. It is monetary sovereignty.
+
+Nigeria launched cNGN (a CBN-supervised naira stablecoin) in 2025. The debate is about which rails remain viable - not whether they exist.
+
+That distinction is what builders need to plan around for the next three years.
+
+Full signal brief: techtribeafrica.com/market-signals/stablecoin-africa-adoption
+
+### WhatsApp
+Africa has the highest stablecoin adoption rate in the world - not because of DeFi, but because the naira lost sixty percent of its value in eight months and people needed dollars. Nigeria received $59 billion in stablecoin inflows in one year, and the IMF now calls it digital dollarization. Full read: techtribeafrica.com/market-signals/stablecoin-africa-adoption
 
 ---
 
