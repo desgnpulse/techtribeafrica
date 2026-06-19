@@ -1,5 +1,5 @@
 # TechTribe Africa — Social Distribution Pack
-# 28 articles × 3 formats: LinkedIn · X thread · WhatsApp
+# 29 articles × 3 formats: LinkedIn · X thread · WhatsApp
 # Voice rules apply: no contractions, no em dashes, no exclamation marks, no banned words
 
 ---
@@ -1927,3 +1927,109 @@ https://techtribeafrica.com/market-signals/africa-cloud-pricing-subsea-cable
 ### WhatsApp
 
 African cloud is still expensive despite three new subsea cables - because the bottleneck was never bandwidth. It was data centres. Lagos gets its first hyperscale facility in 2026. That is when pricing starts to move. Full breakdown at techtribeafrica.com/market-signals/africa-cloud-pricing-subsea-cable
+
+---
+
+## BO#15 — Africa fintech regulatory navigation is a product waiting to be built
+**Slug**: africa-fintech-regulatory-navigation
+**URL**: https://techtribeafrica.com/build-opportunities/africa-fintech-regulatory-navigation
+**Primary keyword**: africa fintech regulatory compliance
+**Published**: 2026-06-19
+
+### LinkedIn
+
+The CBN rejected or delayed 65 percent of Nigerian fintech license applications in 2024.
+
+The most common reasons: documentation errors and capital structure mismatches.
+
+Neither category describes a founder who intended to file incorrectly. Both describe founders who were working from an incomplete map.
+
+Here is the map problem.
+
+A PSSP license covers domestic payment processing. An IMTO license covers cross-border money movement. Choose the wrong one and the architecture built against it does not become compliant by switching license types. It requires rebuilding.
+
+A PSSP requires NGN 100 million locked with the CBN for up to 10 months before the first legal transaction. An IMTO requires USD 1 million in operating capital for foreign operators. The CBN fee schedule - a public document - shows the application fees. It does not show the capital lock-up period, the NGN 3 million to NGN 10 million in legal preparation, or the 18 months of operating runway needed to survive the window.
+
+NALA holds 14 licenses across its operating markets. Every large operator builds this internal regulatory map. No operator sells it below the compliance-firm price point.
+
+The information is public. The synthesis is not.
+
+The product opportunity: a regulatory intelligence tool for African fintech founders. Input - what the product does. Output - the correct license category, capital requirement, sandbox eligibility, and a total cost estimate before the first infrastructure decision.
+
+The CBN sandbox is expanding in 2026 to cover AI, cross-border payments, and embedded finance. More founders are entering regulated territory. The information gap is growing.
+
+The regulation is not the obstacle. The translation is.
+
+→ Full analysis: https://techtribeafrica.com/build-opportunities/africa-fintech-regulatory-navigation
+
+---
+
+### X Thread (7 tweets)
+
+**Tweet 1 (hook)**
+The CBN rejected or delayed 65% of Nigerian fintech license applications in 2024.
+
+Not because founders did not try to comply.
+
+Because they were working from incomplete maps.
+
+**Tweet 2**
+A PSSP covers domestic payment processing.
+An IMTO covers cross-border money movement.
+
+Choose the wrong one and your architecture - not just your paperwork - is wrong.
+
+One Lagos founder discovered this 3 months into building a cross-border transfer product.
+
+**Tweet 3**
+What the CBN fee schedule shows:
+- Application fee
+- Licensing fee on approval
+
+What it does not show:
+- NGN 100M locked for 10 months (PSSP)
+- NGN 3M-10M in legal preparation
+- 18 months operating runway before first legal revenue
+
+That gap is where most founders get surprised.
+
+**Tweet 4**
+The CBN sandbox exists.
+
+45 working days to eligibility review. 6-month testing window. Revenue allowed before full licensing cost lands.
+
+Most founders find out about it after filing the full application.
+
+**Tweet 5**
+NALA holds 14 licenses across its operating markets.
+
+That is not a compliance achievement. It is a regulatory map - license type, capital commitment, operational timeline, by market.
+
+Every large operator builds this internally.
+
+No operator sells it.
+
+**Tweet 6**
+The product gap:
+
+A regulatory intelligence tool for African fintech founders.
+
+Input: what the product does.
+Output: correct license category, capital requirement, sandbox eligibility, total cost estimate.
+
+The compliance firm charges NGN 3M-10M for this. The market below that price point is unoccupied.
+
+**Tweet 7 (CTA)**
+The CBN sandbox is expanding in 2026 - AI, cross-border, embedded finance.
+
+More founders entering regulated territory. The information gap is growing.
+
+The regulation is not the obstacle. The translation is.
+
+Full build brief: https://techtribeafrica.com/build-opportunities/africa-fintech-regulatory-navigation
+
+---
+
+### WhatsApp
+
+65% of Nigerian fintech license applications were rejected or delayed in 2024 - mostly because founders chose the wrong license and built the wrong architecture. The compliance information exists in CBN circulars. Nobody has synthesised it into a tool a pre-revenue founder can use before the first infrastructure decision. That gap is the product. Full build brief: techtribeafrica.com/build-opportunities/africa-fintech-regulatory-navigation
