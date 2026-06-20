@@ -9,9 +9,10 @@ PRD: docs/product/PRD-updated-2026-06-16.md (v1 archived at docs/product/TECHTRI
 
 ## 1. CURRENT STATE
 Sprint 0 complete. Sprint 1 (content expansion) starting.
-13 articles live — all with hero images, all lint-pass, all deployed to techtribeafrica.com.
-  5 Frontier Reports, 6 Market Signals, 2 Build Opportunities.
-  All 13 are within the WhatsApp / micro-business / follow-up thesis — intentionally narrow for launch.
+31 articles live — all with hero images, all lint-pass, all deployed to techtribeafrica.com.
+  12 Frontier Reports, 13 Market Signals, 6 Build Opportunities.
+  All 31 are within the WhatsApp / micro-business / follow-up / mobile money / fintech / AI thesis threads.
+  Full index in data/editorial-context.json (published_articles array).
 Mobile nav with hamburger live. Sitemap at /sitemap.xml live (36 pages).
 Beehiiv newsletter integration live — api:direct subscribers land in dashboard.
 Social distribution pack in docs/social-distribution.md covers all 13 articles (3 formats each).
@@ -46,3 +47,26 @@ IA DECISION (confirmed 2026-06-18): Format-first navigation is correct per PRD.
 - src/content/ — MDX article files (source of truth for content)
 - RSS feed at /feed.xml
 - Newsletter signup (Beehiiv embed)
+
+## 5. EDITORIAL PLUGIN SYSTEM (added 2026-06-20)
+
+Single source of truth: data/editorial-context.json
+  - Voice spec, audience, pillars, distribution formats, lint rules
+  - Thesis threads: 9 active threads, all published articles indexed
+  - Read this file at the start of every content session
+
+Reviewer agents (plugins/editorial/agents/):
+  - reader-riara.md — Nairobi PM audience lens; invoke before Voice Keeper
+  - voice-keeper.md — structure + synthesis gate; invoke on every article
+  - distribution-auditor.md — LinkedIn/X/WhatsApp formatter; invoke before publish
+
+Slash commands (.claude/commands/):
+  - /techtribe:plan <topic> — per-article brief (pillar, thread, angle, slug)
+  - /techtribe:review [file] — editorial gate (all 3 agents + distribution formats)
+  - /techtribe:post [file] — LinkedIn text post generator (format-compliant)
+
+Global skills (invoke from anywhere):
+  - /techtribe-plan — full content architecture, 15-article calendar, link building
+  - /techtribe-write — article writer with SEO, data-visual, lint, image prompts
+
+CI: .github/workflows/content-lint.yml runs scripts/lint-content.sh on PR and push to src/content/ or data/

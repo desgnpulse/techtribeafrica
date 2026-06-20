@@ -14,7 +14,7 @@ ERRORS=0
 
 # ── PROJECT-SPECIFIC EXCLUSIONS ───────────────────────────────────
 # new-project.sh replaces the lines below with project values.
-EXCLUDE_DIRS=(".claude" "scripts" "docs" "node_modules")
+EXCLUDE_DIRS=(".claude" "scripts" "docs" "node_modules" "data" "plugins")
 EXCLUDE_FILES=("CLAUDE.md" "CLAUDE.local.md" "never-do.md")
 # ─────────────────────────────────────────────────────────────────
 

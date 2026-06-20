@@ -1,0 +1,273 @@
+{
+  "version": "1.0.0",
+  "last_updated": "2026-06-20",
+
+  "voice": {
+    "tagline": "What does this mean, and where is the opportunity?",
+    "synthesis_over_news": true,
+    "not": [
+      "news summary without implication",
+      "listicles (here are 10 things)",
+      "over-explaining context the audience already knows",
+      "product pitches disguised as editorial"
+    ],
+    "yes": [
+      "original synthesis connecting dots others miss",
+      "evidence before argument - show the story, then name the structure",
+      "implications for African founders and builders",
+      "structural market analysis with a clear so-what"
+    ],
+    "pov": "Third person only. No 'we' or 'you' in editorial content.",
+    "tone": "Direct. Dense. No filler. Every sentence earns its place.",
+    "opener_rules": [
+      "Scene-setting or strong claim in the first sentence",
+      "Never start with 'In this article...'",
+      "Never open with a listicle",
+      "Opener must work as a standalone hook - reader should want the next sentence"
+    ]
+  },
+
+  "audience": {
+    "primary": "African founders, builders, PMs, and early-stage investors",
+    "persona_file": "plugins/editorial/agents/reader-riara.md",
+    "persona_summary": "Riara, 31, Nairobi PM at a Series A startup. Reading on Tecno on the morning commute. Will abandon if the opener is context she already knows. Does not read listicles. Reads essays.",
+    "core_question": "Am I smarter after reading this? Did this give me an edge?"
+  },
+
+  "pillars": {
+    "frontier-reports": {
+      "path": "src/content/frontier-reports/",
+      "description": "Deep research. Structural market analysis. Long-form explanation of what most people have wrong.",
+      "test": "Does this explain something structural that most people have wrong?",
+      "typical_length_words": "800-1400",
+      "nav_label": "Frontier Reports"
+    },
+    "market-signals": {
+      "path": "src/content/market-signals/",
+      "description": "Shorter synthesis. Hidden trends. What data reveals that most people are reading wrong.",
+      "test": "Is there a signal here most people are misreading?",
+      "typical_length_words": "500-900",
+      "nav_label": "Market Signals"
+    },
+    "build-opportunities": {
+      "path": "src/content/build-opportunities/",
+      "description": "Problems worth solving. Market openings created by the signals. Startup ideas derived from research.",
+      "test": "Is there a clear product or business opportunity from this signal?",
+      "typical_length_words": "500-800",
+      "nav_label": "Build Opportunities"
+    }
+  },
+
+  "article_structure": {
+    "sections": ["What happened", "Why it matters", "What changes", "Opportunity layer"],
+    "section_dividers": "Use --- between sections. Never use ## headers in article body.",
+    "closer": "Ends on an implication for African builders. Forward-looking read. Not a summary."
+  },
+
+  "distribution_formats": {
+    "linkedin": {
+      "format_type": "Long-form TEXT POST — not a LinkedIn Article",
+      "length_words": "150-250",
+      "hook_rule": "First 2 lines must work standalone as the hook (visible before see more)",
+      "rules": [
+        "No external links",
+        "No section headers (## or bold headers)",
+        "No bullet point lists",
+        "1-2 hashtags max at the end",
+        "Ends with a question or observation that invites a response"
+      ],
+      "algorithm_note": "LinkedIn suppresses Articles. Text posts get distribution. This distinction is non-negotiable."
+    },
+    "x_thread": {
+      "tweet_count": 5,
+      "structure": [
+        "Tweet 1: Hook - claim plus tension",
+        "Tweet 2: Context - what most people think",
+        "Tweet 3: Insight - what the data shows",
+        "Tweet 4: Opportunity - what this means for builders",
+        "Tweet 5: CTA - follow TechTribe Africa for more"
+      ],
+      "max_chars_per_tweet": 280
+    },
+    "whatsapp": {
+      "max_sentences": 2,
+      "rules": [
+        "No jargon",
+        "Works without prior context",
+        "Surprising enough to forward"
+      ]
+    }
+  },
+
+  "lint_rules": {
+    "script": "scripts/lint-content.sh",
+    "ci_workflow": ".github/workflows/content-lint.yml",
+    "banned_punctuation": ["em dash —", "exclamation mark !"],
+    "banned_words": [
+      "dive in", "delve", "leverage", "seamless", "unlock", "robust",
+      "streamline", "harness", "cutting-edge", "transformative",
+      "game-changer", "revolutionary", "utilize", "facilitate", "initiate"
+    ],
+    "contractions": "None allowed. Write out in full: did not, it is, they are, cannot, would not.",
+    "sentence_max_words": 20,
+    "headers_in_body": "Forbidden. Use --- dividers only.",
+    "credential_safety": "No API keys, tokens, or secrets in any content file."
+  },
+
+  "thesis_threads": {
+    "whatsapp_as_operating_layer": {
+      "thesis": "WhatsApp is not a channel in the African business stack. It is the stack.",
+      "articles": [
+        "frontier-reports/africa-whatsapp-business-adaptation",
+        "frontier-reports/whatsapp-pricing-change-smes",
+        "frontier-reports/africa-whatsapp-follow-up-revenue-leak",
+        "market-signals/africa-whatsapp-api-pricing-bsp-markup",
+        "build-opportunities/africa-whatsapp-bsp-product-gap",
+        "build-opportunities/whatsapp-ai-agent-africa-micro-business"
+      ],
+      "open_angles": [
+        "WhatsApp Business API competitive landscape in 2026",
+        "Local BSP alternatives and their unit economics",
+        "WhatsApp as customer data layer and what it means for AI"
+      ]
+    },
+    "memory_crm_gap": {
+      "thesis": "African businesses run on memory, not CRM. The gap is not a feature gap - it is a trust and workflow gap.",
+      "articles": [
+        "frontier-reports/africa-crm-adoption-memory-gap",
+        "market-signals/africa-ai-crm-wrong-problem",
+        "market-signals/africa-sme-follow-up-revenue-loss",
+        "build-opportunities/africa-follow-up-os-opportunity"
+      ],
+      "open_angles": [
+        "Specific verticals where memory failure is most expensive (healthcare, legal, logistics)",
+        "What retention looks like for the first follow-up SaaS that cracks this"
+      ]
+    },
+    "missing_middle_of_software": {
+      "thesis": "Africa's software gap is not a volume problem. It is a pricing and workflow mismatch between spreadsheets and enterprise tools.",
+      "articles": [
+        "frontier-reports/africa-missing-middle-software",
+        "frontier-reports/africa-micro-business-real-workflow",
+        "market-signals/africa-saas-fifty-dollar-gap",
+        "market-signals/africa-saas-market-misframed",
+        "market-signals/africa-micro-business-software-wins-first",
+        "build-opportunities/africa-appointment-business-saas-wedge"
+      ],
+      "open_angles": [
+        "Pricing model experiments that are working: pay-per-use vs subscription",
+        "Which African SaaS companies crossed the $50 barrier and how",
+        "The missing middle in specific verticals: logistics, healthcare, education"
+      ]
+    },
+    "mobile_money_infrastructure": {
+      "thesis": "Mobile money in Africa is not a fintech product. It is infrastructure - with all the economics, fragility, and opportunity that implies.",
+      "articles": [
+        "frontier-reports/africa-mobile-money-infrastructure",
+        "market-signals/mpesa-agent-float-economics",
+        "build-opportunities/float-management-mpesa-agents",
+        "build-opportunities/mpesa-agent-float-management"
+      ],
+      "open_angles": [
+        "Cross-border mobile money rails: what works, what does not, who wins",
+        "Float as a balance sheet risk: how agent networks manage it at scale",
+        "The super-agent model emerging in East Africa"
+      ]
+    },
+    "fintech_regulation": {
+      "thesis": "Fintech licensing in Africa is not a compliance checkbox. It is an architecture decision that shapes product, pricing, and market.",
+      "articles": [
+        "frontier-reports/africa-fintech-regulation-licensing",
+        "market-signals/nigeria-fintech-licensing-cost",
+        "build-opportunities/africa-fintech-regulatory-navigation"
+      ],
+      "open_angles": [
+        "Kenya vs Nigeria vs Ghana licensing comparison in 2026",
+        "The sandbox pathway and who is using it",
+        "Regulatory arbitrage as a startup strategy: when it works and when it collapses"
+      ]
+    },
+    "digital_infrastructure": {
+      "thesis": "Africa's digital infrastructure gap is closing faster than the investment narrative priced in.",
+      "articles": [
+        "frontier-reports/africa-digital-infrastructure-closing-gap",
+        "market-signals/africa-cloud-pricing-subsea-cable"
+      ],
+      "open_angles": [
+        "Data centre economics: when local hosting becomes cheaper than AWS",
+        "Power reliability as a product constraint and how builders design around it",
+        "The telco API access bottleneck beyond WhatsApp"
+      ]
+    },
+    "startup_ecosystem": {
+      "thesis": "African startup funding dynamics are not a cyclical slowdown. They are a structural reset driven by LP exits and bridge round mechanics.",
+      "articles": [
+        "frontier-reports/africa-startup-funding-2025-lp-exit",
+        "market-signals/africa-startup-bridge-round",
+        "market-signals/acqui-hire-africa-startups"
+      ],
+      "open_angles": [
+        "Which markets are attracting capital in 2026 and which are being abandoned",
+        "The Series A gap: why the bridge round problem compounds at scale",
+        "Acqui-hire economics: what incumbents are actually paying and why"
+      ]
+    },
+    "ai_in_africa": {
+      "thesis": "AI adoption in Africa is not a hype story. It is a cost-constraint story. The tools African founders use are not the tools being sold to them.",
+      "articles": [
+        "frontier-reports/ai-tools-african-founders",
+        "market-signals/llm-cost-africa-startup"
+      ],
+      "open_angles": [
+        "Local language model gaps and what they mean for product builders",
+        "AI agent use cases that work inside African business workflows",
+        "The open-source vs proprietary trade-off for African startups on tight compute budgets"
+      ]
+    },
+    "stablecoin_and_crypto": {
+      "thesis": "Africa leads the world in stablecoin adoption because it solves a real problem: cross-border value transfer without correspondent banking friction.",
+      "articles": [
+        "market-signals/stablecoin-africa-adoption"
+      ],
+      "open_angles": [
+        "Stablecoin rails for B2B trade finance in African cross-border commerce",
+        "CBDC rollouts vs stablecoin adoption: who is winning and why",
+        "The on-ramp problem: converting local currency to stablecoin at scale"
+      ]
+    }
+  },
+
+  "published_articles": [
+    {"slug": "africa-whatsapp-business-adaptation", "pillar": "frontier-reports", "date": "2026-06-15", "thread": "whatsapp_as_operating_layer"},
+    {"slug": "africa-whatsapp-follow-up-revenue-leak", "pillar": "frontier-reports", "date": "2026-06-16", "thread": "memory_crm_gap"},
+    {"slug": "whatsapp-pricing-change-smes", "pillar": "frontier-reports", "date": "2026-06-16", "thread": "whatsapp_as_operating_layer"},
+    {"slug": "africa-crm-adoption-memory-gap", "pillar": "frontier-reports", "date": "2026-06-17", "thread": "memory_crm_gap"},
+    {"slug": "africa-missing-middle-software", "pillar": "frontier-reports", "date": "2026-06-17", "thread": "missing_middle_of_software"},
+    {"slug": "africa-whatsapp-api-pricing-bsp-markup", "pillar": "market-signals", "date": "2026-06-17", "thread": "whatsapp_as_operating_layer"},
+    {"slug": "africa-ai-crm-wrong-problem", "pillar": "market-signals", "date": "2026-06-17", "thread": "memory_crm_gap"},
+    {"slug": "africa-sme-follow-up-revenue-loss", "pillar": "market-signals", "date": "2026-06-17", "thread": "memory_crm_gap"},
+    {"slug": "africa-follow-up-os-opportunity", "pillar": "build-opportunities", "date": "2026-06-17", "thread": "memory_crm_gap"},
+    {"slug": "africa-whatsapp-bsp-product-gap", "pillar": "build-opportunities", "date": "2026-06-17", "thread": "whatsapp_as_operating_layer"},
+    {"slug": "africa-micro-business-real-workflow", "pillar": "frontier-reports", "date": "2026-06-18", "thread": "missing_middle_of_software"},
+    {"slug": "africa-mobile-money-infrastructure", "pillar": "frontier-reports", "date": "2026-06-18", "thread": "mobile_money_infrastructure"},
+    {"slug": "africa-startup-funding-2025-lp-exit", "pillar": "frontier-reports", "date": "2026-06-18", "thread": "startup_ecosystem"},
+    {"slug": "ai-tools-african-founders", "pillar": "frontier-reports", "date": "2026-06-18", "thread": "ai_in_africa"},
+    {"slug": "africa-saas-fifty-dollar-gap", "pillar": "market-signals", "date": "2026-06-18", "thread": "missing_middle_of_software"},
+    {"slug": "africa-saas-market-misframed", "pillar": "market-signals", "date": "2026-06-18", "thread": "missing_middle_of_software"},
+    {"slug": "africa-micro-business-software-wins-first", "pillar": "market-signals", "date": "2026-06-18", "thread": "missing_middle_of_software"},
+    {"slug": "africa-startup-bridge-round", "pillar": "market-signals", "date": "2026-06-18", "thread": "startup_ecosystem"},
+    {"slug": "llm-cost-africa-startup", "pillar": "market-signals", "date": "2026-06-18", "thread": "ai_in_africa"},
+    {"slug": "mpesa-agent-float-economics", "pillar": "market-signals", "date": "2026-06-18", "thread": "mobile_money_infrastructure"},
+    {"slug": "africa-appointment-business-saas-wedge", "pillar": "build-opportunities", "date": "2026-06-18", "thread": "missing_middle_of_software"},
+    {"slug": "float-management-mpesa-agents", "pillar": "build-opportunities", "date": "2026-06-18", "thread": "mobile_money_infrastructure"},
+    {"slug": "africa-digital-infrastructure-closing-gap", "pillar": "frontier-reports", "date": "2026-06-19", "thread": "digital_infrastructure"},
+    {"slug": "africa-fintech-regulation-licensing", "pillar": "frontier-reports", "date": "2026-06-19", "thread": "fintech_regulation"},
+    {"slug": "acqui-hire-africa-startups", "pillar": "market-signals", "date": "2026-06-19", "thread": "startup_ecosystem"},
+    {"slug": "africa-cloud-pricing-subsea-cable", "pillar": "market-signals", "date": "2026-06-19", "thread": "digital_infrastructure"},
+    {"slug": "nigeria-fintech-licensing-cost", "pillar": "market-signals", "date": "2026-06-19", "thread": "fintech_regulation"},
+    {"slug": "stablecoin-africa-adoption", "pillar": "market-signals", "date": "2026-06-19", "thread": "stablecoin_and_crypto"},
+    {"slug": "africa-fintech-regulatory-navigation", "pillar": "build-opportunities", "date": "2026-06-19", "thread": "fintech_regulation"},
+    {"slug": "mpesa-agent-float-management", "pillar": "build-opportunities", "date": "2026-06-19", "thread": "mobile_money_infrastructure"},
+    {"slug": "whatsapp-ai-agent-africa-micro-business", "pillar": "build-opportunities", "date": "2026-06-19", "thread": "whatsapp_as_operating_layer"}
+  ]
+}
