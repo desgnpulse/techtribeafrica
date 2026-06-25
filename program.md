@@ -209,30 +209,7 @@ Update the pipeline log row to include LinkedIn score and X thread score.
 
 ---
 
-## STEP 11 - Auto-post via Composio (only if article score is 8 or above AND Composio MCP is available)
-
-### LinkedIn - post to TechTribe Africa company page
-Use the Composio tool LINKEDIN_CREATE_LINKED_IN_POST.
-Read body text from data/social/[slug]-linkedin.md (strip any metadata lines at the top).
-Parameters:
-- text: the post body
-- visibility: PUBLIC
-- author: urn:li:organization:134364035
-
-If the tool call succeeds, write the returned share ID or post URN to data/social/[slug]-posted.md.
-If the tool call fails with a scope or auth error: skip posting. Note the failure in the Gmail draft.
-
-### X - post thread to TechTribe Africa profile
-Use the Composio tool TWITTER_CREATE_TWEET (or equivalent X tool name).
-Post tweet 1 from data/social/[slug]-x-thread.md as the root tweet.
-Post tweets 2-5 as replies to the root tweet ID, forming a thread.
-Append tweet IDs to data/social/[slug]-posted.md.
-
-If either posting step fails, do not retry. Note the failure in the Gmail draft and continue.
-
----
-
-## STEP 12 - Create Gmail draft
+## STEP 11 - Create Gmail draft
 
 To: job.muriuki@gmail.com
 
@@ -249,14 +226,29 @@ Thread: [thesis thread name]
 Article score: [score]/10 after [N] attempt(s)
 File: src/content/[category]/[slug].mdx
 
-LinkedIn post: data/social/[slug]-linkedin.md ([linkedin-score]/10)
-X thread: data/social/[slug]-x-thread.md ([x-score]/10)
-
 Article strengths: [2-3 specific things that work]
 Lint issues remaining: [list any, or: None]
 Image needed: /images/articles/[slug].jpg - add before publishing
 
 To publish: remove "status: draft" from frontmatter, add to editorial-context.json published_articles array.
+
+---
+X THREAD ([x-score]/10) — paste directly into X as a thread:
+
+Tweet 1: [tweet 1 text]
+
+Tweet 2 (reply): [tweet 2 text]
+
+Tweet 3 (reply): [tweet 3 text]
+
+Tweet 4 (reply): [tweet 4 text]
+
+Tweet 5 (reply): [tweet 5 text]
+
+---
+LINKEDIN POST ([linkedin-score]/10) — paste into LinkedIn as a text post:
+
+[full LinkedIn post text]
 ```
 
 If article was abandoned:
@@ -268,7 +260,7 @@ Body: explain which angle was attempted, score reached, specific failures, and s
 
 ## Done when
 
-Article committed (score 8+). Social cuts committed. LinkedIn + X posted or failure noted. Pipeline log updated. Gmail draft created.
+Article committed (score 8+). Social cuts committed. Pipeline log updated. Gmail draft created with X thread and LinkedIn post inline.
 Or: article abandoned, pipeline log updated, Gmail draft sent explaining why.
 
 ---
