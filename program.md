@@ -148,7 +148,68 @@ If the article was abandoned (score below 6), commit only `data/pipeline-log.md`
 
 ---
 
-## STEP 9 - Create Gmail draft
+## STEP 9 - Derive social cuts (only if article score is 8 or above)
+
+Read `data/editorial-context.json` distribution_formats section before writing any social cut.
+
+### LinkedIn post
+Rules from editorial-context.json (non-negotiable):
+- Format: long-form TEXT POST, not a LinkedIn Article
+- Length: 150-250 words
+- First 2 lines must work as a standalone hook visible before "see more"
+- No external links, no section headers, no bullet point lists
+- 1-2 hashtags max at the end
+- Ends with a question or observation that invites a response
+- Third person only. No contractions. No banned words. No em dashes.
+
+Score the LinkedIn post (0-10). Start at 10:
+- Minus 2 if first 2 lines do not work as a standalone hook
+- Minus 2 if it exceeds 250 words
+- Minus 1 per banned word (cap: minus 2)
+- Minus 1 if it ends without a question or observation
+- Minus 1 if it contains any bullet points or headers
+- Minus 1 if no hashtags present
+
+If LinkedIn score is below 7: revise once. Accept the revision score.
+
+Write to: `data/social/[slug]-linkedin.md`
+
+### X thread
+Rules:
+- 5 tweets, max 280 characters each
+- Tweet 1: Hook - claim plus tension
+- Tweet 2: Context - what most people think
+- Tweet 3: Insight - what the data or structural analysis shows
+- Tweet 4: Opportunity - what this means for African builders
+- Tweet 5: CTA - follow TechTribe Africa for more
+- No contractions. No banned words. No em dashes.
+
+Score the X thread (0-10). Start at 10:
+- Minus 2 if any tweet exceeds 280 characters
+- Minus 2 if tweet 1 fails as a hook (no tension, no claim)
+- Minus 1 per banned word (cap: minus 2)
+- Minus 1 if tweet 5 does not mention TechTribe Africa
+
+If X thread score is below 7: revise once.
+
+Write to: `data/social/[slug]-x-thread.md`
+
+Create `data/social/` directory if it does not exist.
+
+---
+
+## STEP 10 - Commit social cuts and update pipeline log
+
+Add social files to the commit:
+```bash
+git add data/social/[slug]-linkedin.md data/social/[slug]-x-thread.md
+```
+
+Update the pipeline log row to include LinkedIn score and X thread score.
+
+---
+
+## STEP 11 - Create Gmail draft
 
 To: job.muriuki@gmail.com
 
@@ -162,10 +223,13 @@ New article staged for review.
 Slug: [slug]
 Pillar: [category]
 Thread: [thesis thread name]
-Score: [score]/10 after [N] attempt(s)
+Article score: [score]/10 after [N] attempt(s)
 File: src/content/[category]/[slug].mdx
 
-Strengths: [2-3 specific things that work in this draft]
+LinkedIn post: data/social/[slug]-linkedin.md ([linkedin-score]/10)
+X thread: data/social/[slug]-x-thread.md ([x-score]/10)
+
+Article strengths: [2-3 specific things that work]
 Lint issues remaining: [list any, or: None]
 Image needed: /images/articles/[slug].jpg - add before publishing
 
@@ -181,7 +245,7 @@ Body: explain which angle was attempted, score reached, specific failures, and s
 
 ## Done when
 
-Article committed with score 8 or above AND pipeline log updated AND Gmail draft created.
+Article committed with score 8 or above AND social cuts committed AND pipeline log updated AND Gmail draft created.
 Or: article abandoned, pipeline log updated, Gmail draft sent explaining why.
 
 ---
