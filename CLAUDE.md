@@ -15,7 +15,7 @@ Sprint 0 complete. Sprint 1 (content expansion) starting.
   Full index in data/editorial-context.json (published_articles array).
 Mobile nav with hamburger live. Sitemap at /sitemap.xml live (36 pages).
 Beehiiv newsletter integration live — api:direct subscribers land in dashboard.
-Social distribution pack in docs/social-distribution.md covers all 13 articles (3 formats each).
+Social distribution pack in docs/social-distribution.md covers all 31 articles (3 formats each).
 ⚠ LinkedIn, Instagram, Threads accounts pending (Jay to confirm when live).
 Active plan: .claude/plans/techtribeafrica-sprint1.md
 PRD: docs/product/PRD-updated-2026-06-16.md
