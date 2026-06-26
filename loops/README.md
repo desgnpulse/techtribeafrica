@@ -3,7 +3,16 @@
 ## Active Loops
 | Loop name | Trigger | Schedule | Goal | Status |
 |-----------|---------|----------|------|--------|
-| (none yet) | | | | |
+| content-production | manual / /schedule weekly | Fridays or on-demand | Draft 1 article per run: score 8+, lint pass, social cuts, Gmail draft | active |
+
+### content-production
+- **Trigger:** `/schedule weekly` (cloud) or manual `program.md` invocation at the desk
+- **Goal:** One article drafted, linted, scored 8+, social cuts written, Gmail draft sent
+- **Execution skills:** WebSearch (research), Write (MDX draft), Bash (lint), Gmail MCP (draft)
+- **Verification:** scripts/lint-content.sh + internal 10-point scoring rubric in program.md
+- **Memory file:** data/pipeline-log.md
+- **Human checkpoint:** Image generation (before publish) + removing `status: draft` from frontmatter
+- **Checker:** /techtribe:review (Riara + Voice Keeper + Distribution Auditor) on request
 
 ## Four-Condition Test
 Run before building any loop. All four must be true:
