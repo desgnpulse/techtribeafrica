@@ -8,4 +8,4 @@
 | 2026-07-23 | africa-cbdc-vs-stablecoin-2026 | market-signals | stablecoin_and_crypto | 10/10 | 1 | drafted | 10/10 | 10/10 |
 | 2026-07-23 | africa-stablecoin-onramp-b2b-gap | build-opportunities | stablecoin_and_crypto | 10/10 | 1 | drafted | 10/10 | 10/10 (auth failed - paste manually) |
 | 2026-07-23 | africa-local-language-ai-gap | frontier-reports | ai_in_africa | 10/10 | 1 | drafted | 10/10 | 10/10 (auth failed - paste manually) |
-| 2026-07-23 | africa-stablecoin-b2b-trade-finance | frontier-reports | stablecoin_and_crypto | 10/10 | 1 | drafted | TBD | TBD |
+| 2026-07-23 | africa-stablecoin-b2b-trade-finance | frontier-reports | stablecoin_and_crypto | 10/10 | 1 | drafted | 10/10 | 10/10 (published automatically - run_mrxh65ts_cf69f404052c) |
