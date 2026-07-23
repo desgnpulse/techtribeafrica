@@ -12,17 +12,19 @@ Commit the draft to the repo. Publish the X thread automatically if it passes li
 
 ---
 
-## STEP 0 - Authenticate to SocialClaw
+## STEP 0 - Confirm SocialClaw connectivity
 
-This environment has no persistent credential store, so this runs every time.
+SocialClaw is connected to this routine as an MCP server. Authentication is handled by the
+connection itself - there is no key to fetch, no CLI to install, no login step. Use the SocialClaw
+MCP tools directly (check your available tools for their exact names - list accounts, account
+capabilities, validate schedule, apply schedule, in that rough order of use).
 
-1. Install the CLI: `npm install -g socialclaw@0.1.12`
-2. Find the credentials draft: search Gmail drafts for subject `SOCIALCLAW_CREDENTIALS`. Read its body.
-3. Extract the value after `SC_API_KEY=`.
-4. Run `socialclaw login --api-key <value>`.
-5. Never print, log, commit, or echo the key value anywhere. This includes commit messages, the pipeline log, and the Gmail draft from STEP 11. Where a step would otherwise print it, write "SocialClaw: [authenticated / auth failed]" instead.
+1. Call the SocialClaw MCP tool that lists connected accounts.
+2. Find the X account for @techtribehq. Note its account identifier for STEP 9.5.
 
-Treat any failure here as non-fatal: missing draft, missing key, or a rejected login. Continue to STEP 1 as normal. Generate the article and social cuts. Skip STEP 9.5. Note in the Gmail draft that SocialClaw auth failed and needs manual attention.
+Treat any failure here as non-fatal: MCP call errors, the account not being found, anything
+unexpected. Continue to STEP 1 as normal. Generate the article and social cuts. Skip STEP 9.5.
+Note in the Gmail draft that SocialClaw was unavailable this run and needs manual attention.
 
 ---
 
@@ -212,24 +214,27 @@ Create `data/social/` directory if it does not exist.
 
 ---
 
-## STEP 9.5 - Publish the X thread (if SocialClaw authenticated in STEP 0)
+## STEP 9.5 - Publish the X thread (if STEP 0 found the account)
 
 LinkedIn is not auto-published. Only Job's personal LinkedIn is connected to SocialClaw right now,
 not the TechTribe Africa Page, so there is no correct account to post it to yet. Leave the LinkedIn
 file for manual posting until program.md is updated to say otherwise.
 
-If STEP 0 succeeded and the X thread scored 7 or above:
+If STEP 0 found the @techtribehq account and the X thread scored 7 or above:
 
-```bash
-python3 scripts/publish-social.py [slug] --apply
-```
+1. Run the content lint gate on the thread file itself: `bash scripts/lint-content.sh data/social/[slug]-x-thread.md`.
+   If it fails, abort this step. Do not publish, even though the thread already passed its own
+   scoring above. Treat this the same as "did not publish": note it in the Gmail draft, do not
+   treat the run as failed.
+2. Build a 5-step campaign schedule for the thread: tweet 1 as the first post, tweets 2-5 each
+   chained as a reply to the step before it. `scripts/publish-social.py` has the exact schema.
+   It stays as a reference and a manual fallback. Do not shell out to it here. Use the SocialClaw
+   MCP tools directly.
+3. Validate the schedule with the SocialClaw MCP validate tool. If it reports invalid, abort and
+   note the specific error in the Gmail draft.
+4. If valid, apply it with the SocialClaw MCP apply tool.
 
-This script runs the content lint gate on the thread file itself before calling SocialClaw - if lint
-fails here, it aborts and nothing posts, even though the thread already passed its own scoring above.
-Treat a lint-gate abort the same as "did not publish": note it in the Gmail draft, do not treat the
-run as failed.
-
-Record the outcome (published / lint-blocked / SocialClaw auth failed / skipped) for STEP 11.
+Record the outcome (published / lint-blocked / validation failed / SocialClaw unavailable / skipped) for STEP 11.
 
 ---
 
@@ -268,7 +273,7 @@ Image needed: /images/articles/[slug].jpg - add before publishing
 To publish: remove "status: draft" from frontmatter, add to editorial-context.json published_articles array.
 
 ---
-X THREAD ([x-score]/10) — status: [Published automatically / Lint-blocked, paste manually / SocialClaw auth failed, paste manually / Skipped]
+X THREAD ([x-score]/10) — status: [Published automatically / Lint-blocked, paste manually / Validation failed, paste manually / SocialClaw unavailable, paste manually / Skipped]
 
 Tweet 1: [tweet 1 text]
 
