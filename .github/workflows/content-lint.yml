@@ -21,5 +21,13 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Run content lint
+      - name: Run content lint (articles)
         run: bash scripts/lint-content.sh src/content/
+
+      - name: Run content lint (social copy)
+        run: |
+          if [ -d data/social ]; then
+            bash scripts/lint-content.sh data/social/
+          else
+            echo "No data/social/ directory yet, skipping."
+          fi
