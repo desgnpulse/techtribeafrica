@@ -8,7 +8,21 @@ The human iterates on this file to improve the loop. You execute it.
 ## Your job
 
 Research, draft, score, and stage one new article per run following TechTribe Africa's editorial standards.
-Commit the draft to the repo. Create a Gmail draft for human review.
+Commit the draft to the repo. Publish the X thread automatically if it passes lint. Create a Gmail draft for human review either way.
+
+---
+
+## STEP 0 - Authenticate to SocialClaw
+
+This environment has no persistent credential store, so this runs every time.
+
+1. Install the CLI: `npm install -g socialclaw@0.1.12`
+2. Find the credentials draft: search Gmail drafts for subject `SOCIALCLAW_CREDENTIALS`. Read its body.
+3. Extract the value after `SC_API_KEY=`.
+4. Run `socialclaw login --api-key <value>`.
+5. Never print, log, commit, or echo the key value anywhere. This includes commit messages, the pipeline log, and the Gmail draft from STEP 11. Where a step would otherwise print it, write "SocialClaw: [authenticated / auth failed]" instead.
+
+Treat any failure here as non-fatal: missing draft, missing key, or a rejected login. Continue to STEP 1 as normal. Generate the article and social cuts. Skip STEP 9.5. Note in the Gmail draft that SocialClaw auth failed and needs manual attention.
 
 ---
 
@@ -198,6 +212,27 @@ Create `data/social/` directory if it does not exist.
 
 ---
 
+## STEP 9.5 - Publish the X thread (if SocialClaw authenticated in STEP 0)
+
+LinkedIn is not auto-published. Only Job's personal LinkedIn is connected to SocialClaw right now,
+not the TechTribe Africa Page, so there is no correct account to post it to yet. Leave the LinkedIn
+file for manual posting until program.md is updated to say otherwise.
+
+If STEP 0 succeeded and the X thread scored 7 or above:
+
+```bash
+python3 scripts/publish-social.py [slug] --apply
+```
+
+This script runs the content lint gate on the thread file itself before calling SocialClaw - if lint
+fails here, it aborts and nothing posts, even though the thread already passed its own scoring above.
+Treat a lint-gate abort the same as "did not publish": note it in the Gmail draft, do not treat the
+run as failed.
+
+Record the outcome (published / lint-blocked / SocialClaw auth failed / skipped) for STEP 11.
+
+---
+
 ## STEP 10 - Commit social cuts and update pipeline log
 
 Add social files to the commit:
@@ -205,7 +240,7 @@ Add social files to the commit:
 git add data/social/[slug]-linkedin.md data/social/[slug]-x-thread.md
 ```
 
-Update the pipeline log row to include LinkedIn score and X thread score.
+Update the pipeline log row to include LinkedIn score, X thread score, and the STEP 9.5 publish outcome.
 
 ---
 
@@ -233,7 +268,7 @@ Image needed: /images/articles/[slug].jpg - add before publishing
 To publish: remove "status: draft" from frontmatter, add to editorial-context.json published_articles array.
 
 ---
-X THREAD ([x-score]/10) — paste directly into X as a thread:
+X THREAD ([x-score]/10) — status: [Published automatically / Lint-blocked, paste manually / SocialClaw auth failed, paste manually / Skipped]
 
 Tweet 1: [tweet 1 text]
 
