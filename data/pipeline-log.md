@@ -6,3 +6,4 @@
 | 2026-06-27 | africa-power-reliability-product-constraint | frontier-reports | digital_infrastructure | 10/10 | 1 | drafted | 10/10 | 10/10 |
 | 2026-06-27 | africa-ai-agent-workflow-fit | frontier-reports | ai_in_africa | 10/10 | 1 | drafted | 10/10 | 10/10 |
 | 2026-07-23 | africa-cbdc-vs-stablecoin-2026 | market-signals | stablecoin_and_crypto | 10/10 | 1 | drafted | 10/10 | 10/10 |
+| 2026-07-23 | africa-stablecoin-onramp-b2b-gap | build-opportunities | stablecoin_and_crypto | 10/10 | 1 | drafted | pending | pending |
